@@ -1,6 +1,6 @@
 # Leonardo Leal
 
-## Professional Summary
+## About me
 Experienced Front End Engineer and Designer with 20+ years of experience building scalable, maintainable, and high-performance web applications. Skilled in collaborating with multidisciplinary teams and clients across global markets. Expert in modern JavaScript frameworks, UI/UX design, accessibility, and frontend architecture. Passionate about delivering top-quality user experiences and driving best practices in frontend development.
 
 ## Skills
