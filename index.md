@@ -3,7 +3,7 @@ title: Leonardo Leal (aka LeoLeal)
 ---
 
 ## About me
-Experienced Front End Engineer and Designer with 20+ years of experience building scalable, maintainable, and high-performance web applications. Skilled in collaborating with multidisciplinary teams and clients across global markets. Expert in modern JavaScript frameworks, UI/UX design, accessibility, and frontend architecture. Passionate about delivering top-quality user experiences and driving best practices in frontend development.
+Experienced frontend Engineer and Designer with 20+ years of experience building scalable, maintainable, and high-performance web applications. Skilled in collaborating with multidisciplinary teams and clients across global markets. Expert in modern JavaScript frameworks, UI/UX design, accessibility, and frontend architecture. Passionate about delivering top-quality user experiences and driving best practices in frontend development.
 
 ## Skills
 HTML5, CSS3, JavaScript, TypeScript, React.js, Vue.js, Angular, SASS, Webpack, Next.js, SSR, SSG, ISR, Content Management Systems (CMS), I18n, A11Y (Accessibility), Jest, ESLint, Node.js, NgRx, LIT, GraphQL, User Interface Design, User Experience, Web Design, PWA
@@ -15,35 +15,39 @@ Publicis Sapient
 *Jun 2019 - Present · 6 yrs 3 mos*  
 *London, United Kingdom · Hybrid*  
   
-Lead frontend developer responsible for collaborating with a multi-disciplinary team and clients to deliver top quality user experiences with proper architecture to achieve the best frontend developer's experience to the team aligned with the clients' needs.
+Lead frontend developer collaborating with a multi-disciplinary team and clients to deliver top quality user experiences with proper architecture to achieve the best frontend developer's experience to the team aligned with the clients' needs.
 
-**Senior Javascript Engineer (Frontend)**  
+**Senior Javascript Engineer (frontend)**  
 EPAM Systems  
 *Mar 2018 - May 2019 · 1 yr 3 mos*  
 *Kraków, Poland*  
   
-Senior Developer of an offshore team contracted by US company, developing Frontend to projects. Technical reference across multiple teams for architectural decisions in the front end and main code reviewer.
+Senior Developer of an offshore team contracted by US company, developing Frontend to projects. Technical reference across multiple teams for architectural decisions in the frontend and main code reviewer.
 
-**Senior Front End Engineer (merge acquisition from Rico.com.vc)**  
+**Senior Frontend Engineer (merge acquisition from Rico.com.vc)**  
 XP INVESTIMENTOS  
 *Aug 2016 - Dec 2017 · 1 yr 5 mos*  
 *São Paulo, Brazil*  
   
-Acting as a technical reference for the team, responsible for building the best development environment and projects structure that encourages easily maintainable code for the other developers in the Front-end team. Also collaborate on UX and design for a friendly, performant and smooth end-user experience for both websites and mobile apps.
+Technical lead, responsible for building the best development environment and projects structure that encourages easily maintainable code for the other developers in the frontend team.
 
-**Senior Front End Engineer (merge acquisition from CGD)**  
+With experience on UX and design, also collaborate on those areas with the UX team, to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.
+
+**Senior Frontend Engineer (merge acquisition from CGD)**  
 Rico.com.vc  
 *Sep 2014 - Jul 2016 · 1 yr 11 mos*  
 *São Paulo, Brazil*  
   
-Responsible for building the best development environment and projects structure that encourages easily maintainable code for the other developers in the Front-end team. Also collaborate on UX and design for a friendly, performant and smooth end-user experience for both websites and mobile apps.
+Senior frontend developer collaborating with a multi-disciplinary team to build the home broker platform for the stocks market users.
 
-**Front End Engineer (merge acquisition from Banif)**  
+As I have experience on UX and design, I also collaborate on those areas with the UX team, to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.
+
+**Frontend Engineer (merge acquisition from Banif)**  
 CGD  
 *Apr 2012 - Aug 2014 · 2 yrs 5 mos*  
 *São Paulo, Brazil*
 
-**Designer and Front End Developer**  
+**Designer and Frontend Developer**  
 Banif  
 *Apr 2008 - Apr 2012 · 4 yrs 1 mo*  
 *São Paulo, Brazil*
