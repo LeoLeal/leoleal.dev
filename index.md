@@ -3,7 +3,7 @@ title: Leonardo Leal (aka LeoLeal)
 ---
 
 ## About me
-Experienced frontend Engineer and Designer with 20+ years of experience building scalable, maintainable, and high-performance web applications. Skilled in collaborating with multidisciplinary teams and clients across global markets. Expert in modern JavaScript frameworks, UI/UX design, accessibility, and frontend architecture. Passionate about delivering top-quality user experiences and driving best practices in frontend development.
+Frontend Engineer with 20+ years of experience building scalable, maintainable, and high-performance web applications. Skilled in collaborating with multidisciplinary teams and clients across global markets. Expert in modern JavaScript frameworks and frontend architecture with a strong background in UI/UX design and accessibility. Passionate about delivering top-quality user experiences.
 
 ## Skills
 HTML5, CSS3, JavaScript, TypeScript, React.js, Vue.js, Angular, SASS, Webpack, Next.js, SSR, SSG, ISR, Content Management Systems (CMS), I18n, A11Y (Accessibility), Jest, ESLint, Node.js, NgRx, LIT, GraphQL, User Interface Design, User Experience, Web Design, PWA
