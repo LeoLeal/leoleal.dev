@@ -11,21 +11,21 @@ HTML5, CSS3, JavaScript, TypeScript, React.js, Vue.js, Angular, SASS, Webpack, N
 ## Experience
 
 **Lead Experience Engineer - Sr Associate Engineer L2**  
-Publicis Sapient  
+Publicis Sapient - Consulting  
 *Jun 2019 - Present · 6 yrs 3 mos*  
 *London, United Kingdom · Hybrid*  
   
 Lead frontend developer collaborating with a multi-disciplinary team and clients to deliver top quality user experiences with proper architecture to achieve the best frontend developer's experience to the team aligned with the clients' needs.
 
 **Senior Javascript Engineer (frontend)**  
-EPAM Systems  
+EPAM Systems - Consulting  
 *Mar 2018 - May 2019 · 1 yr 3 mos*  
 *Kraków, Poland*  
   
 Senior Developer of an offshore team contracted by US company, developing Frontend to projects. Technical reference across multiple teams for architectural decisions in the frontend and main code reviewer.
 
 **Senior Frontend Engineer (merge acquisition from Rico.com.vc)**  
-XP INVESTIMENTOS  
+XP INVESTIMENTOS - Investment Banking  
 *Aug 2016 - Dec 2017 · 1 yr 5 mos*  
 *São Paulo, Brazil*  
   
@@ -34,7 +34,7 @@ Technical lead, responsible for building the best development environment and pr
 With experience on UX and design, also collaborate on those areas with the UX team, to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.
 
 **Senior Frontend Engineer (merge acquisition from CGD)**  
-Rico.com.vc  
+Rico.com.vc - Investment Banking  
 *Sep 2014 - Jul 2016 · 1 yr 11 mos*  
 *São Paulo, Brazil*  
   
@@ -43,22 +43,22 @@ Senior frontend developer collaborating with a multi-disciplinary team to build 
 As I have experience on UX and design, I also collaborate on those areas with the UX team, to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.
 
 **Frontend Engineer (merge acquisition from Banif)**  
-CGD  
+CGD - Investment Banking  
 *Apr 2012 - Aug 2014 · 2 yrs 5 mos*  
 *São Paulo, Brazil*
 
 **Designer and Frontend Developer**  
-Banif  
+Banif - Investment Banking  
 *Apr 2008 - Apr 2012 · 4 yrs 1 mo*  
 *São Paulo, Brazil*
 
 **Information Architect**  
-Politec  
+Politec - Consulting  
 *Sep 2007 - Mar 2008 · 7 mos*  
 *Rio de Janeiro, Brazil*
 
 **Designer**  
-EverSystems  
+EverSystems - Consulting  
 *Mar 2000 - Sep 2007 · 7 yrs 7 mos*  
 *Rio de Janeiro, Brazil*
 
