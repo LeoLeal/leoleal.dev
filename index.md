@@ -6,7 +6,7 @@ title: Leonardo Leal (aka LeoLeal)
 Frontend Engineer with 20+ years of experience building scalable, maintainable, and high-performance web applications. Skilled in collaborating with multidisciplinary teams and clients across global markets. Expert in modern JavaScript frameworks and frontend architecture with a strong background in UI/UX design and accessibility. Passionate about delivering top-quality user experiences.
 
 ## Skills
-HTML5, CSS3, JavaScript, TypeScript, React.js, Vue.js, Angular, SASS, Webpack, Next.js, SSR, SSG, ISR, Content Management Systems (CMS), I18n, A11Y (Accessibility), Jest, ESLint, Node.js, NgRx, LIT, GraphQL, User Interface Design, User Experience, Web Design, PWA
+`HTML5` , `CSS3` , `JavaScript` , `TypeScript` , `React.js` , `Vue.js` , `Angular` , `SASS` , `Webpack` , `Next.js` , `Astro` , `SSR` , `SSG` , `ISR` , `CMS` , `I18n` , `A11Y (Accessibility)` , `Node.js` , `NgRx` , `Lit.js` , `GraphQL` , `UX (User Experience)` , `Design Systems` , `PWA` , `Adobe AEM` , `Module Federation`
 
 ## Experience
 
@@ -80,7 +80,7 @@ As Lead Frontend Developer, designed an architecture using Module Federation for
 **Oct 2019 - Jun 2022 · Associated with Publicis Sapient**  
 Lead Frontend Developer for the "product selection" user journey for the Nissan group. Supported multiple languages and brands with localized financial services across many markets using technologies like Vue.js, React, and Lit on Adobe's AEM platform. Also contributed to a Design System using WebComponents (Lit) and the Figma API.  
   
-*Tech stack: Vue.js, React.js, TypeScript, GraphQL, Lit, WebComponents, Adobe AEM*
+*Tech stack: Vue.js, React.js, TypeScript, GraphQL, Lit.js, WebComponents, Adobe AEM*
 
 ### Health Industry - Health Insurance Platform
 **Apr 2018 - Mar 2019 · Associated with EPAM Systems**  
@@ -100,17 +100,19 @@ Developer of a streaming website for the stocks market, featuring financial anal
   
 *Tech stack: VueJS, SASS, WebSockets, NodeJS, MongoDB, Redis*
 
-## Education
+## Education  
 
 **Faculdade da Cidade**  
 Industrial Design  
 1997 - 2001  
-Grade: incomplete
+Grade: incomplete  
 
 ## Languages
 
 **English**: Fluent  
-**Portuguese**: Native speaker
+**Portuguese**: Native speaker  
 
-## Contact
-[contact@leoleal.dev](mailto:contact@leoleal.dev)
+## Contact  
+:email: [contact@leoleal.dev](mailto:contact@leoleal.dev)  
+:globe_with_meridians: [linkedin.com/in/leoleal](https://www.linkedin.com/in/leoleal/)  
+:octocat: [github.com/leoleal](https://github.com/leoleal)  
