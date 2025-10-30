@@ -115,4 +115,4 @@ Grade: incomplete
 ## Contact  
 :email: [contact@leoleal.dev](mailto:contact@leoleal.dev)  
 :globe_with_meridians: [linkedin.com/in/leoleal](https://www.linkedin.com/in/leoleal/)  
-:octocat: [github.com/leoleal](https://github.com/leoleal)  
+:octopus: [github.com/leoleal](https://github.com/leoleal)  
