@@ -15,32 +15,32 @@ Publicis Sapient - Consulting
 *Jun 2019 - Present · 6 yrs 3 mos*  
 *London, United Kingdom · Hybrid*  
   
-Lead developer with strong UX/UI background collaborating with multi-disciplinary teams and clients to deliver top quality products and user experiences with proper architecture and the best frontend developer's experience aligned with the clients' needs.
+Lead developer with strong UX/UI background collaborating with multi-disciplinary teams and clients to deliver top quality products and user experiences with proper architecture and the best frontend developer's experience aligned with the clients' needs.  
 
 **Senior Javascript Engineer (frontend)**  
 EPAM Systems - Consulting  
 *Mar 2018 - May 2019 · 1 yr 3 mos*  
 *Kraków, Poland*  
   
-Senior Developer of an offshore team contracted by US company working on Frontend projects. Technical reference across multiple teams for architectural decisions in the front end.
+Senior Developer of an offshore team contracted by US company working on Frontend projects. Technical reference across multiple teams for architectural decisions in the front end.  
 
 **Senior Frontend Engineer (merge acquisition from Rico.com.vc)**  
 XP INVESTIMENTOS - Investment Banking  
 *Aug 2016 - Dec 2017 · 1 yr 5 mos*  
 *São Paulo, Brazil*  
   
-Technical lead, responsible for building the best development environment and projects structure that encourages easily maintainable code for the other developers in the Front-end team.
-
-With experience on UX and design, also collaborate on those areas with the UX team to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.
+Technical lead, responsible for building the best development environment and projects structure that encourages easily maintainable code for the other developers in the Front-end team.  
+  
+With experience on UX and design, also collaborate on those areas with the UX team to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.  
 
 **Senior Frontend Engineer (merge acquisition from CGD)**  
 Rico.com.vc - Investment Banking  
 *Sep 2014 - Jul 2016 · 1 yr 11 mos*  
 *São Paulo, Brazil*  
   
-Senior Frontend developer collaborating with a multidisciplinary team to build the home broker platform for the stocks market users.
-
-As I have experience on UX and design, I also collaborate on those areas with the UX team, to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.
+Senior Frontend developer collaborating with a multidisciplinary team to build the home broker platform for the stocks market users.  
+  
+As I have experience on UX and design, I also collaborate on those areas with the UX team, to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.  
 
 **Frontend Engineer (merge acquisition from Banif)**  
 CGD - Investment Banking  
