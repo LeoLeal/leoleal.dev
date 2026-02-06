@@ -1,9 +1,9 @@
 ---
-title: Leonardo Leal (aka LeoLeal)
+title: Leonardo Leal | Senior Frontend Engineer
 ---
 
 ## About me
-With many years of experience and engaging on global initiatives to build modern and intuitive solutions, my driving force is to make the online world a better place, while learning about new technologies and placing the humans at the front and center of their experiences.
+With many years of experience and engaging on global initiatives to build modern and intuitive solutions, my driving force is to make the online world a better place, while learning about new technologies and placing the humans at the front and center of their experiences, leveraging the power of AI agentic engineering to improve the quality of software, services and products.
 
 ## Skills
 `HTML5` , `CSS3` , `JavaScript` , `TypeScript` , `React.js` , `Vue.js` , `Angular` , `SASS` , `Webpack` , `Next.js` , `Astro` , `SSR` , `SSG` , `ISR` , `CMS` , `I18n` , `A11Y (Accessibility)` , `Node.js` , `NgRx` , `Lit.js` , `GraphQL` , `UX (User Experience)` , `Design Systems` , `PWA` , `Adobe AEM` , `Module Federation`
