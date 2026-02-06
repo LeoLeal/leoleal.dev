@@ -3,7 +3,7 @@ title: Leonardo Leal (aka LeoLeal)
 ---
 
 ## About me
-With 20+ years of experience and engaging on global initiatives to build modern and intuitive solutions, my driving force is to make the online world a better place, while learning about new technologies and placing the humans at the front and center of their experiences.
+With many years of experience and engaging on global initiatives to build modern and intuitive solutions, my driving force is to make the online world a better place, while learning about new technologies and placing the humans at the front and center of their experiences.
 
 ## Skills
 `HTML5` , `CSS3` , `JavaScript` , `TypeScript` , `React.js` , `Vue.js` , `Angular` , `SASS` , `Webpack` , `Next.js` , `Astro` , `SSR` , `SSG` , `ISR` , `CMS` , `I18n` , `A11Y (Accessibility)` , `Node.js` , `NgRx` , `Lit.js` , `GraphQL` , `UX (User Experience)` , `Design Systems` , `PWA` , `Adobe AEM` , `Module Federation`
@@ -22,14 +22,14 @@ EPAM Systems - Consulting
 *Mar 2018 - May 2019 · 1 yr 3 mos*  
 *Kraków, Poland*  
   
-Senior Developer of an offshore team contracted by US company working on Frontend projects. Technical reference across multiple teams for architectural decisions in the front end.  
+Senior Developer of an offshore team contracted by US company working on Frontend projects. Technical reference across multiple teams for architectural decisions in the frontend.  
 
 **Senior Frontend Engineer (merge acquisition from Rico.com.vc)**  
 XP INVESTIMENTOS - Investment Banking  
 *Aug 2016 - Dec 2017 · 1 yr 5 mos*  
 *São Paulo, Brazil*  
   
-Technical lead, responsible for building the best development environment and projects structure that encourages easily maintainable code for the other developers in the Front-end team.  
+Technical lead, responsible for building the best development environment and projects structure that encourages easily maintainable code for the other developers in the Frontend team.  
   
 With experience on UX and design, also collaborate on those areas with the UX team to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.  
 
@@ -38,7 +38,7 @@ Rico.com.vc - Investment Banking
 *Sep 2014 - Jul 2016 · 1 yr 11 mos*  
 *São Paulo, Brazil*  
   
-Senior Frontend developer collaborating with a multidisciplinary team to build the home broker platform for the stocks market users.  
+Senior Frontend developer for the Digital Marketing team, collaborating with a multidisciplinary team to build the home broker platform for the stocks market users.  
   
 As I have experience on UX and design, I also collaborate on those areas with the UX team, to make for a friendly, performant and smooth end-user experience for both websites and mobile apps.  
 
