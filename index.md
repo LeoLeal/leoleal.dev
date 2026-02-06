@@ -1,5 +1,5 @@
 ---
-title: Leonardo Leal | Senior Frontend Engineer
+title: Leonardo Leal
 ---
 
 ## About me
