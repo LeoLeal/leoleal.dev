@@ -1,0 +1,6263 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "r63jg",
+      "x": 0,
+      "y": 0,
+      "name": "Mobile · Intro / About Me",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "h9qWS8",
+          "x": 0,
+          "y": 0,
+          "name": "Leonardo portrait background",
+          "metadata": {
+            "type": "unsplash",
+            "username": "maks_d",
+            "link": "https://unsplash.com/@maks_d",
+            "author": "maks_d"
+          },
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1761144863268-219ece9568ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDc4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "rectangle",
+          "id": "Cl6Qh",
+          "x": 0,
+          "y": 0,
+          "name": "Readability gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B00",
+                "position": 0
+              },
+              {
+                "color": "#09090B1A",
+                "position": 0.38
+              },
+              {
+                "color": "#09090BEF",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "id": "pHY14",
+          "type": "ref",
+          "ref": "GBQuM",
+          "name": "Search Pill instance · Mobile",
+          "x": 20,
+          "y": 20,
+          "width": 350,
+          "height": 46
+        },
+        {
+          "type": "frame",
+          "id": "d5OxC",
+          "x": 20,
+          "y": 78,
+          "name": "Search suggestions",
+          "width": 350,
+          "layout": "vertical",
+          "gap": 7,
+          "children": [
+            {
+              "type": "text",
+              "id": "l2983",
+              "name": "Suggestions label",
+              "fill": "$ui-muted",
+              "content": "✨ Suggestions:",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "frame",
+              "id": "c314G",
+              "name": "Suggestion chips",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BR5Ll",
+                  "name": "Design systems",
+                  "fill": "#09090B52",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF33",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "izZXP",
+                      "name": "Design systems label",
+                      "fill": "$ui-text",
+                      "content": "Design systems",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zN0MI",
+                  "name": "Frontend stack",
+                  "fill": "#09090B52",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF33",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LQNxA",
+                      "name": "Frontend stack label",
+                      "fill": "$ui-text",
+                      "content": "Frontend stack",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bjdeQ",
+                  "name": "Selected work",
+                  "fill": "#09090B52",
+                  "cornerRadius": 14,
+                  "stroke": "#FFFFFF33",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XLOub",
+                      "name": "Selected work label",
+                      "fill": "$ui-text",
+                      "content": "Selected work",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aMkfu",
+          "x": 20,
+          "y": 428,
+          "name": "Lower third narrative",
+          "width": 350,
+          "layout": "vertical",
+          "gap": 13,
+          "children": [
+            {
+              "type": "text",
+              "id": "q0aT2W",
+              "name": "Eyebrow",
+              "fill": "$accent-violet",
+              "content": "HELLO, I’M LEONARDO",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1.1
+            },
+            {
+              "type": "text",
+              "id": "lbz3O",
+              "name": "Mobile title",
+              "fill": "$ui-text",
+              "content": "Frontend, with feeling.",
+              "fontFamily": "$font-display",
+              "fontSize": 32,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "w3As0",
+              "name": "Role",
+              "fill": "$ui-text",
+              "content": "Frontend Architect & UI/UX Engineer",
+              "fontFamily": "$font-ui",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "MkrWD",
+              "name": "Current location",
+              "fill": "$ui-muted",
+              "content": "📍 Current Location: 🇬🇧 London",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "SCFbj",
+              "name": "Value proposition",
+              "fill": "$ui-text",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "I turn complex product logic into pixel-perfect interfaces. Design systems, performance and polished interactions—made to feel inevitable.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "UbQka",
+              "name": "Expertise tags",
+              "gap": 7,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DW7xj",
+                  "name": "React tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    6,
+                    9
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WJbk8",
+                      "name": "React text",
+                      "fill": "$ui-muted",
+                      "content": "React",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o5YC8A",
+                  "name": "Design systems tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    6,
+                    9
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZuRPc",
+                      "name": "Design systems text",
+                      "fill": "$ui-muted",
+                      "content": "Design systems",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uC8Yr",
+                  "name": "Motion tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    6,
+                    9
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pRL6f",
+                      "name": "Motion text",
+                      "fill": "$ui-muted",
+                      "content": "Motion",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rqpux",
+              "name": "Contact actions",
+              "gap": 13,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "Y9LLyo",
+                  "type": "ref",
+                  "ref": "EkTe7",
+                  "name": "Primary CTA instance · Mobile",
+                  "width": 128,
+                  "height": 44
+                },
+                {
+                  "type": "icon",
+                  "id": "uQ5hx",
+                  "name": "linkedin social icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "linkedin",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "icon",
+                  "id": "QJu2w",
+                  "name": "github social icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "github",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "XicMD",
+          "type": "ref",
+          "ref": "H0B5cZ",
+          "name": "Mobile Smart Toolbar instance · About",
+          "x": 88,
+          "y": 779,
+          "width": 214,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "URU4Y",
+      "x": 0,
+      "y": -924,
+      "name": "Archived wireframe component",
+      "reusable": true,
+      "enabled": false,
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#5C5E65",
+      "layout": "none",
+      "children": [
+        {
+          "type": "path",
+          "id": "kPErV",
+          "x": 0,
+          "y": 0,
+          "name": "Diagonal guide one",
+          "geometry": "M0 0l390 844",
+          "viewBox": [
+            0,
+            0,
+            390,
+            844
+          ],
+          "width": 390,
+          "height": 844,
+          "stroke": "#FFFFFF55",
+          "strokeWidth": 1
+        },
+        {
+          "type": "path",
+          "id": "Q38DU",
+          "x": 0,
+          "y": 0,
+          "name": "Diagonal guide two",
+          "geometry": "M390 0l-390 844",
+          "viewBox": [
+            0,
+            0,
+            390,
+            844
+          ],
+          "width": 390,
+          "height": 844,
+          "stroke": "#FFFFFF55",
+          "strokeWidth": 1
+        },
+        {
+          "type": "rectangle",
+          "id": "g87IA",
+          "x": 20,
+          "y": 92,
+          "name": "Wireframe inset",
+          "fill": "#FFFFFF08",
+          "width": 350,
+          "height": 540,
+          "stroke": "#FFFFFF66",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "n0voDa",
+          "x": 34,
+          "y": 106,
+          "name": "Wireframe label",
+          "fill": "#FFFFFFCC",
+          "content": "[ FULLSCREEN UX WIREFRAME PLACEHOLDER ]",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 1
+        },
+        {
+          "type": "text",
+          "id": "b1j6B",
+          "x": 34,
+          "y": 610,
+          "name": "Wireframe aspect",
+          "fill": "#FFFFFF99",
+          "content": "01 / STRUCTURAL ASSET · TAP EDGE TO EXPLORE",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "I0Yp0p",
+      "x": 470,
+      "y": 0,
+      "name": "Mobile · Journey Employer Overview",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "SmYAG",
+          "x": 0,
+          "y": 0,
+          "name": "Monzo concept imagery",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1784651839181.png",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "rectangle",
+          "id": "pJ52G",
+          "x": 0,
+          "y": 0,
+          "name": "Journey contrast gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B08",
+                "position": 0
+              },
+              {
+                "color": "#09090B10",
+                "position": 0.35
+              },
+              {
+                "color": "#09090BF5",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "text",
+          "id": "n06KPc",
+          "x": 20,
+          "y": 24,
+          "name": "Player context",
+          "fill": "$ui-text",
+          "content": "SWIPE ↕ EMPLOYERS · ↔ PROJECTS",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        },
+        {
+          "id": "ZQVsN",
+          "type": "ref",
+          "ref": "MSG83",
+          "name": "Mobile employer experience header",
+          "x": 20,
+          "y": 82,
+          "width": 350,
+          "height": 58,
+          "descendants": {
+            "qgbgt": {
+              "content": "03 PROJECTS"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "Tokaw",
+          "x": 31,
+          "y": 83,
+          "name": "Employer project count",
+          "enabled": false,
+          "fill": "$ui-muted",
+          "content": "03 PROJECTS",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "g5WqX",
+          "x": 20,
+          "y": 515,
+          "name": "Employer narrative overlay",
+          "width": 350,
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "type": "text",
+              "id": "PjcJH",
+              "name": "Employer industry",
+              "fill": "$accent-violet",
+              "content": "◈ FINANCE",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "h63l6j",
+              "name": "Employer name",
+              "fill": "$ui-text",
+              "content": "Monzo",
+              "fontFamily": "$font-display",
+              "fontSize": 42,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "jZIio",
+              "name": "Employer role",
+              "fill": "$ui-text",
+              "content": "Senior Frontend Architect",
+              "fontFamily": "$font-ui",
+              "fontSize": 15,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "ZPiDG",
+              "name": "Employer duration location",
+              "fill": "$ui-muted",
+              "content": "2022 — Present  ·  🇬🇧 London",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "dFs5O",
+              "name": "Employer prompt",
+              "fill": "$ui-text",
+              "content": "A product environment where clarity is a craft.",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "za5Jv",
+          "x": 88,
+          "y": 779,
+          "name": "Employer smart toolbar",
+          "width": 214,
+          "height": 48,
+          "fill": "#09090B99",
+          "cornerRadius": 24,
+          "effect": {
+            "type": "background_blur",
+            "radius": 12
+          },
+          "padding": [
+            0,
+            18
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "lyNS7",
+              "name": "Profile toolbar icon",
+              "width": 19,
+              "height": 19,
+              "icon": "user-round",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "icon",
+              "id": "ZHE5k",
+              "name": "Employer smart toolbar Journey icon",
+              "width": 19,
+              "height": 19,
+              "icon": "route",
+              "library": "lucide",
+              "fill": "$accent-violet"
+            },
+            {
+              "type": "icon",
+              "id": "RY7Xw",
+              "name": "Employer smart toolbar Search icon",
+              "width": 19,
+              "height": 19,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "rectangle",
+              "id": "VMqPY",
+              "name": "Employer smart toolbar separator",
+              "fill": "#FFFFFF55",
+              "width": 1,
+              "height": 18
+            },
+            {
+              "type": "icon",
+              "id": "yx7aG",
+              "name": "Employer smart toolbar disabled terminal",
+              "opacity": 0.3,
+              "width": 19,
+              "height": 19,
+              "icon": "terminal",
+              "library": "lucide",
+              "fill": "$ui-text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Lpwrb",
+      "x": 940,
+      "y": 0,
+      "name": "Mobile · Journey Project Slide",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "ehLJj",
+          "x": 0,
+          "y": 0,
+          "name": "Payments concept imagery",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1784651841359.png",
+            "mode": "fill"
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "rectangle",
+          "id": "cCZlM",
+          "x": 0,
+          "y": 0,
+          "name": "Project contrast gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B00",
+                "position": 0
+              },
+              {
+                "color": "#09090B22",
+                "position": 0.39
+              },
+              {
+                "color": "#09090BF5",
+                "position": 1
+              }
+            ]
+          },
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "text",
+          "id": "WlapJ",
+          "x": 20,
+          "y": 24,
+          "name": "Project player label",
+          "enabled": false,
+          "fill": "$ui-text",
+          "content": "MONZO / PROJECT 01",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 1
+        },
+        {
+          "type": "frame",
+          "id": "K5iYpR",
+          "x": 164,
+          "y": 474,
+          "name": "Asset pagination dots",
+          "gap": 7,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "Lm8gN",
+              "name": "Asset dot 1",
+              "fill": "#FFFFFF66",
+              "width": 6,
+              "height": 6
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 3,
+              "id": "U7Wmg",
+              "name": "Active asset pill",
+              "fill": "$accent-violet",
+              "width": 18,
+              "height": 6
+            },
+            {
+              "type": "ellipse",
+              "id": "FXjMA",
+              "name": "Asset dot 3",
+              "fill": "#FFFFFF66",
+              "width": 6,
+              "height": 6
+            },
+            {
+              "type": "ellipse",
+              "id": "U1Ew6",
+              "name": "Asset dot 4",
+              "fill": "#FFFFFF66",
+              "width": 6,
+              "height": 6
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pu0Gn",
+          "x": 20,
+          "y": 523,
+          "name": "Project detail overlay",
+          "width": 350,
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "type": "text",
+              "id": "BKyjy",
+              "name": "Project metadata",
+              "fill": "$accent-violet",
+              "content": "◈ FINANCE  ·  🇺🇸 New York",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "IEArq",
+              "name": "Project title",
+              "fill": "$ui-text",
+              "content": "Payments Foundations",
+              "fontFamily": "$font-display",
+              "fontSize": 32,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "fZ5DL",
+              "name": "Project description",
+              "fill": "$ui-text",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "• Rebuilt the payment orchestration UI in React + TypeScript\n• Unified component contracts across 14 critical flows\n• Reduced completion friction by 18% through tested interaction states",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "lQlhV",
+              "name": "Mobile project technology tags",
+              "gap": 7,
+              "children": [
+                {
+                  "id": "eVIeQ",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Mobile React expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "React"
+                    }
+                  }
+                },
+                {
+                  "id": "Z7uYP",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Mobile TypeScript expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "TypeScript"
+                    }
+                  }
+                },
+                {
+                  "id": "amtuG",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Mobile Storybook expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Storybook"
+                    }
+                  }
+                },
+                {
+                  "id": "dlNXL",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Mobile Motion expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Motion"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f6YdR",
+          "type": "ref",
+          "ref": "MSG83",
+          "name": "Mobile project experience header",
+          "x": 20,
+          "y": 82,
+          "width": 350,
+          "height": 58,
+          "descendants": {
+            "qgbgt": {
+              "content": "MONZO / PROJECT 01"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "B9jVu",
+          "x": 31,
+          "y": 83,
+          "name": "Project header label",
+          "enabled": false,
+          "fill": "$ui-muted",
+          "content": "MONZO / PROJECT 01",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "w3cxP",
+          "x": 88,
+          "y": 779,
+          "name": "Project smart toolbar",
+          "width": 214,
+          "height": 48,
+          "fill": "#09090B99",
+          "cornerRadius": 24,
+          "effect": {
+            "type": "background_blur",
+            "radius": 12
+          },
+          "padding": [
+            0,
+            18
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "xxhmo",
+              "name": "Profile toolbar icon",
+              "width": 19,
+              "height": 19,
+              "icon": "user-round",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "icon",
+              "id": "TKbYo",
+              "name": "Project smart toolbar Journey icon",
+              "width": 19,
+              "height": 19,
+              "icon": "route",
+              "library": "lucide",
+              "fill": "$accent-violet"
+            },
+            {
+              "type": "icon",
+              "id": "C4LdCi",
+              "name": "Project smart toolbar Search icon",
+              "width": 19,
+              "height": 19,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "rectangle",
+              "id": "UDRlb",
+              "name": "Project smart toolbar separator",
+              "fill": "#FFFFFF55",
+              "width": 1,
+              "height": 18
+            },
+            {
+              "type": "icon",
+              "id": "O7Wjb",
+              "name": "Project smart toolbar disabled terminal",
+              "opacity": 0.3,
+              "width": 19,
+              "height": 19,
+              "icon": "terminal",
+              "library": "lucide",
+              "fill": "$ui-text"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "j20nlg",
+          "x": 20,
+          "y": 24,
+          "name": "Player context",
+          "fill": "$ui-text",
+          "content": "SWIPE ↕ EMPLOYERS · ↔ PROJECTS",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "juGje",
+      "x": 1410,
+      "y": 0,
+      "name": "Mobile · Birds-Eye Experience Grid",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#111116",
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "WMOyQ",
+          "x": 20,
+          "y": 28,
+          "name": "Grid eyebrow",
+          "fill": "$accent-violet",
+          "content": "BIRD'S EYE JOURNEY VIEW",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        },
+        {
+          "type": "text",
+          "id": "EfSKh",
+          "x": 20,
+          "y": 51,
+          "name": "Grid heading",
+          "fill": "$ui-text",
+          "content": "Select a chapter",
+          "fontFamily": "$font-display",
+          "fontSize": 35,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "aW872",
+          "x": 20,
+          "y": 97,
+          "name": "Grid instruction",
+          "fill": "$ui-muted",
+          "content": "Tap an employer to return to its 100vh player.",
+          "fontFamily": "$font-ui",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "c3Xr2d",
+          "x": 20,
+          "y": 139,
+          "name": "Monzo grid item",
+          "width": 157,
+          "height": 235,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "Lfmj6",
+              "x": 0,
+              "y": 0,
+              "name": "Monzo mini wireframe",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651842666.png",
+                "mode": "fill"
+              },
+              "width": 157,
+              "height": 157,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "path",
+              "id": "rWlVC",
+              "x": 0,
+              "y": 0,
+              "name": "Monzo diagonal",
+              "enabled": false,
+              "geometry": "M0 0l157 157m0-157l-157 157",
+              "viewBox": [
+                0,
+                0,
+                157,
+                157
+              ],
+              "width": 157,
+              "height": 157,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "text",
+              "id": "OXget",
+              "x": 9,
+              "y": 10,
+              "name": "Monzo project count",
+              "fill": "$accent-violet",
+              "content": "3 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "RSrxC",
+              "x": 0,
+              "y": 168,
+              "name": "Monzo metadata",
+              "width": 157,
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Z0xby0",
+                  "name": "Monzo company",
+                  "fill": "$ui-text",
+                  "content": "Monzo",
+                  "fontFamily": "$font-display",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "SvQXS",
+                  "name": "Monzo role",
+                  "fill": "$ui-muted",
+                  "content": "Senior Frontend Architect",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "gxY8A",
+                  "name": "Monzo industry",
+                  "fill": "$ui-text",
+                  "content": "◈ Finance · 🇬🇧 London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MUf2J",
+          "x": 197,
+          "y": 139,
+          "name": "Publicis Sapient grid item",
+          "width": 157,
+          "height": 235,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "e4D7z",
+              "x": 0,
+              "y": 0,
+              "name": "Publicis Sapient mini wireframe",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651844208.png",
+                "mode": "fill"
+              },
+              "width": 157,
+              "height": 157,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "path",
+              "id": "qYlpe",
+              "x": 0,
+              "y": 0,
+              "name": "Publicis Sapient diagonal",
+              "enabled": false,
+              "geometry": "M0 0l157 157m0-157l-157 157",
+              "viewBox": [
+                0,
+                0,
+                157,
+                157
+              ],
+              "width": 157,
+              "height": 157,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "text",
+              "id": "CIJJu",
+              "x": 9,
+              "y": 10,
+              "name": "Publicis Sapient project count",
+              "fill": "$accent-violet",
+              "content": "5 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "ZsXiM",
+              "x": 0,
+              "y": 168,
+              "name": "Publicis Sapient metadata",
+              "width": 157,
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Jad3V",
+                  "name": "Publicis Sapient company",
+                  "fill": "$ui-text",
+                  "content": "Publicis Sapient",
+                  "fontFamily": "$font-display",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "r6RV2",
+                  "name": "Publicis Sapient role",
+                  "fill": "$ui-muted",
+                  "content": "UI/UX Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "i35ELP",
+                  "name": "Publicis Sapient industry",
+                  "fill": "$ui-text",
+                  "content": "◈ Consulting · 🇬🇧 London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iChFI",
+          "x": 20,
+          "y": 398,
+          "name": "BMW Group grid item",
+          "width": 157,
+          "height": 235,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "SyH3Y",
+              "x": 0,
+              "y": 0,
+              "name": "BMW Group mini wireframe",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651845137.png",
+                "mode": "fill"
+              },
+              "width": 157,
+              "height": 157,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "path",
+              "id": "f11TDr",
+              "x": 0,
+              "y": 0,
+              "name": "BMW Group diagonal",
+              "enabled": false,
+              "geometry": "M0 0l157 157m0-157l-157 157",
+              "viewBox": [
+                0,
+                0,
+                157,
+                157
+              ],
+              "width": 157,
+              "height": 157,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "text",
+              "id": "v1UI5",
+              "x": 9,
+              "y": 10,
+              "name": "BMW Group project count",
+              "fill": "$accent-violet",
+              "content": "4 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "UfDwo",
+              "x": 0,
+              "y": 168,
+              "name": "BMW Group metadata",
+              "width": 157,
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AXVIL",
+                  "name": "BMW Group company",
+                  "fill": "$ui-text",
+                  "content": "BMW Group",
+                  "fontFamily": "$font-display",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iq2Eo",
+                  "name": "BMW Group role",
+                  "fill": "$ui-muted",
+                  "content": "Frontend Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "wBx6X",
+                  "name": "BMW Group industry",
+                  "fill": "$ui-text",
+                  "content": "◈ Automotive · 🇩🇪 Munich",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "flCVz",
+          "x": 197,
+          "y": 398,
+          "name": "Booking.com grid item",
+          "width": 157,
+          "height": 235,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "E6tsZI",
+              "x": 0,
+              "y": 0,
+              "name": "Booking.com mini wireframe",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651846475.png",
+                "mode": "fill"
+              },
+              "width": 157,
+              "height": 157,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "path",
+              "id": "KBMAG",
+              "x": 0,
+              "y": 0,
+              "name": "Booking.com diagonal",
+              "enabled": false,
+              "geometry": "M0 0l157 157m0-157l-157 157",
+              "viewBox": [
+                0,
+                0,
+                157,
+                157
+              ],
+              "width": 157,
+              "height": 157,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "text",
+              "id": "C5lQp2",
+              "x": 9,
+              "y": 10,
+              "name": "Booking.com project count",
+              "fill": "$accent-violet",
+              "content": "3 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "UnmSX",
+              "x": 0,
+              "y": 168,
+              "name": "Booking.com metadata",
+              "width": 157,
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Oz7TL",
+                  "name": "Booking.com company",
+                  "fill": "$ui-text",
+                  "content": "Booking.com",
+                  "fontFamily": "$font-display",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "V8GJFm",
+                  "name": "Booking.com role",
+                  "fill": "$ui-muted",
+                  "content": "Product UI Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bcaRf",
+                  "name": "Booking.com industry",
+                  "fill": "$ui-text",
+                  "content": "◈ Travel · 🇳🇱 Amsterdam",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "KlD1i",
+          "x": 20,
+          "y": 747,
+          "name": "Grid gesture cue",
+          "fill": "$ui-muted",
+          "content": "PINCH IN TO RETURN TO IMMERSIVE PLAYER",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "KHvEm",
+          "x": 88,
+          "y": 779,
+          "name": "Birds-eye smart toolbar",
+          "width": 214,
+          "height": 48,
+          "fill": "#09090B99",
+          "cornerRadius": 24,
+          "effect": {
+            "type": "background_blur",
+            "radius": 12
+          },
+          "padding": [
+            0,
+            18
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "WnyO4",
+              "name": "Profile toolbar icon",
+              "width": 19,
+              "height": 19,
+              "icon": "user-round",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "icon",
+              "id": "exgzC",
+              "name": "Birds-eye smart toolbar Journey icon",
+              "width": 19,
+              "height": 19,
+              "icon": "route",
+              "library": "lucide",
+              "fill": "$accent-violet"
+            },
+            {
+              "type": "icon",
+              "id": "H3geF",
+              "name": "Birds-eye smart toolbar Search icon",
+              "width": 19,
+              "height": 19,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "rectangle",
+              "id": "sHX8k",
+              "name": "Birds-eye smart toolbar separator",
+              "fill": "#FFFFFF55",
+              "width": 1,
+              "height": 18
+            },
+            {
+              "type": "icon",
+              "id": "WKEgg",
+              "name": "Birds-eye smart toolbar disabled terminal",
+              "opacity": 0.3,
+              "width": 19,
+              "height": 19,
+              "icon": "terminal",
+              "library": "lucide",
+              "fill": "$ui-text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kw7PV",
+      "x": 1880,
+      "y": 0,
+      "name": "Mobile · Intelligent Search Overlay",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#16161B",
+      "effect": {
+        "type": "background_blur",
+        "radius": 18
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "gzHRS",
+          "x": 20,
+          "y": 27,
+          "name": "Search overlay label",
+          "fill": "$accent-violet",
+          "content": "EXPERIENCE VECTOR SEARCH",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        },
+        {
+          "type": "frame",
+          "id": "O2RtL",
+          "x": 20,
+          "y": 54,
+          "name": "Centered search focus field",
+          "width": 350,
+          "height": 58,
+          "cornerRadius": 4,
+          "stroke": "#FFFFFF99",
+          "strokeWidth": 1,
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "Obnvn",
+              "name": "Search field icon",
+              "width": 20,
+              "height": 20,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "text",
+              "id": "Z0BCv",
+              "name": "Search query",
+              "fill": "$ui-muted",
+              "content": "Search experience...",
+              "fontFamily": "$font-display",
+              "fontSize": 18,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "S9Ckg",
+          "x": 20,
+          "y": 143,
+          "name": "Result count",
+          "fill": "$ui-muted",
+          "content": "START WITH A QUESTION",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "QZZXE",
+          "x": 20,
+          "y": 177,
+          "name": "Payments Foundations result frame",
+          "enabled": false,
+          "clip": true,
+          "width": 350,
+          "height": 170,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784648721080.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "path",
+              "id": "P2Xhei",
+              "x": 0,
+              "y": 0,
+              "name": "Payments Foundations placeholder cross",
+              "enabled": false,
+              "geometry": "M0 0l350 170m0-170l-350 170",
+              "viewBox": [
+                0,
+                0,
+                350,
+                170
+              ],
+              "width": 350,
+              "height": 170,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "Nlt7K",
+              "x": 0,
+              "y": 0,
+              "name": "Payments Foundations result gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.2
+                  },
+                  {
+                    "color": "#09090BEF",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 350,
+              "height": 170
+            },
+            {
+              "type": "frame",
+              "id": "mFDiH",
+              "x": 13,
+              "y": 85,
+              "name": "Payments Foundations result content",
+              "width": 324,
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "u0jIg",
+                  "name": "Payments Foundations result title",
+                  "fill": "$ui-text",
+                  "content": "Payments Foundations",
+                  "fontFamily": "$font-display",
+                  "fontSize": 21,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "bzSZ8",
+                  "name": "Payments Foundations result meta",
+                  "fill": "$ui-muted",
+                  "content": "🇺🇸 New York · Monzo · ◈ Finance",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "E0Qvp",
+                  "name": "Payments Foundations search match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: component contracts + critical flows",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jcy8R",
+          "x": 20,
+          "y": 367,
+          "name": "Digital Retail OS result frame",
+          "enabled": false,
+          "clip": true,
+          "width": 350,
+          "height": 170,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784648721440.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "path",
+              "id": "caQVZ",
+              "x": 0,
+              "y": 0,
+              "name": "Digital Retail OS placeholder cross",
+              "enabled": false,
+              "geometry": "M0 0l350 170m0-170l-350 170",
+              "viewBox": [
+                0,
+                0,
+                350,
+                170
+              ],
+              "width": 350,
+              "height": 170,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "XYi9O",
+              "x": 0,
+              "y": 0,
+              "name": "Digital Retail OS result gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.2
+                  },
+                  {
+                    "color": "#09090BEF",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 350,
+              "height": 170
+            },
+            {
+              "type": "frame",
+              "id": "nfcHm",
+              "x": 13,
+              "y": 85,
+              "name": "Digital Retail OS result content",
+              "width": 324,
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "U5bYq",
+                  "name": "Digital Retail OS result title",
+                  "fill": "$ui-text",
+                  "content": "Digital Retail OS",
+                  "fontFamily": "$font-display",
+                  "fontSize": 21,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "V3ivi",
+                  "name": "Digital Retail OS result meta",
+                  "fill": "$ui-muted",
+                  "content": "🇩🇪 Munich · BMW Group · ◈ Automotive",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "z2iwuW",
+                  "name": "Digital Retail OS search match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: design system architecture",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "u6YBS",
+          "x": 20,
+          "y": 557,
+          "name": "Traveler Checkout result frame",
+          "enabled": false,
+          "clip": true,
+          "width": 350,
+          "height": 170,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784648722036.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "path",
+              "id": "ZbDmR",
+              "x": 0,
+              "y": 0,
+              "name": "Traveler Checkout placeholder cross",
+              "enabled": false,
+              "geometry": "M0 0l350 170m0-170l-350 170",
+              "viewBox": [
+                0,
+                0,
+                350,
+                170
+              ],
+              "width": 350,
+              "height": 170,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "LUxCl",
+              "x": 0,
+              "y": 0,
+              "name": "Traveler Checkout result gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.2
+                  },
+                  {
+                    "color": "#09090BEF",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 350,
+              "height": 170
+            },
+            {
+              "type": "frame",
+              "id": "x8P28",
+              "x": 13,
+              "y": 85,
+              "name": "Traveler Checkout result content",
+              "width": 324,
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Soxua",
+                  "name": "Traveler Checkout result title",
+                  "fill": "$ui-text",
+                  "content": "Traveler Checkout",
+                  "fontFamily": "$font-display",
+                  "fontSize": 21,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "s4vp8",
+                  "name": "Traveler Checkout result meta",
+                  "fill": "$ui-muted",
+                  "content": "🇳🇱 Amsterdam · Booking.com · ◈ Travel & Hospitality",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "d7InNA",
+                  "name": "Traveler Checkout search match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: payment interaction design",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "c0JgD",
+          "x": 20,
+          "y": 747,
+          "name": "Search close cue",
+          "fill": "$ui-muted",
+          "content": "ESC / SWIPE DOWN TO CLOSE",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "mwLcX",
+          "x": 20,
+          "y": 195,
+          "name": "Initial search empty state",
+          "width": 350,
+          "layout": "vertical",
+          "gap": 13,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "Cg9GO",
+              "name": "Empty search icon",
+              "width": 31,
+              "height": 31,
+              "icon": "sparkles",
+              "library": "lucide",
+              "fill": "$accent-violet"
+            },
+            {
+              "type": "text",
+              "id": "rL70T",
+              "name": "Empty search heading",
+              "fill": "$ui-text",
+              "content": "Search the archive",
+              "fontFamily": "$font-display",
+              "fontSize": 27,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "jSnF0",
+              "name": "Empty search prompt",
+              "fill": "$ui-muted",
+              "textGrowth": "fixed-width",
+              "width": 280,
+              "content": "Ask about a project, framework, industry or past employer to surface a matching experience.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S8KJIO",
+          "x": 88,
+          "y": 779,
+          "name": "Search smart toolbar",
+          "width": 214,
+          "height": 48,
+          "fill": "#09090B99",
+          "cornerRadius": 24,
+          "effect": {
+            "type": "background_blur",
+            "radius": 12
+          },
+          "padding": [
+            0,
+            18
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "Ii5U3",
+              "name": "Profile toolbar icon",
+              "width": 19,
+              "height": 19,
+              "icon": "user-round",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "icon",
+              "id": "i14YLi",
+              "name": "Search smart toolbar Journey icon",
+              "width": 19,
+              "height": 19,
+              "icon": "route",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "icon",
+              "id": "ZXvob",
+              "name": "Search smart toolbar Search icon",
+              "width": 19,
+              "height": 19,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$accent-violet"
+            },
+            {
+              "type": "rectangle",
+              "id": "ERAiG",
+              "name": "Search smart toolbar separator",
+              "fill": "#FFFFFF55",
+              "width": 1,
+              "height": 18
+            },
+            {
+              "type": "icon",
+              "id": "yYFzp",
+              "name": "Search smart toolbar disabled terminal",
+              "opacity": 0.3,
+              "width": 19,
+              "height": 19,
+              "icon": "terminal",
+              "library": "lucide",
+              "fill": "$ui-text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Rp8dq",
+      "x": 0,
+      "y": 1084,
+      "name": "Desktop · Intro / About Me",
+      "theme": {
+        "Mode": "Light"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "Shg93",
+          "x": 0,
+          "y": 0,
+          "name": "Desktop reframed Leonardo portrait",
+          "metadata": {
+            "type": "unsplash",
+            "username": "streit0liver",
+            "link": "https://unsplash.com/@streit0liver",
+            "author": "Oliver Streit"
+          },
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1761144863268-219ece9568ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDc4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "rectangle",
+          "id": "eR4Tm",
+          "x": 0,
+          "y": 0,
+          "name": "Desktop readability gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B00",
+                "position": 0
+              },
+              {
+                "color": "#09090B12",
+                "position": 0.38
+              },
+              {
+                "color": "#09090BEF",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "id": "LzaVB",
+          "type": "ref",
+          "ref": "GBQuM",
+          "name": "Search Pill instance · Desktop",
+          "x": 42,
+          "y": 36,
+          "width": 370,
+          "height": 48
+        },
+        {
+          "type": "frame",
+          "id": "HKyB9",
+          "x": 50,
+          "y": 420,
+          "name": "Desktop lower narrative",
+          "width": 630,
+          "layout": "vertical",
+          "gap": 11,
+          "children": [
+            {
+              "type": "text",
+              "id": "ifa3j",
+              "name": "Desktop eyebrow",
+              "fill": "$accent-violet",
+              "content": "HELLO, I’M LEONARDO",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "axBHU",
+              "name": "Desktop title",
+              "fill": "$ui-text",
+              "content": "Frontend, with feeling.",
+              "fontFamily": "$font-display",
+              "fontSize": 58,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "lw3Y7",
+              "name": "Desktop role location",
+              "fill": "$ui-text",
+              "content": "Frontend Architect & UI/UX Engineer",
+              "fontFamily": "$font-ui",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "MzoGQ",
+              "name": "Desktop current location",
+              "fill": "$ui-muted",
+              "content": "📍 Current Location: 🇬🇧 London",
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "x7PmU9",
+              "name": "Desktop description",
+              "fill": "$ui-muted",
+              "textGrowth": "fixed-width",
+              "width": 550,
+              "content": "I turn complex product logic into pixel-perfect interfaces. Design systems, performance and polished interactions—made to feel inevitable.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-ui",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "WeoLi",
+              "name": "Desktop expertise tags",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "G1WRqm",
+                  "name": "Desktop React tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RJt3A",
+                      "name": "Desktop React text",
+                      "fill": "$ui-muted",
+                      "content": "React",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uTOJY",
+                  "name": "Desktop Design systems tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iZqOx",
+                      "name": "Desktop Design systems text",
+                      "fill": "$ui-muted",
+                      "content": "Design systems",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PM1Fx",
+                  "name": "Desktop Motion tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "R1ePf",
+                      "name": "Desktop Motion text",
+                      "fill": "$ui-muted",
+                      "content": "Motion",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xiAx6",
+              "name": "Desktop contact CTA",
+              "fill": "$accent-violet",
+              "cornerRadius": 5,
+              "gap": 8,
+              "padding": [
+                13,
+                17
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tWtus",
+                  "name": "Desktop contact label",
+                  "fill": "$ui-text",
+                  "content": "Contact Me ",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "q1MzNt",
+              "name": "Desktop social profile links",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "GiO9u",
+                  "name": "Desktop LinkedIn icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "linkedin",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "text",
+                  "id": "iGMId",
+                  "name": "Desktop LinkedIn profile",
+                  "fill": "$ui-text",
+                  "content": "linkedin.com/in/leoleal",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "E810h5",
+                  "name": "Desktop social divider",
+                  "fill": "#FFFFFF55",
+                  "width": 1,
+                  "height": 14
+                },
+                {
+                  "type": "icon",
+                  "id": "neEUx",
+                  "name": "Desktop GitHub icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "github",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "text",
+                  "id": "mwoi7",
+                  "name": "Desktop GitHub profile",
+                  "fill": "$ui-text",
+                  "content": "GitHub Profile",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b17lm",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Desktop About vertical toolbar",
+          "x": 1362,
+          "y": 323,
+          "width": 48,
+          "height": 254
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "SJ7fL",
+      "x": 1560,
+      "y": 1084,
+      "name": "Desktop · Journey Employer Overview",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "ZJeRQ",
+          "x": 0,
+          "y": 0,
+          "name": "Desktop Monzo concept imagery",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1784651839640.png",
+            "mode": "fill"
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "rectangle",
+          "id": "DfWWq",
+          "x": 0,
+          "y": 0,
+          "name": "Desktop journey gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B00",
+                "position": 0
+              },
+              {
+                "color": "#09090B15",
+                "position": 0.35
+              },
+              {
+                "color": "#09090BF5",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "text",
+          "id": "jbOZx",
+          "x": 50,
+          "y": 42,
+          "name": "Desktop journey context",
+          "fill": "$ui-text",
+          "content": "JOURNEY / SWIPE ↕ EMPLOYERS · ↔ WORK",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.2
+        },
+        {
+          "id": "tUf5a",
+          "type": "ref",
+          "ref": "MSG83",
+          "name": "Desktop employer experience header",
+          "x": 50,
+          "y": 108,
+          "width": 350,
+          "height": 58,
+          "descendants": {
+            "qgbgt": {
+              "content": "03 PROJECTS"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "H45KWL",
+          "x": 66,
+          "y": 109,
+          "name": "Desktop employer project count",
+          "enabled": false,
+          "fill": "$ui-muted",
+          "content": "03 PROJECTS",
+          "fontFamily": "$font-ui",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "K96tQ",
+          "x": 50,
+          "y": 568,
+          "name": "Desktop employer narrative",
+          "width": 670,
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "C9jO9",
+              "name": "Desktop employer industry",
+              "fill": "$accent-violet",
+              "content": "◈ FINANCE",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "f34Q9W",
+              "name": "Desktop employer name",
+              "fill": "$ui-text",
+              "content": "Monzo",
+              "fontFamily": "$font-display",
+              "fontSize": 64,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Xxhjs",
+              "name": "Desktop employer role",
+              "fill": "$ui-text",
+              "content": "Senior Frontend Architect",
+              "fontFamily": "$font-ui",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "nhRLb",
+              "name": "Desktop employer location",
+              "fill": "$ui-muted",
+              "content": "2022 — Present  ·  🇬🇧 London",
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Wnapy",
+              "name": "Desktop employer prompt",
+              "fill": "$ui-text",
+              "content": "A product environment where clarity is a craft.",
+              "fontFamily": "$font-ui",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "W4pZWt",
+          "x": 50,
+          "y": 844,
+          "name": "Desktop journey cue",
+          "fill": "$ui-muted",
+          "content": "↑↓ CHANGE EMPLOYER",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "x9NSu7",
+          "x": 1285,
+          "y": 844,
+          "name": "Desktop next project cue",
+          "fill": "$ui-text",
+          "content": "NEXT PROJECT →",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600"
+        },
+        {
+          "id": "ENX7X",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Desktop Journey vertical toolbar",
+          "x": 1362,
+          "y": 323,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "jBuVp": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KamCA",
+      "x": 3120,
+      "y": 1084,
+      "name": "Desktop · Journey Project Slide",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "gfhQR",
+          "x": 0,
+          "y": 0,
+          "name": "Desktop payments concept imagery",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1784651842234.png",
+            "mode": "fill"
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "type": "rectangle",
+          "id": "lwcgi",
+          "x": 0,
+          "y": 0,
+          "name": "Desktop project gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B00",
+                "position": 0
+              },
+              {
+                "color": "#09090B20",
+                "position": 0.38
+              },
+              {
+                "color": "#09090BF5",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "id": "iW4Wq",
+          "type": "ref",
+          "ref": "MSG83",
+          "name": "Desktop project experience header",
+          "x": 50,
+          "y": 108,
+          "width": 350,
+          "height": 58,
+          "descendants": {
+            "qgbgt": {
+              "content": "MONZO / PROJECT 01"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "SBoHA",
+          "x": 66,
+          "y": 109,
+          "name": "Desktop project header",
+          "enabled": false,
+          "fill": "$ui-muted",
+          "content": "MONZO / PROJECT 01",
+          "fontFamily": "$font-ui",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "TxsKG",
+          "x": 685,
+          "y": 488,
+          "name": "Desktop asset pagination",
+          "gap": 9,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "AkGKc",
+              "name": "Desktop asset indicator 1",
+              "fill": "#FFFFFF66",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 4,
+              "id": "aFNQ1",
+              "name": "Desktop asset indicator 2",
+              "fill": "$accent-violet",
+              "width": 21,
+              "height": 7
+            },
+            {
+              "type": "ellipse",
+              "id": "hV41E",
+              "name": "Desktop asset indicator 3",
+              "fill": "#FFFFFF66",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "type": "ellipse",
+              "id": "GNYTB",
+              "name": "Desktop asset indicator 4",
+              "fill": "#FFFFFF66",
+              "width": 7,
+              "height": 7
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jASnq",
+          "x": 50,
+          "y": 572,
+          "name": "Desktop project narrative",
+          "width": 690,
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "DgbFa",
+              "name": "Desktop project meta",
+              "fill": "$accent-violet",
+              "content": "◈ FINANCE  ·  🇺🇸 New York",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 1.1
+            },
+            {
+              "type": "text",
+              "id": "Digdo",
+              "name": "Desktop project title",
+              "fill": "$ui-text",
+              "content": "Payments Foundations",
+              "fontFamily": "$font-display",
+              "fontSize": 52,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "j4OFMp",
+              "name": "Desktop project overview",
+              "fill": "$ui-text",
+              "textGrowth": "fixed-width",
+              "width": 620,
+              "content": "• Rebuilt the payment orchestration UI in React + TypeScript\n• Unified component contracts across 14 critical flows\n• Reduced completion friction by 18% through tested interaction states",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-ui",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "PlA2P",
+              "name": "Desktop project technology tags",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "qZTYk",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Desktop React expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "React"
+                    }
+                  }
+                },
+                {
+                  "id": "yghzk",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Desktop TypeScript expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "TypeScript"
+                    }
+                  }
+                },
+                {
+                  "id": "pqbYf",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Desktop Storybook expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Storybook"
+                    }
+                  }
+                },
+                {
+                  "id": "N4esrU",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Desktop Motion expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Motion"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "z36EJ",
+          "x": 50,
+          "y": 844,
+          "name": "Desktop previous asset cue",
+          "fill": "$ui-muted",
+          "content": "← TAP EDGE",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "T2f3nk",
+          "x": 1300,
+          "y": 844,
+          "name": "Desktop next asset cue",
+          "fill": "$ui-muted",
+          "content": "TAP EDGE →",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "id": "iD45M",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Desktop Project vertical toolbar",
+          "x": 1362,
+          "y": 323,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "jBuVp": {
+              "fill": "$accent-violet"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "tqVPJ",
+          "x": 50,
+          "y": 42,
+          "name": "Desktop journey context",
+          "fill": "$ui-text",
+          "content": "JOURNEY / SWIPE ↕ EMPLOYERS · ↔ WORK",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.2
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Y40gN",
+      "x": 4680,
+      "y": 1084,
+      "name": "Desktop · Birds-Eye Experience Grid",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#111116",
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "siPtI",
+          "x": 56,
+          "y": 55,
+          "name": "Desktop grid eyebrow",
+          "fill": "$accent-violet",
+          "content": "PINCH OUT / BIRD’S-EYE VIEW",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.2
+        },
+        {
+          "type": "text",
+          "id": "qCESY",
+          "x": 56,
+          "y": 78,
+          "name": "Desktop grid title",
+          "fill": "$ui-text",
+          "content": "Select a chapter",
+          "fontFamily": "$font-display",
+          "fontSize": 54,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "XQO1x",
+          "x": 60,
+          "y": 151,
+          "name": "Desktop grid instruction",
+          "fill": "$ui-muted",
+          "content": "Tap an employer to return to its 100vh player.",
+          "fontFamily": "$font-ui",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "OJjjy",
+          "x": 60,
+          "y": 205,
+          "name": "Desktop Monzo grid item",
+          "width": 490,
+          "height": 250,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "GOT7T",
+              "x": 0,
+              "y": 0,
+              "name": "Monzo concept thumbnail",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651846615.png",
+                "mode": "fill"
+              },
+              "width": 260,
+              "height": 250
+            },
+            {
+              "type": "text",
+              "id": "MxDFg",
+              "x": 14,
+              "y": 14,
+              "name": "Monzo count",
+              "fill": "$accent-violet",
+              "content": "3 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "yytVz",
+              "x": 285,
+              "y": 53,
+              "name": "Monzo desktop metadata",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "z0rBE",
+                  "name": "Monzo desktop name",
+                  "fill": "$ui-text",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Monzo",
+                  "fontFamily": "$font-display",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "x34bJL",
+                  "name": "Monzo desktop role",
+                  "fill": "$ui-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Senior Frontend Architect",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FGRDn",
+                  "name": "Monzo desktop industry",
+                  "fill": "$ui-text",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "◈ Finance · 🇬🇧 London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AGn1X",
+          "x": 610,
+          "y": 205,
+          "name": "Desktop Publicis Sapient grid item",
+          "width": 490,
+          "height": 250,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "Lw0cz",
+              "x": 0,
+              "y": 0,
+              "name": "Publicis Sapient concept thumbnail",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651846929.png",
+                "mode": "fill"
+              },
+              "width": 260,
+              "height": 250
+            },
+            {
+              "type": "text",
+              "id": "I4gyS",
+              "x": 14,
+              "y": 14,
+              "name": "Publicis Sapient count",
+              "fill": "$accent-violet",
+              "content": "5 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "QdG1s",
+              "x": 285,
+              "y": 53,
+              "name": "Publicis Sapient desktop metadata",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Yh5yN",
+                  "name": "Publicis Sapient desktop name",
+                  "fill": "$ui-text",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Publicis Sapient",
+                  "fontFamily": "$font-display",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Ul5RM",
+                  "name": "Publicis Sapient desktop role",
+                  "fill": "$ui-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "UI/UX Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "B3OfW",
+                  "name": "Publicis Sapient desktop industry",
+                  "fill": "$ui-text",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "◈ Consulting · 🇬🇧 London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "M3o9jq",
+          "x": 60,
+          "y": 495,
+          "name": "Desktop BMW Group grid item",
+          "width": 490,
+          "height": 250,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "M4G1Hx",
+              "x": 0,
+              "y": 0,
+              "name": "BMW Group concept thumbnail",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651847424.png",
+                "mode": "fill"
+              },
+              "width": 260,
+              "height": 250
+            },
+            {
+              "type": "text",
+              "id": "V9ooHF",
+              "x": 14,
+              "y": 14,
+              "name": "BMW Group count",
+              "fill": "$accent-violet",
+              "content": "4 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "XmZSF",
+              "x": 285,
+              "y": 53,
+              "name": "BMW Group desktop metadata",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eKU2t",
+                  "name": "BMW Group desktop name",
+                  "fill": "$ui-text",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "BMW Group",
+                  "fontFamily": "$font-display",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "IUKWu",
+                  "name": "BMW Group desktop role",
+                  "fill": "$ui-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Frontend Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "TKIRH",
+                  "name": "BMW Group desktop industry",
+                  "fill": "$ui-text",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "◈ Automotive · 🇩🇪 Munich",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "U8pZAe",
+          "x": 610,
+          "y": 495,
+          "name": "Desktop Booking.com grid item",
+          "width": 490,
+          "height": 250,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "diVG8",
+              "x": 0,
+              "y": 0,
+              "name": "Booking.com concept thumbnail",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651849203.png",
+                "mode": "fill"
+              },
+              "width": 260,
+              "height": 250
+            },
+            {
+              "type": "text",
+              "id": "Liira",
+              "x": 14,
+              "y": 14,
+              "name": "Booking.com count",
+              "fill": "$accent-violet",
+              "content": "3 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "A1kNO",
+              "x": 285,
+              "y": 53,
+              "name": "Booking.com desktop metadata",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QcC8X",
+                  "name": "Booking.com desktop name",
+                  "fill": "$ui-text",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Booking.com",
+                  "fontFamily": "$font-display",
+                  "fontSize": 30,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "g9flhq",
+                  "name": "Booking.com desktop role",
+                  "fill": "$ui-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "Product UI Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "tv6tc",
+                  "name": "Booking.com desktop industry",
+                  "fill": "$ui-text",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "content": "◈ Travel · 🇳🇱 Amsterdam",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "Dzv3N",
+          "x": 60,
+          "y": 846,
+          "name": "Desktop grid gesture cue",
+          "fill": "$ui-muted",
+          "content": "PINCH IN TO RETURN TO IMMERSIVE PLAYER",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "id": "lC9Jr",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Desktop Grid vertical toolbar",
+          "x": 1362,
+          "y": 323,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "jBuVp": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "TcK8G",
+      "x": 6240,
+      "y": 1084,
+      "name": "Desktop · Intelligent Search Overlay",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#16161B",
+      "effect": {
+        "type": "background_blur",
+        "radius": 18
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "Lylnf",
+          "x": 60,
+          "y": 55,
+          "name": "Desktop search label",
+          "fill": "$accent-violet",
+          "content": "EXPERIENCE INDEX",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.2
+        },
+        {
+          "type": "frame",
+          "id": "GNwYC",
+          "x": 300,
+          "y": 180,
+          "name": "Desktop centered search field",
+          "width": 740,
+          "height": 70,
+          "cornerRadius": 5,
+          "stroke": "#FFFFFF99",
+          "strokeWidth": 1,
+          "gap": 14,
+          "padding": [
+            0,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "Iq1Gn",
+              "name": "Desktop search field icon",
+              "width": 22,
+              "height": 22,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "text",
+              "id": "sEsxD",
+              "name": "Desktop search placeholder",
+              "fill": "$ui-muted",
+              "content": "Search experience...",
+              "fontFamily": "$font-display",
+              "fontSize": 23,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jxNRV",
+          "x": 420,
+          "y": 340,
+          "name": "Desktop search empty state",
+          "width": 500,
+          "layout": "vertical",
+          "gap": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "qgVdm",
+              "name": "Desktop empty search icon",
+              "width": 38,
+              "height": 38,
+              "icon": "sparkles",
+              "library": "lucide",
+              "fill": "$accent-violet"
+            },
+            {
+              "type": "text",
+              "id": "vKSo8",
+              "name": "Desktop empty search heading",
+              "fill": "$ui-text",
+              "content": "Search the archive",
+              "fontFamily": "$font-display",
+              "fontSize": 39,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "GSQs4",
+              "name": "Desktop empty search copy",
+              "fill": "$ui-muted",
+              "textGrowth": "fixed-width",
+              "width": 420,
+              "content": "Ask about a project, framework, industry or past employer to surface a matching experience.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-ui",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "Xp5FS",
+          "x": 60,
+          "y": 846,
+          "name": "Desktop search close cue",
+          "fill": "$ui-muted",
+          "content": "ESC / SWIPE DOWN TO CLOSE",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "id": "XsTH7",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Desktop Search vertical toolbar",
+          "x": 1362,
+          "y": 323,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "NBh4f": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "b8d41",
+      "x": 0,
+      "y": 2224,
+      "name": "Tablet · Intro / About Me",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 768,
+      "height": 1024,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "E9Kdnd",
+          "x": 0,
+          "y": 0,
+          "name": "Tablet Leonardo portrait",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1761144863268-219ece9568ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDc4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "type": "rectangle",
+          "id": "lY94B",
+          "x": 0,
+          "y": 0,
+          "name": "Tablet intro gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B00",
+                "position": 0
+              },
+              {
+                "color": "#09090BEF",
+                "position": 1
+              }
+            ]
+          },
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "type": "frame",
+          "id": "x3Os8",
+          "x": 40,
+          "y": 38,
+          "name": "Tablet search pill",
+          "width": 390,
+          "height": 50,
+          "fill": "#09090B66",
+          "cornerRadius": 25,
+          "stroke": "#FFFFFF40",
+          "strokeWidth": 1,
+          "gap": 11,
+          "padding": [
+            0,
+            17
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "t52pWQ",
+              "name": "Tablet search icon",
+              "width": 18,
+              "height": 18,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "text",
+              "id": "JH3Ny",
+              "name": "Tablet search copy",
+              "fill": "$ui-muted",
+              "content": "Ask something about my experience...",
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vks2Y",
+          "x": 44,
+          "y": 650,
+          "name": "Tablet intro narrative",
+          "width": 570,
+          "layout": "vertical",
+          "gap": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "MRcVX",
+              "name": "Tablet intro eyebrow",
+              "fill": "$accent-violet",
+              "content": "HELLO, I’M LEONARDO",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "H517s",
+              "name": "Tablet intro title",
+              "fill": "$ui-text",
+              "content": "Frontend, with feeling.",
+              "fontFamily": "$font-display",
+              "fontSize": 52,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "conME",
+              "name": "Tablet intro role",
+              "fill": "$ui-text",
+              "content": "Frontend Architect & UI/UX Engineer",
+              "fontFamily": "$font-ui",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "kmfPX",
+              "name": "Tablet intro location",
+              "fill": "$ui-muted",
+              "content": "📍 Current Location: 🇬🇧 London",
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "L3gt38",
+              "name": "Tablet intro value",
+              "fill": "$ui-text",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "I turn complex product logic into pixel-perfect interfaces. Design systems, performance and polished interactions—made to feel inevitable.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font-ui",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "yVYvS",
+              "name": "Tablet expertise tags",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JIZEW",
+                  "name": "Tablet React tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZFDUU",
+                      "name": "Tablet React text",
+                      "fill": "$ui-muted",
+                      "content": "React",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "L5PYz3",
+                  "name": "Tablet Design systems tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wHirF",
+                      "name": "Tablet Design systems text",
+                      "fill": "$ui-muted",
+                      "content": "Design systems",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IyH6f",
+                  "name": "Tablet Motion tag",
+                  "fill": "#FFFFFF1F",
+                  "cornerRadius": 15,
+                  "padding": [
+                    7,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "F3C4i",
+                      "name": "Tablet Motion text",
+                      "fill": "$ui-muted",
+                      "content": "Motion",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "neKge",
+              "name": "Tablet contact actions",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yR1i3",
+                  "name": "Tablet contact button",
+                  "fill": "$accent-violet",
+                  "cornerRadius": 5,
+                  "padding": [
+                    13,
+                    17
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uhOUi",
+                      "name": "Tablet contact label",
+                      "fill": "$ui-text",
+                      "content": "Contact Me",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "fysXC",
+                  "name": "Tablet LinkedIn icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "linkedin",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "icon",
+                  "id": "Fggap",
+                  "name": "Tablet Github icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "github",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E15Cx",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Tablet About vertical toolbar",
+          "x": 696,
+          "y": 385,
+          "width": 48,
+          "height": 254
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "abS8I",
+      "x": 888,
+      "y": 2224,
+      "name": "Tablet · Journey Employer Overview",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 768,
+      "height": 1024,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "r32GH",
+          "x": 0,
+          "y": 0,
+          "name": "Tablet Monzo imagery",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1784651839972.png",
+            "mode": "fill"
+          },
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "type": "rectangle",
+          "id": "B9cRSx",
+          "x": 0,
+          "y": 0,
+          "name": "Tablet journey gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B00",
+                "position": 0
+              },
+              {
+                "color": "#09090BF4",
+                "position": 1
+              }
+            ]
+          },
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "type": "text",
+          "id": "kwycD",
+          "x": 40,
+          "y": 42,
+          "name": "Tablet journey context",
+          "fill": "$ui-text",
+          "content": "JOURNEY / SWIPE ↕ EMPLOYERS · ↔ WORK",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1
+        },
+        {
+          "id": "XJ8GV",
+          "type": "ref",
+          "ref": "MSG83",
+          "name": "Tablet employer experience header",
+          "x": 40,
+          "y": 108,
+          "width": 350,
+          "height": 58,
+          "descendants": {
+            "qgbgt": {
+              "content": "03 PROJECTS"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "dAsit",
+          "x": 56,
+          "y": 109,
+          "name": "Tablet employer count",
+          "enabled": false,
+          "fill": "$ui-muted",
+          "content": "03 PROJECTS",
+          "fontFamily": "$font-ui",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "ihiio",
+          "x": 40,
+          "y": 700,
+          "name": "Tablet employer narrative",
+          "width": 520,
+          "layout": "vertical",
+          "gap": 11,
+          "children": [
+            {
+              "type": "text",
+              "id": "EBCGG",
+              "name": "Tablet industry",
+              "fill": "$accent-violet",
+              "content": "◈ FINANCE",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "FtRJH",
+              "name": "Tablet employer name",
+              "fill": "$ui-text",
+              "content": "Monzo",
+              "fontFamily": "$font-display",
+              "fontSize": 54,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "vsS0m",
+              "name": "Tablet employer role",
+              "fill": "$ui-text",
+              "content": "Senior Frontend Architect",
+              "fontFamily": "$font-ui",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "h4ZeN",
+              "name": "Tablet employer location",
+              "fill": "$ui-muted",
+              "content": "2022 — Present  ·  🇬🇧 London",
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "yWoVI",
+              "name": "Tablet employer copy",
+              "fill": "$ui-text",
+              "content": "A product environment where clarity is a craft.",
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "id": "VjbCK",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Tablet Journey vertical toolbar",
+          "x": 696,
+          "y": 385,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "jBuVp": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "aHl1D",
+      "x": 1776,
+      "y": 2224,
+      "name": "Tablet · Journey Project Slide",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 768,
+      "height": 1024,
+      "fill": "$canvas",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "On7fH",
+          "x": 0,
+          "y": 0,
+          "name": "Tablet payments imagery",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1784651842707.png",
+            "mode": "fill"
+          },
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "type": "rectangle",
+          "id": "SZvc4",
+          "x": 0,
+          "y": 0,
+          "name": "Tablet project gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#09090B00",
+                "position": 0
+              },
+              {
+                "color": "#09090BF5",
+                "position": 1
+              }
+            ]
+          },
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "id": "o8guX",
+          "type": "ref",
+          "ref": "MSG83",
+          "name": "Tablet project experience header",
+          "x": 40,
+          "y": 108,
+          "width": 350,
+          "height": 58,
+          "descendants": {
+            "qgbgt": {
+              "content": "MONZO / PROJECT 01"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "QTb4W",
+          "x": 56,
+          "y": 109,
+          "name": "Tablet project header",
+          "enabled": false,
+          "fill": "$ui-muted",
+          "content": "MONZO / PROJECT 01",
+          "fontFamily": "$font-ui",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "TD0ZZ",
+          "x": 360,
+          "y": 570,
+          "name": "Tablet asset pagination",
+          "gap": 8,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "k7r5nP",
+              "name": "Tablet indicator 1",
+              "fill": "#FFFFFF66",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 4,
+              "id": "hLeR0",
+              "name": "Tablet indicator 2",
+              "fill": "$accent-violet",
+              "width": 21,
+              "height": 7
+            },
+            {
+              "type": "ellipse",
+              "id": "bE6pD",
+              "name": "Tablet indicator 3",
+              "fill": "#FFFFFF66",
+              "width": 7,
+              "height": 7
+            },
+            {
+              "type": "ellipse",
+              "id": "WL0SE",
+              "name": "Tablet indicator 4",
+              "fill": "#FFFFFF66",
+              "width": 7,
+              "height": 7
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "O4nHl",
+          "x": 40,
+          "y": 666,
+          "name": "Tablet project narrative",
+          "width": 560,
+          "layout": "vertical",
+          "gap": 11,
+          "children": [
+            {
+              "type": "text",
+              "id": "s3hB5e",
+              "name": "Tablet project meta",
+              "fill": "$accent-violet",
+              "content": "◈ FINANCE  ·  🇺🇸 New York",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "V5DkkL",
+              "name": "Tablet project title",
+              "fill": "$ui-text",
+              "content": "Payments Foundations",
+              "fontFamily": "$font-display",
+              "fontSize": 45,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ijutC",
+              "name": "Tablet project overview",
+              "fill": "$ui-text",
+              "textGrowth": "fixed-width",
+              "width": 530,
+              "content": "• Rebuilt the payment orchestration UI in React + TypeScript\n• Unified component contracts across 14 critical flows\n• Reduced completion friction by 18% through tested interaction states",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Rv28v",
+              "name": "Tablet project technology tags",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "uTSBZ",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Tablet React expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "React"
+                    }
+                  }
+                },
+                {
+                  "id": "Q8MlbS",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Tablet TypeScript expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "TypeScript"
+                    }
+                  }
+                },
+                {
+                  "id": "MvLM3",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Tablet Storybook expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Storybook"
+                    }
+                  }
+                },
+                {
+                  "id": "n7E5N",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Tablet Motion expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Motion"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "xWbd4",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Tablet Project vertical toolbar",
+          "x": 696,
+          "y": 385,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "jBuVp": {
+              "fill": "$accent-violet"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "r6Mqr",
+          "x": 40,
+          "y": 42,
+          "name": "Tablet journey context",
+          "fill": "$ui-text",
+          "content": "JOURNEY / SWIPE ↕ EMPLOYERS · ↔ WORK",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nA77q",
+      "x": 2664,
+      "y": 2224,
+      "name": "Tablet · Birds-Eye Experience Grid",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 768,
+      "height": 1024,
+      "fill": "#111116",
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "G5FnAb",
+          "x": 40,
+          "y": 44,
+          "name": "Tablet grid eyebrow",
+          "fill": "$accent-violet",
+          "content": "PINCH OUT / BIRD’S-EYE VIEW",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        },
+        {
+          "type": "text",
+          "id": "WxQn3",
+          "x": 40,
+          "y": 70,
+          "name": "Tablet grid title",
+          "fill": "$ui-text",
+          "content": "Select a chapter",
+          "fontFamily": "$font-display",
+          "fontSize": 46,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "MfbGV",
+          "x": 40,
+          "y": 130,
+          "name": "Tablet grid instruction",
+          "fill": "$ui-muted",
+          "content": "Tap an employer to return to its 100vh player.",
+          "fontFamily": "$font-ui",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "T4UCOD",
+          "x": 40,
+          "y": 184,
+          "name": "Tablet Monzo item",
+          "width": 280,
+          "height": 290,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "ZPC9A",
+              "x": 0,
+              "y": 0,
+              "name": "Tablet Monzo image",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651849164.png",
+                "mode": "fill"
+              },
+              "width": 280,
+              "height": 185
+            },
+            {
+              "type": "text",
+              "id": "w6KBhK",
+              "x": 12,
+              "y": 12,
+              "name": "Tablet Monzo count",
+              "fill": "$accent-violet",
+              "content": "3 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "L9yW18",
+              "x": 0,
+              "y": 198,
+              "name": "Tablet Monzo metadata",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 5,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w2vXsD",
+                  "name": "Tablet Monzo name",
+                  "fill": "$ui-text",
+                  "content": "Monzo",
+                  "fontFamily": "$font-display",
+                  "fontSize": 27,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "aQHF5",
+                  "name": "Tablet Monzo role",
+                  "fill": "$ui-muted",
+                  "content": "Senior Frontend Architect",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ouIRO",
+                  "name": "Tablet Monzo industry",
+                  "fill": "$ui-text",
+                  "content": "◈ Finance · 🇬🇧 London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IJ6uc",
+          "x": 360,
+          "y": 184,
+          "name": "Tablet Publicis Sapient item",
+          "width": 280,
+          "height": 290,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "NgFGe",
+              "x": 0,
+              "y": 0,
+              "name": "Tablet Publicis Sapient image",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651849576.png",
+                "mode": "fill"
+              },
+              "width": 280,
+              "height": 185
+            },
+            {
+              "type": "text",
+              "id": "o0Gcvj",
+              "x": 12,
+              "y": 12,
+              "name": "Tablet Publicis Sapient count",
+              "fill": "$accent-violet",
+              "content": "5 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Rl3br",
+              "x": 0,
+              "y": 198,
+              "name": "Tablet Publicis Sapient metadata",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 5,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CZlkV",
+                  "name": "Tablet Publicis Sapient name",
+                  "fill": "$ui-text",
+                  "content": "Publicis Sapient",
+                  "fontFamily": "$font-display",
+                  "fontSize": 27,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "MCsxy",
+                  "name": "Tablet Publicis Sapient role",
+                  "fill": "$ui-muted",
+                  "content": "UI/UX Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "v3eKE8",
+                  "name": "Tablet Publicis Sapient industry",
+                  "fill": "$ui-text",
+                  "content": "◈ Consulting · 🇬🇧 London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LsS2w",
+          "x": 40,
+          "y": 506,
+          "name": "Tablet BMW Group item",
+          "width": 280,
+          "height": 290,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "vhsjx",
+              "x": 0,
+              "y": 0,
+              "name": "Tablet BMW Group image",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651850369.png",
+                "mode": "fill"
+              },
+              "width": 280,
+              "height": 185
+            },
+            {
+              "type": "text",
+              "id": "NpyMY",
+              "x": 12,
+              "y": 12,
+              "name": "Tablet BMW Group count",
+              "fill": "$accent-violet",
+              "content": "4 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "hpWFC",
+              "x": 0,
+              "y": 198,
+              "name": "Tablet BMW Group metadata",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 5,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p7blb",
+                  "name": "Tablet BMW Group name",
+                  "fill": "$ui-text",
+                  "content": "BMW Group",
+                  "fontFamily": "$font-display",
+                  "fontSize": 27,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "v1gDD2",
+                  "name": "Tablet BMW Group role",
+                  "fill": "$ui-muted",
+                  "content": "Frontend Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "U8ugpv",
+                  "name": "Tablet BMW Group industry",
+                  "fill": "$ui-text",
+                  "content": "◈ Automotive · 🇩🇪 Munich",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PURaV",
+          "x": 360,
+          "y": 506,
+          "name": "Tablet Booking.com item",
+          "width": 280,
+          "height": 290,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "o1XNZ",
+              "x": 0,
+              "y": 0,
+              "name": "Tablet Booking.com image",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1784651850774.png",
+                "mode": "fill"
+              },
+              "width": 280,
+              "height": 185
+            },
+            {
+              "type": "text",
+              "id": "i0AWUd",
+              "x": 12,
+              "y": 12,
+              "name": "Tablet Booking.com count",
+              "fill": "$accent-violet",
+              "content": "3 PROJECTS",
+              "fontFamily": "$font-ui",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "WWArN",
+              "x": 0,
+              "y": 198,
+              "name": "Tablet Booking.com metadata",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 5,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "c52ix",
+                  "name": "Tablet Booking.com name",
+                  "fill": "$ui-text",
+                  "content": "Booking.com",
+                  "fontFamily": "$font-display",
+                  "fontSize": 27,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Qb2p6",
+                  "name": "Tablet Booking.com role",
+                  "fill": "$ui-muted",
+                  "content": "Product UI Engineer",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "WNK9l",
+                  "name": "Tablet Booking.com industry",
+                  "fill": "$ui-text",
+                  "content": "◈ Travel · 🇳🇱 Amsterdam",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t1ORAM",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Tablet Grid vertical toolbar",
+          "x": 696,
+          "y": 385,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "jBuVp": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "wavOF",
+      "x": 3552,
+      "y": 2224,
+      "name": "Tablet · Intelligent Search Overlay",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 768,
+      "height": 1024,
+      "fill": "#16161B",
+      "effect": {
+        "type": "background_blur",
+        "radius": 18
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "rh3QG",
+          "x": 40,
+          "y": 44,
+          "name": "Tablet search label",
+          "fill": "$accent-violet",
+          "content": "EXPERIENCE INDEX",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        },
+        {
+          "type": "frame",
+          "id": "YKxBx",
+          "x": 106,
+          "y": 210,
+          "name": "Tablet search field",
+          "width": 520,
+          "height": 64,
+          "cornerRadius": 5,
+          "stroke": "#FFFFFF99",
+          "strokeWidth": 1,
+          "gap": 13,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "qMVcr",
+              "name": "Tablet field search icon",
+              "width": 21,
+              "height": 21,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "text",
+              "id": "Tkp4z",
+              "name": "Tablet field placeholder",
+              "fill": "$ui-muted",
+              "content": "Search experience...",
+              "fontFamily": "$font-display",
+              "fontSize": 21,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "F6y85Z",
+          "x": 154,
+          "y": 390,
+          "name": "Tablet empty search state",
+          "width": 460,
+          "layout": "vertical",
+          "gap": 15,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "Xaapg",
+              "name": "Tablet empty icon",
+              "width": 36,
+              "height": 36,
+              "icon": "sparkles",
+              "library": "lucide",
+              "fill": "$accent-violet"
+            },
+            {
+              "type": "text",
+              "id": "vwRSt",
+              "name": "Tablet empty title",
+              "fill": "$ui-text",
+              "content": "Search the archive",
+              "fontFamily": "$font-display",
+              "fontSize": 36,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "L0BFx",
+              "name": "Tablet empty copy",
+              "fill": "$ui-muted",
+              "textGrowth": "fixed-width",
+              "width": 390,
+              "content": "Ask about a project, framework, industry or past employer to surface a matching experience.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "id": "B251H",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Tablet Search vertical toolbar",
+          "x": 696,
+          "y": 385,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "NBh4f": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BKwrm",
+      "x": 0,
+      "y": -1636,
+      "name": "Design System · Leonardo Leal Portfolio",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 1363,
+      "fill": "#0C0C0F",
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "q7EFxX",
+          "x": 58,
+          "y": 54,
+          "name": "Guide eyebrow",
+          "fill": "$accent-violet",
+          "content": "LEONARDO LEAL / DESIGN SYSTEM v1.0",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "meVgu",
+          "x": 58,
+          "y": 80,
+          "name": "Guide title",
+          "fill": "$ui-text",
+          "content": "Immersive portfolio language",
+          "fontFamily": "$font-display",
+          "fontSize": 48
+        },
+        {
+          "type": "text",
+          "id": "iEHxV",
+          "x": 60,
+          "y": 146,
+          "name": "Guide intro",
+          "fill": "$ui-muted",
+          "textGrowth": "fixed-width",
+          "width": 590,
+          "content": "A mobile-first system for editorial storytelling over full-bleed media. White type, disciplined overlays, and one decisive action color create consistent focus across every breakpoint.",
+          "lineHeight": 1.5,
+          "fontFamily": "$font-ui",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "EyjoS",
+          "x": 60,
+          "y": 244,
+          "name": "Foundation label",
+          "fill": "$accent-violet",
+          "content": "01 / FOUNDATIONS",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.2
+        },
+        {
+          "type": "frame",
+          "id": "hPHph",
+          "x": 60,
+          "y": 275,
+          "name": "Color tokens",
+          "width": 1320,
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "RFVNz",
+              "name": "Canvas token",
+              "width": 240,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "nKfIe",
+                  "name": "Canvas swatch",
+                  "fill": "#09090B",
+                  "width": 240,
+                  "height": 66,
+                  "stroke": "#FFFFFF22",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "xvRPP",
+                  "name": "Canvas token name",
+                  "fill": "$ui-text",
+                  "content": "Canvas",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "h1kgpI",
+                  "name": "Canvas token value",
+                  "fill": "$ui-muted",
+                  "content": "$canvas",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QWr6Z",
+              "name": "Surface overlay token",
+              "width": 240,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "NPAMV",
+                  "name": "Surface overlay swatch",
+                  "fill": "#09090B99",
+                  "width": 240,
+                  "height": 66
+                },
+                {
+                  "type": "text",
+                  "id": "SKYSY",
+                  "name": "Surface overlay token name",
+                  "fill": "$ui-text",
+                  "content": "Surface overlay",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "gePay",
+                  "name": "Surface overlay token value",
+                  "fill": "$ui-muted",
+                  "content": "$overlay-soft",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QJBMH",
+              "name": "Primary text token",
+              "width": 240,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "kVVkC",
+                  "name": "Primary text swatch",
+                  "fill": "#FFFFFF",
+                  "width": 240,
+                  "height": 66
+                },
+                {
+                  "type": "text",
+                  "id": "gLuYm",
+                  "name": "Primary text token name",
+                  "fill": "$ui-text",
+                  "content": "Primary text",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "m9OFOo",
+                  "name": "Primary text token value",
+                  "fill": "$ui-muted",
+                  "content": "$ui-text",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VWvcu",
+              "name": "Muted text token",
+              "width": 240,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "R12gC1",
+                  "name": "Muted text swatch",
+                  "fill": "#FFFFFFB3",
+                  "width": 240,
+                  "height": 66
+                },
+                {
+                  "type": "text",
+                  "id": "eknkR",
+                  "name": "Muted text token name",
+                  "fill": "$ui-text",
+                  "content": "Muted text",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "V6HoYv",
+                  "name": "Muted text token value",
+                  "fill": "$ui-muted",
+                  "content": "$ui-muted",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "r9CG7",
+              "name": "Accent token",
+              "width": 240,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "DrvBk",
+                  "name": "Accent swatch",
+                  "fill": "#E83F1A",
+                  "width": 240,
+                  "height": 66
+                },
+                {
+                  "type": "text",
+                  "id": "w9Oufb",
+                  "name": "Accent token name",
+                  "fill": "$ui-text",
+                  "content": "Accent",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "eBgJM",
+                  "name": "Accent token value",
+                  "fill": "$ui-muted",
+                  "content": "$accent-violet",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "Qq1IS",
+          "x": 60,
+          "y": 414,
+          "name": "Typography label",
+          "fill": "$accent-violet",
+          "content": "02 / TYPOGRAPHY",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.2
+        },
+        {
+          "type": "frame",
+          "id": "jY1B3",
+          "x": 60,
+          "y": 448,
+          "name": "Typography samples",
+          "width": 1320,
+          "layout": "vertical",
+          "gap": 11,
+          "children": [
+            {
+              "type": "text",
+              "id": "FeEYA",
+              "name": "Display type sample",
+              "fill": "$ui-text",
+              "content": "Frontend, with feeling.",
+              "fontFamily": "$font-display",
+              "fontSize": 44
+            },
+            {
+              "type": "text",
+              "id": "r6xQT",
+              "name": "UI type sample",
+              "fill": "$ui-text",
+              "content": "Hanken Grotesk / Interface and metadata",
+              "fontFamily": "$font-ui",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "V1ZT4p",
+              "name": "Body type sample",
+              "fill": "$ui-muted",
+              "content": "Use regular UI typography for context, metadata, labels, and technical contribution details. Keep major titles in Libre Caslon Text at a calm regular weight.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-ui",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "IME5K",
+          "x": 60,
+          "y": 630,
+          "name": "Component label",
+          "fill": "$accent-violet",
+          "content": "03 / COMPONENT LIBRARY",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.2
+        },
+        {
+          "type": "frame",
+          "id": "U5b7xN",
+          "x": 60,
+          "y": 665,
+          "name": "Component shelf",
+          "width": 1320,
+          "height": 610,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "DUUxu",
+              "x": 0,
+              "y": 0,
+              "name": "Search component label",
+              "fill": "$ui-muted",
+              "content": "SEARCH PILL",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "GBQuM",
+              "x": 0,
+              "y": 24,
+              "name": "Component · Search Pill",
+              "reusable": true,
+              "width": 350,
+              "height": 46,
+              "fill": "$overlay-soft",
+              "cornerRadius": 23,
+              "stroke": "$border-overlay",
+              "strokeWidth": 1,
+              "gap": 10,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "E6uiX7",
+                  "name": "Search icon",
+                  "width": 17,
+                  "height": 17,
+                  "icon": "search",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "text",
+                  "id": "BJPq6",
+                  "name": "Search placeholder",
+                  "fill": "$ui-muted",
+                  "content": "Ask something about my experience...",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "d2UYT",
+              "x": 400,
+              "y": 0,
+              "name": "CTA component label",
+              "fill": "$ui-muted",
+              "content": "PRIMARY CTA",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "EkTe7",
+              "x": 400,
+              "y": 24,
+              "name": "Component · Primary Contact CTA",
+              "reusable": true,
+              "fill": "$accent-violet",
+              "cornerRadius": 5,
+              "gap": 8,
+              "padding": [
+                12,
+                15
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MDA0U",
+                  "name": "CTA label",
+                  "fill": "$ui-text",
+                  "content": "Contact Me",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon",
+                  "id": "UyrBo",
+                  "name": "CTA arrow",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "arrow-up-right",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "L0ULkl",
+              "x": 610,
+              "y": 0,
+              "name": "Tag component label",
+              "fill": "$ui-muted",
+              "content": "EXPERTISE TAG",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "LsCot",
+              "x": 610,
+              "y": 24,
+              "name": "Component · Expertise Tag",
+              "reusable": true,
+              "fill": "#FFFFFF1F",
+              "cornerRadius": 15,
+              "padding": [
+                7,
+                10
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BTap7",
+                  "name": "Tag label",
+                  "fill": "$ui-muted",
+                  "content": "Design systems",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "pRIKl",
+              "x": 0,
+              "y": 120,
+              "name": "Timeline component label",
+              "fill": "$ui-muted",
+              "content": "EXPERIENCE HEADER",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "MSG83",
+              "x": 0,
+              "y": 145,
+              "name": "Component · Experience Header",
+              "reusable": true,
+              "width": 350,
+              "height": 58,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "mAHUT",
+                  "name": "Active segment",
+                  "fill": "$accent-violet",
+                  "width": 3,
+                  "height": 52
+                },
+                {
+                  "type": "text",
+                  "id": "qgbgt",
+                  "name": "Header label",
+                  "fill": "$ui-muted",
+                  "content": "MONZO / PROJECT 01",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Gc4Xt",
+              "x": 400,
+              "y": 120,
+              "name": "Pagination component label",
+              "fill": "$ui-muted",
+              "content": "ASSET PAGINATION",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "I1lA3",
+              "x": 400,
+              "y": 145,
+              "name": "Component · Asset Pagination",
+              "reusable": true,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "ZbwtK",
+                  "name": "Asset indicator 1",
+                  "fill": "#FFFFFF66",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "RYpoF",
+                  "name": "Asset indicator 2",
+                  "fill": "$accent-violet",
+                  "width": 18,
+                  "height": 6
+                },
+                {
+                  "type": "ellipse",
+                  "id": "FFYLF",
+                  "name": "Asset indicator 3",
+                  "fill": "#FFFFFF66",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "ellipse",
+                  "id": "NWePh",
+                  "name": "Asset indicator 4",
+                  "fill": "#FFFFFF66",
+                  "width": 6,
+                  "height": 6
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "dpHLE",
+              "x": 0,
+              "y": 232,
+              "name": "Mobile toolbar component label",
+              "fill": "$ui-muted",
+              "content": "MOBILE SMART TOOLBAR",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "H0B5cZ",
+              "x": 0,
+              "y": 257,
+              "name": "Component · Mobile Smart Toolbar",
+              "reusable": true,
+              "width": 214,
+              "height": 48,
+              "fill": "$overlay-soft",
+              "cornerRadius": 24,
+              "effect": {
+                "type": "background_blur",
+                "radius": 12
+              },
+              "padding": [
+                0,
+                18
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "OmmjE",
+                  "name": "Profile icon",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "user-round",
+                  "library": "lucide",
+                  "fill": "$accent-violet"
+                },
+                {
+                  "type": "icon",
+                  "id": "sPen2",
+                  "name": "Journey icon",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "route",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "icon",
+                  "id": "szkXt",
+                  "name": "Search icon",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "search",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ZTl0w",
+                  "name": "Toolbar separator",
+                  "fill": "#FFFFFF55",
+                  "width": 1,
+                  "height": 18
+                },
+                {
+                  "type": "icon",
+                  "id": "N68Ld",
+                  "name": "Disabled terminal",
+                  "opacity": 0.3,
+                  "width": 19,
+                  "height": 19,
+                  "icon": "terminal",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "lqAsR",
+              "x": 0,
+              "y": 511,
+              "name": "Guidance label",
+              "fill": "$accent-violet",
+              "content": "USAGE PRINCIPLES",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "OlHyg",
+              "x": 0,
+              "y": 541,
+              "name": "Usage principles",
+              "width": 780,
+              "layout": "vertical",
+              "gap": 9,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xSC6W",
+                  "name": "Principle Full-bleed media",
+                  "fill": "$ui-muted",
+                  "content": "• Full-bleed media is the surface; readability comes from gradients, never cards.",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kLTic",
+                  "name": "Principle Reserve the acce",
+                  "fill": "$ui-muted",
+                  "content": "• Reserve the accent for active navigation, primary contact, progress, and focus.",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "XqZEa",
+                  "name": "Principle At ≥768px, repla",
+                  "fill": "$ui-muted",
+                  "content": "• At ≥768px, replace the mobile toolbar with the vertical desktop dock.",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xNcHn",
+                  "name": "Principle Use Libre Caslon",
+                  "fill": "$ui-muted",
+                  "content": "• Use Libre Caslon Text only for major titles; use Hanken Grotesk everywhere else.",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "aflKi",
+              "x": 400,
+              "y": 203,
+              "name": "Desktop toolbar component label",
+              "fill": "$ui-muted",
+              "content": "TABLET / DESKTOP SMART TOOLBAR",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "F6UDD",
+              "x": 400,
+              "y": 228,
+              "name": "Component · Vertical Smart Toolbar",
+              "reusable": true,
+              "width": 48,
+              "height": 254,
+              "fill": "$overlay-soft",
+              "cornerRadius": 24,
+              "effect": {
+                "type": "background_blur",
+                "radius": 12
+              },
+              "layout": "vertical",
+              "padding": [
+                14,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "l9xtL",
+                  "name": "Profile icon",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "user-round",
+                  "library": "lucide",
+                  "fill": "$accent-violet"
+                },
+                {
+                  "type": "icon",
+                  "id": "jBuVp",
+                  "name": "Journey icon",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "route",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "icon",
+                  "id": "NBh4f",
+                  "name": "Search icon",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "search",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "T3ANw",
+                  "name": "Toolbar separator",
+                  "fill": "#FFFFFF55",
+                  "width": 18,
+                  "height": 1
+                },
+                {
+                  "type": "icon",
+                  "id": "jYItA",
+                  "name": "Disabled terminal",
+                  "opacity": 0.3,
+                  "width": 19,
+                  "height": 19,
+                  "icon": "terminal",
+                  "library": "lucide",
+                  "fill": "$ui-text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XO5yY",
+      "type": "ref",
+      "ref": "H0B5cZ",
+      "x": 7720,
+      "y": -924
+    },
+    {
+      "type": "note",
+      "id": "Y4389",
+      "x": 4680,
+      "y": 2058,
+      "width": 250,
+      "height": 219,
+      "content": "Need to improve desktop navigation between brid's eye, employers and projects"
+    }
+  ],
+  "themes": {
+    "Mode": [
+      "Light",
+      "Dark"
+    ]
+  },
+  "variables": {
+    "--sidebar": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E7E8E5"
+        },
+        {
+          "value": "#18181b",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--sidebar-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#666666"
+        },
+        {
+          "value": "#fafafa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--sidebar-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#18181b"
+        },
+        {
+          "value": "#18181b",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--sidebar-primary-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#fafafa"
+        },
+        {
+          "value": "#fafafa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--sidebar-border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#CBCCC9"
+        },
+        {
+          "value": "#ffffff1a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--sidebar-accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#CBCCC9"
+        },
+        {
+          "value": "#2a2a30",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--sidebar-accent-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#18181b"
+        },
+        {
+          "value": "#fafafa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--sidebar-ring": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#71717a"
+        },
+        {
+          "value": "#71717a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--background": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F2F3F0"
+        },
+        {
+          "value": "#111111",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111"
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--card": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#1A1A1A",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--card-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111"
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--popover": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#1A1A1A",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--popover-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111"
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FF8400"
+        },
+        {
+          "value": "#FF8400",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--primary-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111"
+        },
+        {
+          "value": "#111111",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E7E8E5"
+        },
+        {
+          "value": "#2E2E2E",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--secondary-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111"
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F2F3F0"
+        },
+        {
+          "value": "#2E2E2E",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--muted-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#666666"
+        },
+        {
+          "value": "#B8B9B6",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F2F3F0"
+        },
+        {
+          "value": "#111111",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--accent-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111"
+        },
+        {
+          "value": "#F2F3F0",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--destructive": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#D93C15"
+        },
+        {
+          "value": "#FF5C33",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#CBCCC9"
+        },
+        {
+          "value": "#2E2E2E",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--input": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#CBCCC9"
+        },
+        {
+          "value": "#2E2E2E",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--ring": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#666666"
+        },
+        {
+          "value": "#666666",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--black": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "--font-primary": {
+      "type": "string",
+      "value": "Hanken Grotesk"
+    },
+    "--font-secondary": {
+      "type": "string",
+      "value": "Hanken Grotesk"
+    },
+    "--radius-none": {
+      "type": "number",
+      "value": 0
+    },
+    "--radius-pill": {
+      "type": "number",
+      "value": 999
+    },
+    "--color-success": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#DFE6E1"
+        },
+        {
+          "value": "#222924",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--color-success-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#004D1A"
+        },
+        {
+          "value": "#B6FFCE",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--color-warning": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E9E3D8"
+        },
+        {
+          "value": "#291C0F",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--color-warning-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#804200"
+        },
+        {
+          "value": "#FF8400",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--color-error": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E5DCDA"
+        },
+        {
+          "value": "#24100B",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--color-error-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#8C1C00"
+        },
+        {
+          "value": "#FF5C33",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--color-info": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#DFDFE6"
+        },
+        {
+          "value": "#222229",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--color-info-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#000066"
+        },
+        {
+          "value": "#B2B2FF",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--radius-m": {
+      "type": "number",
+      "value": 16
+    },
+    "canvas": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F4F2EE",
+          "theme": {
+            "Mode": "Light"
+          }
+        },
+        {
+          "value": "#09090B",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "ui-text": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "ui-muted": {
+      "type": "color",
+      "value": "#FFFFFFB3"
+    },
+    "accent-violet": {
+      "type": "color",
+      "value": "#E83F1A"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Libre Caslon Text"
+    },
+    "font-ui": {
+      "type": "string",
+      "value": "Hanken Grotesk"
+    },
+    "space-1": {
+      "type": "number",
+      "value": 8
+    },
+    "space-2": {
+      "type": "number",
+      "value": 12
+    },
+    "space-3": {
+      "type": "number",
+      "value": 16
+    },
+    "space-4": {
+      "type": "number",
+      "value": 24
+    },
+    "space-5": {
+      "type": "number",
+      "value": 32
+    },
+    "radius-control": {
+      "type": "number",
+      "value": 5
+    },
+    "overlay-dark": {
+      "type": "color",
+      "value": "#09090BEF"
+    },
+    "overlay-soft": {
+      "type": "color",
+      "value": "#09090B99"
+    },
+    "border-overlay": {
+      "type": "color",
+      "value": "#FFFFFF40"
+    }
+  },
+  "fileToken": "39766d99-5d35-4f03-8728-cc848968b9c2"
+}
