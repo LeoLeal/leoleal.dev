@@ -19,9 +19,9 @@
         {
           "type": "rectangle",
           "id": "h9qWS8",
-          "x": 0,
+          "x": -10,
           "y": 0,
-          "name": "Leonardo portrait background",
+          "name": "Original attached portrait · Mobile",
           "metadata": {
             "type": "unsplash",
             "username": "maks_d",
@@ -31,10 +31,10 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "https://images.unsplash.com/photo-1761144863268-219ece9568ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDc4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
-            "mode": "fill"
+            "url": "images/leonardo-original-upright.png",
+            "mode": "stretch"
           },
-          "width": 390,
+          "width": 714,
           "height": 844
         },
         {
@@ -191,7 +191,6 @@
           "x": 20,
           "y": 428,
           "name": "Lower third narrative",
-          "width": 350,
           "layout": "vertical",
           "gap": 13,
           "children": [
@@ -211,9 +210,9 @@
               "id": "lbz3O",
               "name": "Mobile title",
               "fill": "$ui-text",
-              "content": "Frontend, with feeling.",
+              "content": "Frontend, with purpose.",
               "fontFamily": "$font-display",
-              "fontSize": 32,
+              "fontSize": 30,
               "fontWeight": "normal"
             },
             {
@@ -227,14 +226,39 @@
               "fontWeight": "500"
             },
             {
-              "type": "text",
-              "id": "MkrWD",
+              "type": "frame",
+              "id": "K0IAcB",
               "name": "Current location",
-              "fill": "$ui-muted",
-              "content": "📍 Current Location: 🇬🇧 London",
-              "fontFamily": "$font-ui",
-              "fontSize": 12,
-              "fontWeight": "normal"
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "W1hoc",
+                  "name": "Current location prefix",
+                  "fill": "$ui-muted",
+                  "content": "📍 Current Location:",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "S2ZYre",
+                  "type": "ref",
+                  "ref": "bl5T1",
+                  "name": "United Kingdom flag"
+                },
+                {
+                  "type": "text",
+                  "id": "rfGt4",
+                  "name": "Current location city",
+                  "fill": "$ui-muted",
+                  "content": "London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
             },
             {
               "type": "text",
@@ -256,73 +280,37 @@
               "gap": 7,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "DW7xj",
-                  "name": "React tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    6,
-                    9
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "WJbk8",
-                      "name": "React text",
-                      "fill": "$ui-muted",
-                      "content": "React",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 10,
-                      "fontWeight": "normal"
+                  "id": "ylhFO",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Mobile React expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "React"
                     }
-                  ]
+                  }
                 },
                 {
-                  "type": "frame",
-                  "id": "o5YC8A",
-                  "name": "Design systems tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    6,
-                    9
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "ZuRPc",
-                      "name": "Design systems text",
-                      "fill": "$ui-muted",
-                      "content": "Design systems",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 10,
-                      "fontWeight": "normal"
+                  "id": "YZx9H",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Mobile Design systems expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Design systems"
                     }
-                  ]
+                  }
                 },
                 {
-                  "type": "frame",
-                  "id": "uC8Yr",
-                  "name": "Motion tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    6,
-                    9
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "pRL6f",
-                      "name": "Motion text",
-                      "fill": "$ui-muted",
-                      "content": "Motion",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 10,
-                      "fontWeight": "normal"
+                  "id": "LVY5t",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Mobile Motion expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Motion"
                     }
-                  ]
+                  }
                 }
               ]
             },
@@ -338,8 +326,17 @@
                   "type": "ref",
                   "ref": "EkTe7",
                   "name": "Primary CTA instance · Mobile",
-                  "width": 128,
-                  "height": 44
+                  "width": 95,
+                  "height": 44,
+                  "flipX": false,
+                  "flipY": false,
+                  "x": 0,
+                  "y": 0,
+                  "descendants": {
+                    "UyrBo": {
+                      "enabled": false
+                    }
+                  }
                 },
                 {
                   "type": "icon",
@@ -379,95 +376,6 @@
     },
     {
       "type": "frame",
-      "id": "URU4Y",
-      "x": 0,
-      "y": -924,
-      "name": "Archived wireframe component",
-      "reusable": true,
-      "enabled": false,
-      "clip": true,
-      "width": 390,
-      "height": 844,
-      "fill": "#5C5E65",
-      "layout": "none",
-      "children": [
-        {
-          "type": "path",
-          "id": "kPErV",
-          "x": 0,
-          "y": 0,
-          "name": "Diagonal guide one",
-          "geometry": "M0 0l390 844",
-          "viewBox": [
-            0,
-            0,
-            390,
-            844
-          ],
-          "width": 390,
-          "height": 844,
-          "stroke": "#FFFFFF55",
-          "strokeWidth": 1
-        },
-        {
-          "type": "path",
-          "id": "Q38DU",
-          "x": 0,
-          "y": 0,
-          "name": "Diagonal guide two",
-          "geometry": "M390 0l-390 844",
-          "viewBox": [
-            0,
-            0,
-            390,
-            844
-          ],
-          "width": 390,
-          "height": 844,
-          "stroke": "#FFFFFF55",
-          "strokeWidth": 1
-        },
-        {
-          "type": "rectangle",
-          "id": "g87IA",
-          "x": 20,
-          "y": 92,
-          "name": "Wireframe inset",
-          "fill": "#FFFFFF08",
-          "width": 350,
-          "height": 540,
-          "stroke": "#FFFFFF66",
-          "strokeWidth": 1
-        },
-        {
-          "type": "text",
-          "id": "n0voDa",
-          "x": 34,
-          "y": 106,
-          "name": "Wireframe label",
-          "fill": "#FFFFFFCC",
-          "content": "[ FULLSCREEN UX WIREFRAME PLACEHOLDER ]",
-          "fontFamily": "Inter",
-          "fontSize": 10,
-          "fontWeight": "600",
-          "letterSpacing": 1
-        },
-        {
-          "type": "text",
-          "id": "b1j6B",
-          "x": 34,
-          "y": 610,
-          "name": "Wireframe aspect",
-          "fill": "#FFFFFF99",
-          "content": "01 / STRUCTURAL ASSET · TAP EDGE TO EXPLORE",
-          "fontFamily": "Inter",
-          "fontSize": 10,
-          "fontWeight": "normal"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "I0Yp0p",
       "x": 470,
       "y": 0,
@@ -490,7 +398,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1784651839181.png",
+            "url": "./images/generated-1785012393429.png",
             "mode": "fill"
           },
           "width": 390,
@@ -552,7 +460,7 @@
           "height": 58,
           "descendants": {
             "qgbgt": {
-              "content": "03 PROJECTS"
+              "content": "05 PROJECTS"
             }
           }
         },
@@ -584,7 +492,7 @@
               "id": "PjcJH",
               "name": "Employer industry",
               "fill": "$accent-violet",
-              "content": "◈ FINANCE",
+              "content": "◈ CONSULTING",
               "fontFamily": "$font-ui",
               "fontSize": 11,
               "fontWeight": "600",
@@ -595,7 +503,7 @@
               "id": "h63l6j",
               "name": "Employer name",
               "fill": "$ui-text",
-              "content": "Monzo",
+              "content": "Publicis Sapient",
               "fontFamily": "$font-display",
               "fontSize": 42,
               "fontWeight": "normal"
@@ -605,27 +513,54 @@
               "id": "jZIio",
               "name": "Employer role",
               "fill": "$ui-text",
-              "content": "Senior Frontend Architect",
+              "content": "Senior UI/UX Engineer",
               "fontFamily": "$font-ui",
               "fontSize": 15,
               "fontWeight": "500"
             },
             {
-              "type": "text",
-              "id": "ZPiDG",
+              "type": "frame",
+              "id": "zZAnm",
               "name": "Employer duration location",
-              "fill": "$ui-muted",
-              "content": "2022 — Present  ·  🇬🇧 London",
-              "fontFamily": "$font-ui",
-              "fontSize": 12,
-              "fontWeight": "normal"
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YuVT4",
+                  "name": "Employer duration prefix",
+                  "fill": "$ui-muted",
+                  "content": "2020 — 2022  ·",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "IicD7",
+                  "type": "ref",
+                  "ref": "bl5T1",
+                  "name": "United Kingdom flag"
+                },
+                {
+                  "type": "text",
+                  "id": "Jcu4l",
+                  "name": "Employer location city",
+                  "fill": "$ui-muted",
+                  "content": "London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
             },
             {
               "type": "text",
               "id": "dFs5O",
               "name": "Employer prompt",
               "fill": "$ui-text",
-              "content": "A product environment where clarity is a craft.",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "A global digital business transformation partner, where experience meets intelligent engineering.",
               "fontFamily": "$font-ui",
               "fontSize": 12,
               "fontWeight": "normal"
@@ -730,7 +665,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1784651841359.png",
+            "url": "./images/generated-1785012564704.png",
             "mode": "fill"
           },
           "width": 390,
@@ -837,24 +772,56 @@
           "gap": 10,
           "children": [
             {
-              "type": "text",
-              "id": "BKyjy",
+              "type": "frame",
+              "id": "SHg7E",
               "name": "Project metadata",
-              "fill": "$accent-violet",
-              "content": "◈ FINANCE  ·  🇺🇸 New York",
-              "fontFamily": "$font-ui",
-              "fontSize": 11,
-              "fontWeight": "600",
-              "letterSpacing": 1
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jeI5g",
+                  "name": "Project metadata prefix",
+                  "fill": "$accent-violet",
+                  "content": "◈ AUTOMOTIVE  ·",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ukBLl",
+                  "name": "Japan flag",
+                  "fill": "$accent-violet",
+                  "content": "🇯🇵",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "nIdWL",
+                  "name": "Project metadata city",
+                  "fill": "$accent-violet",
+                  "content": "Yokohama",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                }
+              ]
             },
             {
               "type": "text",
               "id": "IEArq",
               "name": "Project title",
               "fill": "$ui-text",
-              "content": "Payments Foundations",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "Product Selection Journey",
               "fontFamily": "$font-display",
-              "fontSize": 32,
+              "fontSize": 29,
               "fontWeight": "normal"
             },
             {
@@ -864,7 +831,7 @@
               "fill": "$ui-text",
               "textGrowth": "fixed-width",
               "width": 350,
-              "content": "• Rebuilt the payment orchestration UI in React + TypeScript\n• Unified component contracts across 14 critical flows\n• Reduced completion friction by 18% through tested interaction states",
+              "content": "• Designed a visual vehicle selection journey for Nissan Motor Group\n• Connected model discovery, configuration and purchase-ready decision moments\n• Built scalable automotive UI patterns for regional product teams",
               "lineHeight": 1.5,
               "fontFamily": "$font-ui",
               "fontSize": 13,
@@ -935,7 +902,7 @@
           "height": 58,
           "descendants": {
             "qgbgt": {
-              "content": "MONZO / PROJECT 01"
+              "content": "PUBLICIS SAPIENT / PROJECT 01"
             }
           }
         },
@@ -1097,8 +1064,8 @@
           "x": 20,
           "y": 139,
           "name": "Monzo grid item",
-          "width": 157,
-          "height": 235,
+          "width": 165,
+          "height": 243,
           "layout": "none",
           "children": [
             {
@@ -1110,11 +1077,11 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651842666.png",
+                "url": "./images/generated-1785012803350.png",
                 "mode": "fill"
               },
-              "width": 157,
-              "height": 157,
+              "width": 165,
+              "height": 165,
               "stroke": "#FFFFFF55",
               "strokeWidth": 1
             },
@@ -1132,8 +1099,8 @@
                 157,
                 157
               ],
-              "width": 157,
-              "height": 157,
+              "width": 165,
+              "height": 165,
               "stroke": "#FFFFFF55",
               "strokeWidth": 1
             },
@@ -1144,7 +1111,7 @@
               "y": 10,
               "name": "Monzo project count",
               "fill": "$accent-violet",
-              "content": "3 PROJECTS",
+              "content": "4 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 10,
               "fontWeight": "600"
@@ -1153,9 +1120,9 @@
               "type": "frame",
               "id": "RSrxC",
               "x": 0,
-              "y": 168,
+              "y": 176,
               "name": "Monzo metadata",
-              "width": 157,
+              "width": 165,
               "layout": "vertical",
               "gap": 4,
               "children": [
@@ -1164,7 +1131,7 @@
                   "id": "Z0xby0",
                   "name": "Monzo company",
                   "fill": "$ui-text",
-                  "content": "Monzo",
+                  "content": "Rico.com.vc",
                   "fontFamily": "$font-display",
                   "fontSize": 20,
                   "fontWeight": "normal"
@@ -1174,20 +1141,49 @@
                   "id": "SvQXS",
                   "name": "Monzo role",
                   "fill": "$ui-muted",
-                  "content": "Senior Frontend Architect",
+                  "content": "Product Design Lead",
                   "fontFamily": "$font-ui",
                   "fontSize": 10,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "gxY8A",
+                  "type": "frame",
+                  "id": "G70Gc",
                   "name": "Monzo industry",
-                  "fill": "$ui-text",
-                  "content": "◈ Finance · 🇬🇧 London",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 10,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HbEBw",
+                      "name": "Monzo industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Venture ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mppxD",
+                      "name": "Brazil flag",
+                      "fill": "$ui-text",
+                      "content": "🇧🇷",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dcnFh",
+                      "name": "Monzo industry city",
+                      "fill": "$ui-text",
+                      "content": "São Paulo",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -1196,11 +1192,11 @@
         {
           "type": "frame",
           "id": "MUf2J",
-          "x": 197,
+          "x": 205,
           "y": 139,
           "name": "Publicis Sapient grid item",
-          "width": 157,
-          "height": 235,
+          "width": 165,
+          "height": 243,
           "layout": "none",
           "children": [
             {
@@ -1212,11 +1208,11 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651844208.png",
+                "url": "./images/generated-1785012805439.png",
                 "mode": "fill"
               },
-              "width": 157,
-              "height": 157,
+              "width": 165,
+              "height": 165,
               "stroke": "#FFFFFF55",
               "strokeWidth": 1
             },
@@ -1234,8 +1230,8 @@
                 157,
                 157
               ],
-              "width": 157,
-              "height": 157,
+              "width": 165,
+              "height": 165,
               "stroke": "#FFFFFF55",
               "strokeWidth": 1
             },
@@ -1255,9 +1251,9 @@
               "type": "frame",
               "id": "ZsXiM",
               "x": 0,
-              "y": 168,
+              "y": 176,
               "name": "Publicis Sapient metadata",
-              "width": 157,
+              "width": 165,
               "layout": "vertical",
               "gap": 4,
               "children": [
@@ -1266,9 +1262,9 @@
                   "id": "Jad3V",
                   "name": "Publicis Sapient company",
                   "fill": "$ui-text",
-                  "content": "Publicis Sapient",
+                  "content": "XP Investimentos",
                   "fontFamily": "$font-display",
-                  "fontSize": 20,
+                  "fontSize": 19,
                   "fontWeight": "normal"
                 },
                 {
@@ -1276,20 +1272,49 @@
                   "id": "r6RV2",
                   "name": "Publicis Sapient role",
                   "fill": "$ui-muted",
-                  "content": "UI/UX Engineer",
+                  "content": "Senior UI/UX Engineer",
                   "fontFamily": "$font-ui",
                   "fontSize": 10,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "i35ELP",
+                  "type": "frame",
+                  "id": "U8O2gq",
                   "name": "Publicis Sapient industry",
-                  "fill": "$ui-text",
-                  "content": "◈ Consulting · 🇬🇧 London",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 10,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iIIID",
+                      "name": "Publicis Sapient industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Finance ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "m00Op",
+                      "name": "Brazil flag",
+                      "fill": "$ui-text",
+                      "content": "🇧🇷",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "X9LvBP",
+                      "name": "Publicis Sapient industry city",
+                      "fill": "$ui-text",
+                      "content": "São Paulo",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -1299,10 +1324,10 @@
           "type": "frame",
           "id": "iChFI",
           "x": 20,
-          "y": 398,
+          "y": 394,
           "name": "BMW Group grid item",
-          "width": 157,
-          "height": 235,
+          "width": 165,
+          "height": 243,
           "layout": "none",
           "children": [
             {
@@ -1314,11 +1339,11 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651845137.png",
+                "url": "./images/generated-1785012806577.png",
                 "mode": "fill"
               },
-              "width": 157,
-              "height": 157,
+              "width": 165,
+              "height": 165,
               "stroke": "#FFFFFF55",
               "strokeWidth": 1
             },
@@ -1336,8 +1361,8 @@
                 157,
                 157
               ],
-              "width": 157,
-              "height": 157,
+              "width": 165,
+              "height": 165,
               "stroke": "#FFFFFF55",
               "strokeWidth": 1
             },
@@ -1348,7 +1373,7 @@
               "y": 10,
               "name": "BMW Group project count",
               "fill": "$accent-violet",
-              "content": "4 PROJECTS",
+              "content": "6 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 10,
               "fontWeight": "600"
@@ -1357,9 +1382,9 @@
               "type": "frame",
               "id": "UfDwo",
               "x": 0,
-              "y": 168,
+              "y": 176,
               "name": "BMW Group metadata",
-              "width": 157,
+              "width": 165,
               "layout": "vertical",
               "gap": 4,
               "children": [
@@ -1368,7 +1393,7 @@
                   "id": "AXVIL",
                   "name": "BMW Group company",
                   "fill": "$ui-text",
-                  "content": "BMW Group",
+                  "content": "EPAM",
                   "fontFamily": "$font-display",
                   "fontSize": 20,
                   "fontWeight": "normal"
@@ -1378,20 +1403,45 @@
                   "id": "iq2Eo",
                   "name": "BMW Group role",
                   "fill": "$ui-muted",
-                  "content": "Frontend Engineer",
+                  "content": "Frontend Architect",
                   "fontFamily": "$font-ui",
                   "fontSize": 10,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "wBx6X",
+                  "type": "frame",
+                  "id": "g4hMQ",
                   "name": "BMW Group industry",
-                  "fill": "$ui-text",
-                  "content": "◈ Automotive · 🇩🇪 Munich",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 10,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Jm8x3",
+                      "name": "BMW Group industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Engineering ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "idJ4f",
+                      "type": "ref",
+                      "ref": "bl5T1",
+                      "name": "United Kingdom flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x6Cxhx",
+                      "name": "BMW Group industry city",
+                      "fill": "$ui-text",
+                      "content": "London",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -1400,11 +1450,11 @@
         {
           "type": "frame",
           "id": "flCVz",
-          "x": 197,
-          "y": 398,
+          "x": 205,
+          "y": 394,
           "name": "Booking.com grid item",
-          "width": 157,
-          "height": 235,
+          "width": 165,
+          "height": 243,
           "layout": "none",
           "children": [
             {
@@ -1416,11 +1466,11 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651846475.png",
+                "url": "./images/generated-1785012807251.png",
                 "mode": "fill"
               },
-              "width": 157,
-              "height": 157,
+              "width": 165,
+              "height": 165,
               "stroke": "#FFFFFF55",
               "strokeWidth": 1
             },
@@ -1438,8 +1488,8 @@
                 157,
                 157
               ],
-              "width": 157,
-              "height": 157,
+              "width": 165,
+              "height": 165,
               "stroke": "#FFFFFF55",
               "strokeWidth": 1
             },
@@ -1450,7 +1500,7 @@
               "y": 10,
               "name": "Booking.com project count",
               "fill": "$accent-violet",
-              "content": "3 PROJECTS",
+              "content": "5 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 10,
               "fontWeight": "600"
@@ -1459,9 +1509,9 @@
               "type": "frame",
               "id": "UnmSX",
               "x": 0,
-              "y": 168,
+              "y": 176,
               "name": "Booking.com metadata",
-              "width": 157,
+              "width": 165,
               "layout": "vertical",
               "gap": 4,
               "children": [
@@ -1470,7 +1520,7 @@
                   "id": "Oz7TL",
                   "name": "Booking.com company",
                   "fill": "$ui-text",
-                  "content": "Booking.com",
+                  "content": "Publicis Sapient",
                   "fontFamily": "$font-display",
                   "fontSize": 20,
                   "fontWeight": "normal"
@@ -1480,20 +1530,45 @@
                   "id": "V8GJFm",
                   "name": "Booking.com role",
                   "fill": "$ui-muted",
-                  "content": "Product UI Engineer",
+                  "content": "Senior UI/UX Engineer",
                   "fontFamily": "$font-ui",
                   "fontSize": 10,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "bcaRf",
+                  "type": "frame",
+                  "id": "YsZbY",
                   "name": "Booking.com industry",
-                  "fill": "$ui-text",
-                  "content": "◈ Travel · 🇳🇱 Amsterdam",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 9,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TscvE",
+                      "name": "Booking.com industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Consulting ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 9,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "MeLE2",
+                      "type": "ref",
+                      "ref": "bl5T1",
+                      "name": "United Kingdom flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bIq2F",
+                      "name": "Booking.com industry city",
+                      "fill": "$ui-text",
+                      "content": "London",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 9,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -1622,10 +1697,10 @@
           "id": "O2RtL",
           "x": 20,
           "y": 54,
-          "name": "Centered search focus field",
+          "name": "Mobile search experience pill",
           "width": 350,
           "height": 58,
-          "cornerRadius": 4,
+          "cornerRadius": 29,
           "stroke": "#FFFFFF99",
           "strokeWidth": 1,
           "gap": 12,
@@ -1651,10 +1726,9 @@
               "name": "Search query",
               "fill": "$ui-muted",
               "content": "Search experience...",
-              "fontFamily": "$font-display",
+              "fontFamily": "$font-ui",
               "fontSize": 18,
-              "fontWeight": "normal",
-              "fontStyle": "italic"
+              "fontWeight": "normal"
             }
           ]
         },
@@ -1757,14 +1831,29 @@
                   "fontStyle": "italic"
                 },
                 {
-                  "type": "text",
-                  "id": "bzSZ8",
+                  "type": "frame",
+                  "id": "WKEFZ",
                   "name": "Payments Foundations result meta",
-                  "fill": "$ui-muted",
-                  "content": "🇺🇸 New York · Monzo · ◈ Finance",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 10,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "YHoVq",
+                      "type": "ref",
+                      "ref": "uOxdS",
+                      "name": "Payments Foundations result meta flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O2655",
+                      "name": "Payments Foundations result meta details",
+                      "fill": "$ui-muted",
+                      "content": "New York · Monzo · ◈ Finance",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 },
                 {
                   "type": "text",
@@ -1867,14 +1956,29 @@
                   "fontStyle": "italic"
                 },
                 {
-                  "type": "text",
-                  "id": "V3ivi",
+                  "type": "frame",
+                  "id": "E7KVg8",
                   "name": "Digital Retail OS result meta",
-                  "fill": "$ui-muted",
-                  "content": "🇩🇪 Munich · BMW Group · ◈ Automotive",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 10,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "y1mAll",
+                      "type": "ref",
+                      "ref": "va6GD",
+                      "name": "Digital Retail OS result meta flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yjhN0",
+                      "name": "Digital Retail OS result meta details",
+                      "fill": "$ui-muted",
+                      "content": "Munich · BMW Group · ◈ Automotive",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 },
                 {
                   "type": "text",
@@ -1977,14 +2081,29 @@
                   "fontStyle": "italic"
                 },
                 {
-                  "type": "text",
-                  "id": "s4vp8",
+                  "type": "frame",
+                  "id": "ziXi8",
                   "name": "Traveler Checkout result meta",
-                  "fill": "$ui-muted",
-                  "content": "🇳🇱 Amsterdam · Booking.com · ◈ Travel & Hospitality",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 10,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "AJgsu",
+                      "type": "ref",
+                      "ref": "LOWeg",
+                      "name": "Traveler Checkout result meta flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "puXBV",
+                      "name": "Traveler Checkout result meta details",
+                      "fill": "$ui-muted",
+                      "content": "Amsterdam · Booking.com · ◈ Travel & Hospitality",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 },
                 {
                   "type": "text",
@@ -2145,7 +2264,7 @@
       "clip": true,
       "width": 1440,
       "height": 900,
-      "fill": "$canvas",
+      "fill": "#071014",
       "layout": "none",
       "children": [
         {
@@ -2153,7 +2272,7 @@
           "id": "Shg93",
           "x": 0,
           "y": 0,
-          "name": "Desktop reframed Leonardo portrait",
+          "name": "Original attached portrait · Desktop",
           "metadata": {
             "type": "unsplash",
             "username": "streit0liver",
@@ -2163,41 +2282,74 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "https://images.unsplash.com/photo-1761144863268-219ece9568ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDc4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+            "url": "images/leonardo-original-upright.png",
             "mode": "fill"
           },
           "width": 1440,
-          "height": 900
+          "height": 1270
         },
         {
           "type": "rectangle",
           "id": "eR4Tm",
           "x": 0,
           "y": 0,
-          "name": "Desktop readability gradient",
-          "fill": {
-            "type": "gradient",
-            "gradientType": "linear",
-            "enabled": true,
-            "rotation": 180,
-            "size": {
-              "height": 1
+          "name": "Desktop portrait transition gradient",
+          "fill": [
+            {
+              "type": "gradient",
+              "gradientType": "linear",
+              "enabled": true,
+              "rotation": 180,
+              "size": {
+                "height": 1
+              },
+              "colors": [
+                {
+                  "color": "#09090B00",
+                  "position": 0
+                },
+                {
+                  "color": "#09090B0F",
+                  "position": 0.52
+                },
+                {
+                  "color": "#09090BB8",
+                  "position": 1
+                }
+              ]
             },
-            "colors": [
-              {
-                "color": "#09090B00",
-                "position": 0
+            {
+              "type": "gradient",
+              "gradientType": "linear",
+              "enabled": true,
+              "rotation": -180,
+              "size": {
+                "height": 0.8972153143954933
               },
-              {
-                "color": "#09090B12",
-                "position": 0.38
-              },
-              {
-                "color": "#09090BEF",
-                "position": 1
+              "colors": [
+                {
+                  "color": "#09090b00",
+                  "position": 0
+                },
+                {
+                  "color": "#09090B16",
+                  "position": 0.34
+                },
+                {
+                  "color": "#09090ba8",
+                  "position": 0.68
+                },
+                {
+                  "color": "#09090bbf",
+                  "position": 1
+                }
+              ],
+              "center": {
+                "x": -1.5308084989341915e-17,
+                "y": 0.44860765719774665
               }
-            ]
-          },
+            }
+          ],
           "width": 1440,
           "height": 900
         },
@@ -2206,20 +2358,20 @@
           "type": "ref",
           "ref": "GBQuM",
           "name": "Search Pill instance · Desktop",
-          "x": 42,
+          "x": 50,
           "y": 36,
           "width": 370,
-          "height": 48
+          "height": 48,
+          "cornerRadius": 24
         },
         {
           "type": "frame",
           "id": "HKyB9",
           "x": 50,
-          "y": 420,
+          "y": 510,
           "name": "Desktop lower narrative",
-          "width": 630,
           "layout": "vertical",
-          "gap": 11,
+          "gap": 15,
           "children": [
             {
               "type": "text",
@@ -2237,7 +2389,7 @@
               "id": "axBHU",
               "name": "Desktop title",
               "fill": "$ui-text",
-              "content": "Frontend, with feeling.",
+              "content": "Frontend, with purpose.",
               "fontFamily": "$font-display",
               "fontSize": 58,
               "fontWeight": "normal"
@@ -2253,14 +2405,39 @@
               "fontWeight": "normal"
             },
             {
-              "type": "text",
-              "id": "MzoGQ",
+              "type": "frame",
+              "id": "A3tRp",
               "name": "Desktop current location",
-              "fill": "$ui-muted",
-              "content": "📍 Current Location: 🇬🇧 London",
-              "fontFamily": "$font-ui",
-              "fontSize": 13,
-              "fontWeight": "normal"
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bjZqJ",
+                  "name": "Desktop current location prefix",
+                  "fill": "$ui-muted",
+                  "content": "📍 Current Location:",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "qa6s5",
+                  "type": "ref",
+                  "ref": "bl5T1",
+                  "name": "United Kingdom flag"
+                },
+                {
+                  "type": "text",
+                  "id": "G83WS",
+                  "name": "Desktop current location city",
+                  "fill": "$ui-muted",
+                  "content": "London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
             },
             {
               "type": "text",
@@ -2274,83 +2451,6 @@
               "fontFamily": "$font-ui",
               "fontSize": 14,
               "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "WeoLi",
-              "name": "Desktop expertise tags",
-              "gap": 8,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "G1WRqm",
-                  "name": "Desktop React tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    7,
-                    10
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "RJt3A",
-                      "name": "Desktop React text",
-                      "fill": "$ui-muted",
-                      "content": "React",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 10,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "uTOJY",
-                  "name": "Desktop Design systems tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    7,
-                    10
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "iZqOx",
-                      "name": "Desktop Design systems text",
-                      "fill": "$ui-muted",
-                      "content": "Design systems",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 10,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "PM1Fx",
-                  "name": "Desktop Motion tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    7,
-                    10
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "R1ePf",
-                      "name": "Desktop Motion text",
-                      "fill": "$ui-muted",
-                      "content": "Motion",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 10,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
             },
             {
               "type": "frame",
@@ -2472,7 +2572,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1784651839640.png",
+            "url": "./images/generated-1785012394078.png",
             "mode": "fill"
           },
           "width": 1440,
@@ -2534,7 +2634,7 @@
           "height": 58,
           "descendants": {
             "qgbgt": {
-              "content": "03 PROJECTS"
+              "content": "05 PROJECTS"
             }
           }
         },
@@ -2566,7 +2666,7 @@
               "id": "C9jO9",
               "name": "Desktop employer industry",
               "fill": "$accent-violet",
-              "content": "◈ FINANCE",
+              "content": "◈ CONSULTING",
               "fontFamily": "$font-ui",
               "fontSize": 12,
               "fontWeight": "600",
@@ -2577,7 +2677,7 @@
               "id": "f34Q9W",
               "name": "Desktop employer name",
               "fill": "$ui-text",
-              "content": "Monzo",
+              "content": "Publicis Sapient",
               "fontFamily": "$font-display",
               "fontSize": 64,
               "fontWeight": "normal"
@@ -2587,27 +2687,52 @@
               "id": "Xxhjs",
               "name": "Desktop employer role",
               "fill": "$ui-text",
-              "content": "Senior Frontend Architect",
+              "content": "Senior UI/UX Engineer",
               "fontFamily": "$font-ui",
               "fontSize": 17,
               "fontWeight": "500"
             },
             {
-              "type": "text",
-              "id": "nhRLb",
+              "type": "frame",
+              "id": "IDQt0",
               "name": "Desktop employer location",
-              "fill": "$ui-muted",
-              "content": "2022 — Present  ·  🇬🇧 London",
-              "fontFamily": "$font-ui",
-              "fontSize": 13,
-              "fontWeight": "normal"
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "En3nO",
+                  "name": "Desktop employer duration",
+                  "fill": "$ui-muted",
+                  "content": "2020 — 2022  ·",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "IVhbx",
+                  "type": "ref",
+                  "ref": "bl5T1",
+                  "name": "United Kingdom flag"
+                },
+                {
+                  "type": "text",
+                  "id": "buzDV",
+                  "name": "Desktop employer city",
+                  "fill": "$ui-muted",
+                  "content": "London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
             },
             {
               "type": "text",
               "id": "Wnapy",
               "name": "Desktop employer prompt",
               "fill": "$ui-text",
-              "content": "A product environment where clarity is a craft.",
+              "content": "A global digital business transformation partner, where experience meets intelligent engineering.",
               "fontFamily": "$font-ui",
               "fontSize": 14,
               "fontWeight": "normal"
@@ -2682,7 +2807,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1784651842234.png",
+            "url": "./images/generated-1785012565512.png",
             "mode": "fill"
           },
           "width": 1440,
@@ -2731,7 +2856,7 @@
           "height": 58,
           "descendants": {
             "qgbgt": {
-              "content": "MONZO / PROJECT 01"
+              "content": "PUBLICIS SAPIENT / PROJECT 01"
             }
           }
         },
@@ -2803,24 +2928,56 @@
           "gap": 12,
           "children": [
             {
-              "type": "text",
-              "id": "DgbFa",
+              "type": "frame",
+              "id": "mg5py",
               "name": "Desktop project meta",
-              "fill": "$accent-violet",
-              "content": "◈ FINANCE  ·  🇺🇸 New York",
-              "fontFamily": "$font-ui",
-              "fontSize": 12,
-              "fontWeight": "600",
-              "letterSpacing": 1.1
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C2yIja",
+                  "name": "Desktop project meta prefix",
+                  "fill": "$accent-violet",
+                  "content": "◈ AUTOMOTIVE  ·",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.1
+                },
+                {
+                  "type": "text",
+                  "id": "O6z1C",
+                  "name": "Japan flag",
+                  "fill": "$accent-violet",
+                  "content": "🇯🇵",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "O0SNAT",
+                  "name": "Desktop project city",
+                  "fill": "$accent-violet",
+                  "content": "Yokohama",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.1
+                }
+              ]
             },
             {
               "type": "text",
               "id": "Digdo",
               "name": "Desktop project title",
               "fill": "$ui-text",
-              "content": "Payments Foundations",
+              "textGrowth": "fixed-width",
+              "width": 690,
+              "content": "Product Selection Journey",
               "fontFamily": "$font-display",
-              "fontSize": 52,
+              "fontSize": 48,
               "fontWeight": "normal"
             },
             {
@@ -2830,7 +2987,7 @@
               "fill": "$ui-text",
               "textGrowth": "fixed-width",
               "width": 620,
-              "content": "• Rebuilt the payment orchestration UI in React + TypeScript\n• Unified component contracts across 14 critical flows\n• Reduced completion friction by 18% through tested interaction states",
+              "content": "• Designed a visual vehicle selection journey for Nissan Motor Group\n• Connected model discovery, configuration and purchase-ready decision moments\n• Built scalable automotive UI patterns for regional product teams",
               "lineHeight": 1.5,
               "fontFamily": "$font-ui",
               "fontSize": 14,
@@ -3018,7 +3175,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651846615.png",
+                "url": "./images/generated-1785012807424.png",
                 "mode": "fill"
               },
               "width": 260,
@@ -3031,7 +3188,7 @@
               "y": 14,
               "name": "Monzo count",
               "fill": "$accent-violet",
-              "content": "3 PROJECTS",
+              "content": "4 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 11,
               "fontWeight": "600"
@@ -3053,7 +3210,7 @@
                   "fill": "$ui-text",
                   "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "Monzo",
+                  "content": "Rico.com.vc",
                   "fontFamily": "$font-display",
                   "fontSize": 30,
                   "fontWeight": "normal"
@@ -3065,22 +3222,50 @@
                   "fill": "$ui-muted",
                   "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "Senior Frontend Architect",
+                  "content": "Product Design Lead",
                   "fontFamily": "$font-ui",
                   "fontSize": 12,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "FGRDn",
+                  "type": "frame",
+                  "id": "qCDnR",
                   "name": "Monzo desktop industry",
-                  "fill": "$ui-text",
-                  "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "◈ Finance · 🇬🇧 London",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 12,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g5HUP",
+                      "name": "Monzo desktop industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Venture ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "isMzQ",
+                      "name": "Brazil flag",
+                      "fill": "$ui-text",
+                      "content": "🇧🇷",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J1i8o",
+                      "name": "Monzo desktop industry city",
+                      "fill": "$ui-text",
+                      "content": "São Paulo",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -3105,7 +3290,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651846929.png",
+                "url": "./images/generated-1785012808816.png",
                 "mode": "fill"
               },
               "width": 260,
@@ -3140,7 +3325,7 @@
                   "fill": "$ui-text",
                   "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "Publicis Sapient",
+                  "content": "XP Investimentos",
                   "fontFamily": "$font-display",
                   "fontSize": 30,
                   "fontWeight": "normal"
@@ -3152,22 +3337,50 @@
                   "fill": "$ui-muted",
                   "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "UI/UX Engineer",
+                  "content": "Senior UI/UX Engineer",
                   "fontFamily": "$font-ui",
                   "fontSize": 12,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "B3OfW",
+                  "type": "frame",
+                  "id": "nUKnI",
                   "name": "Publicis Sapient desktop industry",
-                  "fill": "$ui-text",
-                  "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "◈ Consulting · 🇬🇧 London",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 12,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rMn2O",
+                      "name": "Publicis Sapient desktop industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Finance ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Hfouz",
+                      "name": "Brazil flag",
+                      "fill": "$ui-text",
+                      "content": "🇧🇷",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yXCcM",
+                      "name": "Publicis Sapient desktop industry city",
+                      "fill": "$ui-text",
+                      "content": "São Paulo",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -3177,7 +3390,7 @@
           "type": "frame",
           "id": "M3o9jq",
           "x": 60,
-          "y": 495,
+          "y": 515,
           "name": "Desktop BMW Group grid item",
           "width": 490,
           "height": 250,
@@ -3192,7 +3405,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651847424.png",
+                "url": "./images/generated-1785012808047.png",
                 "mode": "fill"
               },
               "width": 260,
@@ -3205,7 +3418,7 @@
               "y": 14,
               "name": "BMW Group count",
               "fill": "$accent-violet",
-              "content": "4 PROJECTS",
+              "content": "6 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 11,
               "fontWeight": "600"
@@ -3227,7 +3440,7 @@
                   "fill": "$ui-text",
                   "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "BMW Group",
+                  "content": "EPAM",
                   "fontFamily": "$font-display",
                   "fontSize": 30,
                   "fontWeight": "normal"
@@ -3239,22 +3452,46 @@
                   "fill": "$ui-muted",
                   "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "Frontend Engineer",
+                  "content": "Frontend Architect",
                   "fontFamily": "$font-ui",
                   "fontSize": 12,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "TKIRH",
+                  "type": "frame",
+                  "id": "QJQJG",
                   "name": "BMW Group desktop industry",
-                  "fill": "$ui-text",
-                  "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "◈ Automotive · 🇩🇪 Munich",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 12,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kw9zb",
+                      "name": "BMW Group desktop industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Engineering ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "B1rpC",
+                      "type": "ref",
+                      "ref": "bl5T1",
+                      "name": "United Kingdom flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YPrNC",
+                      "name": "BMW Group desktop industry city",
+                      "fill": "$ui-text",
+                      "content": "London",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -3264,7 +3501,7 @@
           "type": "frame",
           "id": "U8pZAe",
           "x": 610,
-          "y": 495,
+          "y": 515,
           "name": "Desktop Booking.com grid item",
           "width": 490,
           "height": 250,
@@ -3279,7 +3516,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651849203.png",
+                "url": "./images/generated-1785012808379.png",
                 "mode": "fill"
               },
               "width": 260,
@@ -3292,7 +3529,7 @@
               "y": 14,
               "name": "Booking.com count",
               "fill": "$accent-violet",
-              "content": "3 PROJECTS",
+              "content": "5 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 11,
               "fontWeight": "600"
@@ -3314,7 +3551,7 @@
                   "fill": "$ui-text",
                   "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "Booking.com",
+                  "content": "Publicis Sapient",
                   "fontFamily": "$font-display",
                   "fontSize": 30,
                   "fontWeight": "normal"
@@ -3326,22 +3563,46 @@
                   "fill": "$ui-muted",
                   "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "Product UI Engineer",
+                  "content": "Senior UI/UX Engineer",
                   "fontFamily": "$font-ui",
                   "fontSize": 12,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "tv6tc",
+                  "type": "frame",
+                  "id": "WAvoP",
                   "name": "Booking.com desktop industry",
-                  "fill": "$ui-text",
-                  "textGrowth": "fixed-width",
                   "width": 200,
-                  "content": "◈ Travel · 🇳🇱 Amsterdam",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 12,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oBQFZ",
+                      "name": "Booking.com desktop industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Consulting ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "Jc3nI",
+                      "type": "ref",
+                      "ref": "bl5T1",
+                      "name": "United Kingdom flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kfDL0",
+                      "name": "Booking.com desktop industry city",
+                      "fill": "$ui-text",
+                      "content": "London",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -3416,10 +3677,10 @@
           "id": "GNwYC",
           "x": 300,
           "y": 180,
-          "name": "Desktop centered search field",
+          "name": "Desktop search experience pill",
           "width": 740,
           "height": 70,
-          "cornerRadius": 5,
+          "cornerRadius": 35,
           "stroke": "#FFFFFF99",
           "strokeWidth": 1,
           "gap": 14,
@@ -3445,7 +3706,7 @@
               "name": "Desktop search placeholder",
               "fill": "$ui-muted",
               "content": "Search experience...",
-              "fontFamily": "$font-display",
+              "fontFamily": "$font-ui",
               "fontSize": 23,
               "fontWeight": "normal"
             }
@@ -3548,16 +3809,16 @@
         {
           "type": "rectangle",
           "id": "E9Kdnd",
-          "x": 0,
+          "x": -40,
           "y": 0,
-          "name": "Tablet Leonardo portrait",
+          "name": "Original attached portrait · Tablet",
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "https://images.unsplash.com/photo-1761144863268-219ece9568ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDc4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
-            "mode": "fill"
+            "url": "images/leonardo-original-upright.png",
+            "mode": "stretch"
           },
-          "width": 768,
+          "width": 866,
           "height": 1024
         },
         {
@@ -3596,7 +3857,7 @@
           "name": "Tablet search pill",
           "width": 390,
           "height": 50,
-          "fill": "#09090B66",
+          "fill": "$overlay-soft",
           "cornerRadius": 25,
           "stroke": "#FFFFFF40",
           "strokeWidth": 1,
@@ -3633,10 +3894,9 @@
         {
           "type": "frame",
           "id": "vks2Y",
-          "x": 44,
+          "x": 40,
           "y": 650,
           "name": "Tablet intro narrative",
-          "width": 570,
           "layout": "vertical",
           "gap": 14,
           "children": [
@@ -3656,7 +3916,7 @@
               "id": "H517s",
               "name": "Tablet intro title",
               "fill": "$ui-text",
-              "content": "Frontend, with feeling.",
+              "content": "Frontend, with purpose.",
               "fontFamily": "$font-display",
               "fontSize": 52,
               "fontWeight": "normal"
@@ -3672,14 +3932,39 @@
               "fontWeight": "500"
             },
             {
-              "type": "text",
-              "id": "kmfPX",
+              "type": "frame",
+              "id": "jMmJI",
               "name": "Tablet intro location",
-              "fill": "$ui-muted",
-              "content": "📍 Current Location: 🇬🇧 London",
-              "fontFamily": "$font-ui",
-              "fontSize": 13,
-              "fontWeight": "normal"
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Cp1Ug",
+                  "name": "Tablet intro location prefix",
+                  "fill": "$ui-muted",
+                  "content": "📍 Current Location:",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "H00kc",
+                  "type": "ref",
+                  "ref": "bl5T1",
+                  "name": "United Kingdom flag"
+                },
+                {
+                  "type": "text",
+                  "id": "aRvWF",
+                  "name": "Tablet intro city",
+                  "fill": "$ui-muted",
+                  "content": "London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
             },
             {
               "type": "text",
@@ -3701,73 +3986,37 @@
               "gap": 8,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "JIZEW",
-                  "name": "Tablet React tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    7,
-                    10
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "ZFDUU",
-                      "name": "Tablet React text",
-                      "fill": "$ui-muted",
-                      "content": "React",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
+                  "id": "VJmo3",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Tablet React expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "React"
                     }
-                  ]
+                  }
                 },
                 {
-                  "type": "frame",
-                  "id": "L5PYz3",
-                  "name": "Tablet Design systems tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    7,
-                    10
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "wHirF",
-                      "name": "Tablet Design systems text",
-                      "fill": "$ui-muted",
-                      "content": "Design systems",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
+                  "id": "idHgn",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Tablet Design systems expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Design systems"
                     }
-                  ]
+                  }
                 },
                 {
-                  "type": "frame",
-                  "id": "IyH6f",
-                  "name": "Tablet Motion tag",
-                  "fill": "#FFFFFF1F",
-                  "cornerRadius": 15,
-                  "padding": [
-                    7,
-                    10
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "F3C4i",
-                      "name": "Tablet Motion text",
-                      "fill": "$ui-muted",
-                      "content": "Motion",
-                      "fontFamily": "$font-ui",
-                      "fontSize": 11,
-                      "fontWeight": "normal"
+                  "id": "jym8Q",
+                  "type": "ref",
+                  "ref": "LsCot",
+                  "name": "Tablet Motion expertise tag",
+                  "descendants": {
+                    "BTap7": {
+                      "content": "Motion"
                     }
-                  ]
+                  }
                 }
               ]
             },
@@ -3861,7 +4110,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1784651839972.png",
+            "url": "./images/generated-1785012395106.png",
             "mode": "fill"
           },
           "width": 768,
@@ -3919,7 +4168,7 @@
           "height": 58,
           "descendants": {
             "qgbgt": {
-              "content": "03 PROJECTS"
+              "content": "05 PROJECTS"
             }
           }
         },
@@ -3951,7 +4200,7 @@
               "id": "EBCGG",
               "name": "Tablet industry",
               "fill": "$accent-violet",
-              "content": "◈ FINANCE",
+              "content": "◈ CONSULTING",
               "fontFamily": "$font-ui",
               "fontSize": 12,
               "fontWeight": "600"
@@ -3961,7 +4210,7 @@
               "id": "FtRJH",
               "name": "Tablet employer name",
               "fill": "$ui-text",
-              "content": "Monzo",
+              "content": "Publicis Sapient",
               "fontFamily": "$font-display",
               "fontSize": 54,
               "fontWeight": "normal"
@@ -3971,27 +4220,54 @@
               "id": "vsS0m",
               "name": "Tablet employer role",
               "fill": "$ui-text",
-              "content": "Senior Frontend Architect",
+              "content": "Senior UI/UX Engineer",
               "fontFamily": "$font-ui",
               "fontSize": 16,
               "fontWeight": "500"
             },
             {
-              "type": "text",
-              "id": "h4ZeN",
+              "type": "frame",
+              "id": "o2hbFX",
               "name": "Tablet employer location",
-              "fill": "$ui-muted",
-              "content": "2022 — Present  ·  🇬🇧 London",
-              "fontFamily": "$font-ui",
-              "fontSize": 13,
-              "fontWeight": "normal"
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "R2MpW",
+                  "name": "Tablet employer duration",
+                  "fill": "$ui-muted",
+                  "content": "2020 — 2022  ·",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "B1VqU",
+                  "type": "ref",
+                  "ref": "bl5T1",
+                  "name": "United Kingdom flag"
+                },
+                {
+                  "type": "text",
+                  "id": "NWBFq",
+                  "name": "Tablet employer city",
+                  "fill": "$ui-muted",
+                  "content": "London",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
             },
             {
               "type": "text",
               "id": "yWoVI",
               "name": "Tablet employer copy",
               "fill": "$ui-text",
-              "content": "A product environment where clarity is a craft.",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "A global digital business transformation partner, where experience meets intelligent engineering.",
               "fontFamily": "$font-ui",
               "fontSize": 13,
               "fontWeight": "normal"
@@ -4042,7 +4318,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1784651842707.png",
+            "url": "./images/generated-1785012565441.png",
             "mode": "fill"
           },
           "width": 768,
@@ -4087,7 +4363,7 @@
           "height": 58,
           "descendants": {
             "qgbgt": {
-              "content": "MONZO / PROJECT 01"
+              "content": "PUBLICIS SAPIENT / PROJECT 01"
             }
           }
         },
@@ -4107,7 +4383,7 @@
         {
           "type": "frame",
           "id": "TD0ZZ",
-          "x": 360,
+          "x": 351,
           "y": 570,
           "name": "Tablet asset pagination",
           "gap": 8,
@@ -4159,23 +4435,54 @@
           "gap": 11,
           "children": [
             {
-              "type": "text",
-              "id": "s3hB5e",
+              "type": "frame",
+              "id": "mTamW",
               "name": "Tablet project meta",
-              "fill": "$accent-violet",
-              "content": "◈ FINANCE  ·  🇺🇸 New York",
-              "fontFamily": "$font-ui",
-              "fontSize": 12,
-              "fontWeight": "600"
+              "gap": 3,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rNBD9",
+                  "name": "Tablet project meta prefix",
+                  "fill": "$accent-violet",
+                  "content": "◈ AUTOMOTIVE  ·",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "rb5nr",
+                  "name": "Japan flag",
+                  "fill": "$accent-violet",
+                  "content": "🇯🇵",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "v5ZHig",
+                  "name": "Tablet project city",
+                  "fill": "$accent-violet",
+                  "content": "Yokohama",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
             },
             {
               "type": "text",
               "id": "V5DkkL",
               "name": "Tablet project title",
               "fill": "$ui-text",
-              "content": "Payments Foundations",
+              "textGrowth": "fixed-width",
+              "width": 560,
+              "content": "Product Selection Journey",
               "fontFamily": "$font-display",
-              "fontSize": 45,
+              "fontSize": 40,
               "fontWeight": "normal"
             },
             {
@@ -4185,7 +4492,7 @@
               "fill": "$ui-text",
               "textGrowth": "fixed-width",
               "width": 530,
-              "content": "• Rebuilt the payment orchestration UI in React + TypeScript\n• Unified component contracts across 14 critical flows\n• Reduced completion friction by 18% through tested interaction states",
+              "content": "• Designed a visual vehicle selection journey for Nissan Motor Group\n• Connected model discovery, configuration and purchase-ready decision moments\n• Built scalable automotive UI patterns for regional product teams",
               "lineHeight": 1.5,
               "fontFamily": "$font-ui",
               "fontSize": 13,
@@ -4349,7 +4656,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651849164.png",
+                "url": "./images/generated-1785012809356.png",
                 "mode": "fill"
               },
               "width": 280,
@@ -4362,7 +4669,7 @@
               "y": 12,
               "name": "Tablet Monzo count",
               "fill": "$accent-violet",
-              "content": "3 PROJECTS",
+              "content": "4 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 10,
               "fontWeight": "600"
@@ -4382,7 +4689,7 @@
                   "id": "w2vXsD",
                   "name": "Tablet Monzo name",
                   "fill": "$ui-text",
-                  "content": "Monzo",
+                  "content": "Rico.com.vc",
                   "fontFamily": "$font-display",
                   "fontSize": 27,
                   "fontWeight": "normal"
@@ -4392,20 +4699,49 @@
                   "id": "aQHF5",
                   "name": "Tablet Monzo role",
                   "fill": "$ui-muted",
-                  "content": "Senior Frontend Architect",
+                  "content": "Product Design Lead",
                   "fontFamily": "$font-ui",
                   "fontSize": 11,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "ouIRO",
+                  "type": "frame",
+                  "id": "Y9We6q",
                   "name": "Tablet Monzo industry",
-                  "fill": "$ui-text",
-                  "content": "◈ Finance · 🇬🇧 London",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WQLfg",
+                      "name": "Tablet Monzo industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Venture ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bhmSu",
+                      "name": "Brazil flag",
+                      "fill": "$ui-text",
+                      "content": "🇧🇷",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aym8X",
+                      "name": "Tablet Monzo industry city",
+                      "fill": "$ui-text",
+                      "content": "São Paulo",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -4430,7 +4766,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651849576.png",
+                "url": "./images/generated-1785012809831.png",
                 "mode": "fill"
               },
               "width": 280,
@@ -4463,7 +4799,7 @@
                   "id": "CZlkV",
                   "name": "Tablet Publicis Sapient name",
                   "fill": "$ui-text",
-                  "content": "Publicis Sapient",
+                  "content": "XP Investimentos",
                   "fontFamily": "$font-display",
                   "fontSize": 27,
                   "fontWeight": "normal"
@@ -4473,20 +4809,49 @@
                   "id": "MCsxy",
                   "name": "Tablet Publicis Sapient role",
                   "fill": "$ui-muted",
-                  "content": "UI/UX Engineer",
+                  "content": "Senior UI/UX Engineer",
                   "fontFamily": "$font-ui",
                   "fontSize": 11,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "v3eKE8",
+                  "type": "frame",
+                  "id": "p5WL5",
                   "name": "Tablet Publicis Sapient industry",
-                  "fill": "$ui-text",
-                  "content": "◈ Consulting · 🇬🇧 London",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OU25y",
+                      "name": "Tablet Publicis Sapient industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Finance ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "H0SYUP",
+                      "name": "Brazil flag",
+                      "fill": "$ui-text",
+                      "content": "🇧🇷",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DfJPe",
+                      "name": "Tablet Publicis Sapient industry city",
+                      "fill": "$ui-text",
+                      "content": "São Paulo",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -4496,7 +4861,7 @@
           "type": "frame",
           "id": "LsS2w",
           "x": 40,
-          "y": 506,
+          "y": 514,
           "name": "Tablet BMW Group item",
           "width": 280,
           "height": 290,
@@ -4511,7 +4876,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651850369.png",
+                "url": "./images/generated-1785012811821.png",
                 "mode": "fill"
               },
               "width": 280,
@@ -4524,7 +4889,7 @@
               "y": 12,
               "name": "Tablet BMW Group count",
               "fill": "$accent-violet",
-              "content": "4 PROJECTS",
+              "content": "6 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 10,
               "fontWeight": "600"
@@ -4544,7 +4909,7 @@
                   "id": "p7blb",
                   "name": "Tablet BMW Group name",
                   "fill": "$ui-text",
-                  "content": "BMW Group",
+                  "content": "EPAM",
                   "fontFamily": "$font-display",
                   "fontSize": 27,
                   "fontWeight": "normal"
@@ -4554,20 +4919,45 @@
                   "id": "v1gDD2",
                   "name": "Tablet BMW Group role",
                   "fill": "$ui-muted",
-                  "content": "Frontend Engineer",
+                  "content": "Frontend Architect",
                   "fontFamily": "$font-ui",
                   "fontSize": 11,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "U8ugpv",
+                  "type": "frame",
+                  "id": "c4rYwi",
                   "name": "Tablet BMW Group industry",
-                  "fill": "$ui-text",
-                  "content": "◈ Automotive · 🇩🇪 Munich",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GbhgN",
+                      "name": "Tablet BMW Group industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Engineering ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "b5TvP0",
+                      "type": "ref",
+                      "ref": "bl5T1",
+                      "name": "United Kingdom flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bVVgM",
+                      "name": "Tablet BMW Group industry city",
+                      "fill": "$ui-text",
+                      "content": "London",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -4577,7 +4967,7 @@
           "type": "frame",
           "id": "PURaV",
           "x": 360,
-          "y": 506,
+          "y": 514,
           "name": "Tablet Booking.com item",
           "width": 280,
           "height": 290,
@@ -4592,7 +4982,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1784651850774.png",
+                "url": "./images/generated-1785012812734.png",
                 "mode": "fill"
               },
               "width": 280,
@@ -4605,7 +4995,7 @@
               "y": 12,
               "name": "Tablet Booking.com count",
               "fill": "$accent-violet",
-              "content": "3 PROJECTS",
+              "content": "5 PROJECTS",
               "fontFamily": "$font-ui",
               "fontSize": 10,
               "fontWeight": "600"
@@ -4625,7 +5015,7 @@
                   "id": "c52ix",
                   "name": "Tablet Booking.com name",
                   "fill": "$ui-text",
-                  "content": "Booking.com",
+                  "content": "Publicis Sapient",
                   "fontFamily": "$font-display",
                   "fontSize": 27,
                   "fontWeight": "normal"
@@ -4635,20 +5025,45 @@
                   "id": "Qb2p6",
                   "name": "Tablet Booking.com role",
                   "fill": "$ui-muted",
-                  "content": "Product UI Engineer",
+                  "content": "Senior UI/UX Engineer",
                   "fontFamily": "$font-ui",
                   "fontSize": 11,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "WNK9l",
+                  "type": "frame",
+                  "id": "X6l6bk",
                   "name": "Tablet Booking.com industry",
-                  "fill": "$ui-text",
-                  "content": "◈ Travel · 🇳🇱 Amsterdam",
-                  "fontFamily": "$font-ui",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ipKMd",
+                      "name": "Tablet Booking.com industry prefix",
+                      "fill": "$ui-text",
+                      "content": "◈ Consulting ·",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "IfcGo",
+                      "type": "ref",
+                      "ref": "bl5T1",
+                      "name": "United Kingdom flag"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fFhbz",
+                      "name": "Tablet Booking.com industry city",
+                      "fill": "$ui-text",
+                      "content": "London",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 }
               ]
             }
@@ -4711,10 +5126,10 @@
           "id": "YKxBx",
           "x": 106,
           "y": 210,
-          "name": "Tablet search field",
+          "name": "Tablet search experience pill",
           "width": 520,
           "height": 64,
-          "cornerRadius": 5,
+          "cornerRadius": 32,
           "stroke": "#FFFFFF99",
           "strokeWidth": 1,
           "gap": 13,
@@ -4740,7 +5155,7 @@
               "name": "Tablet field placeholder",
               "fill": "$ui-muted",
               "content": "Search experience...",
-              "fontFamily": "$font-display",
+              "fontFamily": "$font-ui",
               "fontSize": 21,
               "fontWeight": "normal"
             }
@@ -4749,7 +5164,7 @@
         {
           "type": "frame",
           "id": "F6y85Z",
-          "x": 154,
+          "x": 136,
           "y": 390,
           "name": "Tablet empty search state",
           "width": 460,
@@ -4824,7 +5239,7 @@
       },
       "clip": true,
       "width": 1440,
-      "height": 1363,
+      "height": 1400,
       "fill": "#0C0C0F",
       "layout": "none",
       "children": [
@@ -4850,7 +5265,8 @@
           "fill": "$ui-text",
           "content": "Immersive portfolio language",
           "fontFamily": "$font-display",
-          "fontSize": 48
+          "fontSize": 48,
+          "fontWeight": "normal"
         },
         {
           "type": "text",
@@ -5116,9 +5532,10 @@
               "id": "FeEYA",
               "name": "Display type sample",
               "fill": "$ui-text",
-              "content": "Frontend, with feeling.",
+              "content": "Frontend, with purpose.",
               "fontFamily": "$font-display",
-              "fontSize": 44
+              "fontSize": 44,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -5163,7 +5580,7 @@
           "y": 665,
           "name": "Component shelf",
           "width": 1320,
-          "height": 610,
+          "height": 650,
           "layout": "none",
           "children": [
             {
@@ -5293,7 +5710,7 @@
               "y": 24,
               "name": "Component · Expertise Tag",
               "reusable": true,
-              "fill": "#FFFFFF1F",
+              "fill": "#ffffff33",
               "cornerRadius": 15,
               "padding": [
                 7,
@@ -5652,26 +6069,1407 @@
                   "fill": "$ui-text"
                 }
               ]
+            },
+            {
+              "type": "text",
+              "id": "VH6bq",
+              "x": 900,
+              "y": 0,
+              "name": "Country flag component label",
+              "fill": "$ui-muted",
+              "content": "COUNTRY FLAGS",
+              "fontFamily": "$font-ui",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "bl5T1",
+              "x": 900,
+              "y": 24,
+              "name": "Component · United Kingdom Flag",
+              "reusable": true,
+              "clip": true,
+              "width": 14,
+              "height": 10,
+              "fill": "#012169",
+              "cornerRadius": 1,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 0.5,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "Bm18E",
+                  "x": 0,
+                  "y": 0,
+                  "name": "UK white diagonals",
+                  "geometry": "M0 0l14 10m0-10l-14 10",
+                  "viewBox": [
+                    0,
+                    0,
+                    14,
+                    10
+                  ],
+                  "width": 14,
+                  "height": 10,
+                  "stroke": "#FFFFFF",
+                  "strokeWidth": 3
+                },
+                {
+                  "type": "path",
+                  "id": "cMjl1",
+                  "x": 0,
+                  "y": 0,
+                  "name": "UK red diagonals",
+                  "geometry": "M0 0l14 10m0-10l-14 10",
+                  "viewBox": [
+                    0,
+                    0,
+                    14,
+                    10
+                  ],
+                  "width": 14,
+                  "height": 10,
+                  "stroke": "#C8102E",
+                  "strokeWidth": 1.2
+                },
+                {
+                  "type": "rectangle",
+                  "id": "lJcwH",
+                  "x": 0,
+                  "y": 3.5,
+                  "name": "UK white horizontal bar",
+                  "fill": "#FFFFFF",
+                  "width": 14,
+                  "height": 3
+                },
+                {
+                  "type": "rectangle",
+                  "id": "a4vGX",
+                  "x": 5.5,
+                  "y": 0,
+                  "name": "UK white vertical bar",
+                  "fill": "#FFFFFF",
+                  "width": 3,
+                  "height": 10
+                },
+                {
+                  "type": "rectangle",
+                  "id": "LoyaJ",
+                  "x": 0,
+                  "y": 4.25,
+                  "name": "UK red horizontal bar",
+                  "fill": "#C8102E",
+                  "width": 14,
+                  "height": 1.5
+                },
+                {
+                  "type": "rectangle",
+                  "id": "gAY4O",
+                  "x": 6.25,
+                  "y": 0,
+                  "name": "UK red vertical bar",
+                  "fill": "#C8102E",
+                  "width": 1.5,
+                  "height": 10
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uOxdS",
+              "x": 930,
+              "y": 24,
+              "name": "Component · United States Flag",
+              "reusable": true,
+              "clip": true,
+              "width": 14,
+              "height": 10,
+              "fill": "#FFFFFF",
+              "cornerRadius": 1,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 0.5,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "KSrXM",
+                  "x": 0,
+                  "y": 0,
+                  "name": "US red stripe",
+                  "fill": "#B22234",
+                  "width": 14,
+                  "height": 0.77
+                },
+                {
+                  "type": "rectangle",
+                  "id": "CISTD",
+                  "x": 0,
+                  "y": 1.54,
+                  "name": "US red stripe",
+                  "fill": "#B22234",
+                  "width": 14,
+                  "height": 0.77
+                },
+                {
+                  "type": "rectangle",
+                  "id": "hgEZ4",
+                  "x": 0,
+                  "y": 3.08,
+                  "name": "US red stripe",
+                  "fill": "#B22234",
+                  "width": 14,
+                  "height": 0.77
+                },
+                {
+                  "type": "rectangle",
+                  "id": "m9Bprm",
+                  "x": 0,
+                  "y": 4.62,
+                  "name": "US red stripe",
+                  "fill": "#B22234",
+                  "width": 14,
+                  "height": 0.77
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ziooE",
+                  "x": 0,
+                  "y": 6.16,
+                  "name": "US red stripe",
+                  "fill": "#B22234",
+                  "width": 14,
+                  "height": 0.77
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ahR1x",
+                  "x": 0,
+                  "y": 7.7,
+                  "name": "US red stripe",
+                  "fill": "#B22234",
+                  "width": 14,
+                  "height": 0.77
+                },
+                {
+                  "type": "rectangle",
+                  "id": "PEzgh",
+                  "x": 0,
+                  "y": 9.23,
+                  "name": "US red stripe",
+                  "fill": "#B22234",
+                  "width": 14,
+                  "height": 0.77
+                },
+                {
+                  "type": "rectangle",
+                  "id": "kMSxa",
+                  "x": 0,
+                  "y": 0,
+                  "name": "US blue canton",
+                  "fill": "#3C3B6E",
+                  "width": 6.2,
+                  "height": 5.39
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "va6GD",
+              "x": 960,
+              "y": 24,
+              "name": "Component · Germany Flag",
+              "reusable": true,
+              "clip": true,
+              "width": 14,
+              "height": 10,
+              "fill": "#000000",
+              "cornerRadius": 1,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 0.5,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "hqBLd",
+                  "x": 0,
+                  "y": 3.33,
+                  "name": "Germany red band",
+                  "fill": "#DD0000",
+                  "width": 14,
+                  "height": 3.34
+                },
+                {
+                  "type": "rectangle",
+                  "id": "AktJv",
+                  "x": 0,
+                  "y": 6.67,
+                  "name": "Germany gold band",
+                  "fill": "#FFCE00",
+                  "width": 14,
+                  "height": 3.33
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LOWeg",
+              "x": 990,
+              "y": 24,
+              "name": "Component · Netherlands Flag",
+              "reusable": true,
+              "clip": true,
+              "width": 14,
+              "height": 10,
+              "fill": "#FFFFFF",
+              "cornerRadius": 1,
+              "stroke": "#FFFFFF55",
+              "strokeWidth": 0.5,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "JtOAc",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Netherlands red band",
+                  "fill": "#AE1C28",
+                  "width": 14,
+                  "height": 3.33
+                },
+                {
+                  "type": "rectangle",
+                  "id": "xGJuY",
+                  "x": 0,
+                  "y": 6.67,
+                  "name": "Netherlands blue band",
+                  "fill": "#21468B",
+                  "width": 14,
+                  "height": 3.33
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "id": "XO5yY",
-      "type": "ref",
-      "ref": "H0B5cZ",
-      "x": 7720,
-      "y": -924
-    },
-    {
       "type": "note",
       "id": "Y4389",
-      "x": 4680,
-      "y": 2058,
+      "x": 3048,
+      "y": 422,
       "width": 250,
       "height": 219,
       "content": "Need to improve desktop navigation between brid's eye, employers and projects"
+    },
+    {
+      "type": "frame",
+      "id": "e3qT5",
+      "x": 2370,
+      "y": 0,
+      "name": "Mobile · Search Results",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#16161B",
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "jNa9a",
+          "x": 20,
+          "y": 22,
+          "name": "Mobile results eyebrow",
+          "fill": "$accent-violet",
+          "content": "EXPERIENCE VECTOR SEARCH",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        },
+        {
+          "type": "frame",
+          "id": "N2EHLT",
+          "x": 20,
+          "y": 42,
+          "name": "Mobile results search pill",
+          "width": 350,
+          "height": 52,
+          "cornerRadius": 26,
+          "stroke": "#FFFFFF99",
+          "strokeWidth": 1,
+          "gap": 10,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "Bj1De",
+              "name": "Mobile results search icon",
+              "width": 18,
+              "height": 18,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "text",
+              "id": "SMdal",
+              "name": "Mobile results query",
+              "fill": "$ui-text",
+              "content": "design systems",
+              "fontFamily": "$font-ui",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "PlA2F",
+          "x": 20,
+          "y": 112,
+          "name": "Mobile results count",
+          "fill": "$ui-muted",
+          "content": "03 MATCHES · TAP TO OPEN",
+          "fontFamily": "$font-ui",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 0.8
+        },
+        {
+          "type": "frame",
+          "id": "hlBKI",
+          "x": 20,
+          "y": 144,
+          "name": "Mobile result · Payments Foundations",
+          "clip": true,
+          "width": 350,
+          "height": 160,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784651839640.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "c5mTb",
+              "x": 0,
+              "y": 0,
+              "name": "Payments Foundations result gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.15
+                  },
+                  {
+                    "color": "#09090BF2",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 350,
+              "height": 160
+            },
+            {
+              "type": "frame",
+              "id": "aLam5",
+              "x": 14,
+              "y": 77,
+              "name": "Payments Foundations result content",
+              "width": 322,
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UctDg",
+                  "name": "Payments Foundations result title",
+                  "fill": "$ui-text",
+                  "content": "Payments Foundations",
+                  "fontFamily": "$font-display",
+                  "fontSize": 22
+                },
+                {
+                  "type": "text",
+                  "id": "sgtu9",
+                  "name": "Payments Foundations result location",
+                  "fill": "$ui-muted",
+                  "content": "🇬🇧 London · Publicis Sapient · ◈ CONSULTING",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "BeuSe",
+                  "name": "Payments Foundations result match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: component contracts + critical flows",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zQ99m",
+          "x": 20,
+          "y": 322,
+          "name": "Mobile result · Digital Retail OS",
+          "clip": true,
+          "width": 350,
+          "height": 160,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1785012565070.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "wXjK4",
+              "x": 0,
+              "y": 0,
+              "name": "Digital Retail OS result gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.15
+                  },
+                  {
+                    "color": "#09090BF2",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 350,
+              "height": 160
+            },
+            {
+              "type": "frame",
+              "id": "lRC1z",
+              "x": 14,
+              "y": 77,
+              "name": "Digital Retail OS result content",
+              "width": 322,
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RYQ2l",
+                  "name": "Digital Retail OS result title",
+                  "fill": "$ui-text",
+                  "content": "Product Selection Journey",
+                  "fontFamily": "$font-display",
+                  "fontSize": 22
+                },
+                {
+                  "type": "text",
+                  "id": "bMBU0",
+                  "name": "Digital Retail OS result location",
+                  "fill": "$ui-muted",
+                  "content": "🇩🇪 Munich · BMW Group · ◈ AUTOMOTIVE",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "qL6hh",
+                  "name": "Digital Retail OS result match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: shared design foundations",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Txons",
+          "x": 20,
+          "y": 500,
+          "name": "Mobile result · Traveler Checkout",
+          "clip": true,
+          "width": 350,
+          "height": 160,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784651842707.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "Lw8ct",
+              "x": 0,
+              "y": 0,
+              "name": "Traveler Checkout result gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.15
+                  },
+                  {
+                    "color": "#09090BF2",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 350,
+              "height": 160
+            },
+            {
+              "type": "frame",
+              "id": "HFu1z",
+              "x": 14,
+              "y": 77,
+              "name": "Traveler Checkout result content",
+              "width": 322,
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Iy1Kq",
+                  "name": "Traveler Checkout result title",
+                  "fill": "$ui-text",
+                  "content": "Traveler Checkout",
+                  "fontFamily": "$font-display",
+                  "fontSize": 22
+                },
+                {
+                  "type": "text",
+                  "id": "zZjNm",
+                  "name": "Traveler Checkout result location",
+                  "fill": "$ui-muted",
+                  "content": "🇳🇱 Amsterdam · Booking.com · ◈ TRAVEL & HOSPITALITY",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "noj2v",
+                  "name": "Traveler Checkout result match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: checkout interaction patterns",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "TB8UQ",
+          "type": "ref",
+          "ref": "H0B5cZ",
+          "name": "Mobile results toolbar",
+          "x": 88,
+          "y": 779,
+          "width": 214,
+          "height": 48,
+          "descendants": {
+            "OmmjE": {
+              "fill": "$ui-text"
+            },
+            "szkXt": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "IhSjH",
+      "x": 4440,
+      "y": 2224,
+      "name": "Tablet · Search Results",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 768,
+      "height": 1024,
+      "fill": "#16161B",
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "pORVz",
+          "x": 40,
+          "y": 46,
+          "name": "Tablet results eyebrow",
+          "fill": "$accent-violet",
+          "content": "EXPERIENCE VECTOR SEARCH",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        },
+        {
+          "type": "frame",
+          "id": "SKNRu",
+          "x": 90,
+          "y": 78,
+          "name": "Tablet results search pill",
+          "width": 540,
+          "height": 60,
+          "cornerRadius": 30,
+          "stroke": "#FFFFFF99",
+          "strokeWidth": 1,
+          "gap": 12,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "SSCnh",
+              "name": "Tablet results search icon",
+              "width": 20,
+              "height": 20,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "text",
+              "id": "k3yMg",
+              "name": "Tablet results query",
+              "fill": "$ui-text",
+              "content": "design systems",
+              "fontFamily": "$font-ui",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "x8aXh2",
+          "x": 90,
+          "y": 159,
+          "name": "Tablet results count",
+          "fill": "$ui-muted",
+          "content": "03 MATCHES · TAP A FRAME TO OPEN",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1
+        },
+        {
+          "type": "frame",
+          "id": "z9uAbU",
+          "x": 40,
+          "y": 205,
+          "name": "Tablet result · Payments Foundations",
+          "clip": true,
+          "width": 302,
+          "height": 250,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784651839640.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "NldYa",
+              "x": 0,
+              "y": 0,
+              "name": "Payments Foundations tablet gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.18
+                  },
+                  {
+                    "color": "#09090BF2",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 302,
+              "height": 250
+            },
+            {
+              "type": "frame",
+              "id": "bkO2P",
+              "x": 17,
+              "y": 150,
+              "name": "Payments Foundations tablet content",
+              "width": 268,
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BbND5",
+                  "name": "Payments Foundations tablet title",
+                  "fill": "$ui-text",
+                  "content": "Payments Foundations",
+                  "fontFamily": "$font-display",
+                  "fontSize": 24
+                },
+                {
+                  "type": "text",
+                  "id": "KRZb3",
+                  "name": "Payments Foundations tablet meta",
+                  "fill": "$ui-muted",
+                  "content": "🇬🇧 London · Publicis Sapient · ◈ CONSULTING",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "tbimM",
+                  "name": "Payments Foundations tablet match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: component contracts + critical flows",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jLuQW",
+          "x": 382,
+          "y": 205,
+          "name": "Tablet result · Digital Retail OS",
+          "clip": true,
+          "width": 302,
+          "height": 250,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1785012566590.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "CQYjZ",
+              "x": 0,
+              "y": 0,
+              "name": "Digital Retail OS tablet gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.18
+                  },
+                  {
+                    "color": "#09090BF2",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 302,
+              "height": 250
+            },
+            {
+              "type": "frame",
+              "id": "nR70a",
+              "x": 17,
+              "y": 150,
+              "name": "Digital Retail OS tablet content",
+              "width": 268,
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JzEG6",
+                  "name": "Digital Retail OS tablet title",
+                  "fill": "$ui-text",
+                  "content": "Product Selection Journey",
+                  "fontFamily": "$font-display",
+                  "fontSize": 21
+                },
+                {
+                  "type": "text",
+                  "id": "WPbms",
+                  "name": "Digital Retail OS tablet meta",
+                  "fill": "$ui-muted",
+                  "content": "🇩🇪 Munich · BMW Group · ◈ AUTOMOTIVE",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "zET2s",
+                  "name": "Digital Retail OS tablet match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: shared design foundations",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FfKuk",
+          "x": 40,
+          "y": 495,
+          "name": "Tablet result · Traveler Checkout",
+          "clip": true,
+          "width": 644,
+          "height": 250,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784651842707.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "VRxOQ",
+              "x": 0,
+              "y": 0,
+              "name": "Traveler Checkout tablet gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.18
+                  },
+                  {
+                    "color": "#09090BF2",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 644,
+              "height": 250
+            },
+            {
+              "type": "frame",
+              "id": "Nfv5b",
+              "x": 17,
+              "y": 150,
+              "name": "Traveler Checkout tablet content",
+              "width": 610,
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LS4A1",
+                  "name": "Traveler Checkout tablet title",
+                  "fill": "$ui-text",
+                  "content": "Traveler Checkout",
+                  "fontFamily": "$font-display",
+                  "fontSize": 27
+                },
+                {
+                  "type": "text",
+                  "id": "M2UJJ",
+                  "name": "Traveler Checkout tablet meta",
+                  "fill": "$ui-muted",
+                  "content": "🇳🇱 Amsterdam · Booking.com · ◈ TRAVEL & HOSPITALITY",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xMHWs",
+                  "name": "Traveler Checkout tablet match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: checkout interaction patterns",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nvheb",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Tablet results toolbar",
+          "x": 696,
+          "y": 385,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "NBh4f": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "y3s7Nb",
+      "x": 7800,
+      "y": 1084,
+      "name": "Desktop · Search Results",
+      "theme": {
+        "Mode": "Dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#16161B",
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "H42X3T",
+          "x": 60,
+          "y": 55,
+          "name": "Desktop results eyebrow",
+          "fill": "$accent-violet",
+          "content": "EXPERIENCE VECTOR SEARCH",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.2
+        },
+        {
+          "type": "frame",
+          "id": "DJQ5L",
+          "x": 310,
+          "y": 92,
+          "name": "Desktop results search pill",
+          "width": 720,
+          "height": 66,
+          "cornerRadius": 33,
+          "stroke": "#FFFFFF99",
+          "strokeWidth": 1,
+          "gap": 14,
+          "padding": [
+            0,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "wl0VL",
+              "name": "Desktop results search icon",
+              "width": 22,
+              "height": 22,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$ui-text"
+            },
+            {
+              "type": "text",
+              "id": "YKIPA",
+              "name": "Desktop results query",
+              "fill": "$ui-text",
+              "content": "design systems",
+              "fontFamily": "$font-ui",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "bAOCM",
+          "x": 310,
+          "y": 178,
+          "name": "Desktop results count",
+          "fill": "$ui-muted",
+          "content": "03 MATCHES · SELECT A RESULT TO JUMP TO ITS PROJECT",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1.1
+        },
+        {
+          "type": "frame",
+          "id": "c9M8v9",
+          "x": 60,
+          "y": 232,
+          "name": "Desktop result · Payments Foundations",
+          "clip": true,
+          "width": 380,
+          "height": 370,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784651839640.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "EsVTX",
+              "x": 0,
+              "y": 0,
+              "name": "Payments Foundations desktop gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.2
+                  },
+                  {
+                    "color": "#09090BF5",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 380,
+              "height": 370
+            },
+            {
+              "type": "frame",
+              "id": "fe5uK",
+              "x": 18,
+              "y": 234,
+              "name": "Payments Foundations desktop content",
+              "width": 344,
+              "layout": "vertical",
+              "gap": 5,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ocSWs",
+                  "name": "Payments Foundations desktop title",
+                  "fill": "$ui-text",
+                  "content": "Payments Foundations",
+                  "fontFamily": "$font-display",
+                  "fontSize": 30
+                },
+                {
+                  "type": "text",
+                  "id": "liXmV",
+                  "name": "Payments Foundations desktop meta",
+                  "fill": "$ui-muted",
+                  "content": "🇬🇧 London · Publicis Sapient · ◈ CONSULTING",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "r1aA1V",
+                  "name": "Payments Foundations desktop match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: component contracts + critical flows",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DqZsr",
+          "x": 480,
+          "y": 232,
+          "name": "Desktop result · Digital Retail OS",
+          "clip": true,
+          "width": 380,
+          "height": 370,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1785012567107.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "K6Fary",
+              "x": 0,
+              "y": 0,
+              "name": "Digital Retail OS desktop gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.2
+                  },
+                  {
+                    "color": "#09090BF5",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 380,
+              "height": 370
+            },
+            {
+              "type": "frame",
+              "id": "WDnbI",
+              "x": 18,
+              "y": 234,
+              "name": "Digital Retail OS desktop content",
+              "width": 344,
+              "layout": "vertical",
+              "gap": 5,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Z3CpfJ",
+                  "name": "Digital Retail OS desktop title",
+                  "fill": "$ui-text",
+                  "content": "Product Selection Journey",
+                  "fontFamily": "$font-display",
+                  "fontSize": 26
+                },
+                {
+                  "type": "text",
+                  "id": "A8fus",
+                  "name": "Digital Retail OS desktop meta",
+                  "fill": "$ui-muted",
+                  "content": "🇩🇪 Munich · BMW Group · ◈ AUTOMOTIVE",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "pp61x",
+                  "name": "Digital Retail OS desktop match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: shared design foundations",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oOV7n",
+          "x": 900,
+          "y": 232,
+          "name": "Desktop result · Traveler Checkout",
+          "clip": true,
+          "width": 380,
+          "height": 370,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1784651842707.png",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "BJchA",
+              "x": 0,
+              "y": 0,
+              "name": "Traveler Checkout desktop gradient",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#09090B00",
+                    "position": 0.2
+                  },
+                  {
+                    "color": "#09090BF5",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 380,
+              "height": 370
+            },
+            {
+              "type": "frame",
+              "id": "Ki60d",
+              "x": 18,
+              "y": 234,
+              "name": "Traveler Checkout desktop content",
+              "width": 344,
+              "layout": "vertical",
+              "gap": 5,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jQi0u",
+                  "name": "Traveler Checkout desktop title",
+                  "fill": "$ui-text",
+                  "content": "Traveler Checkout",
+                  "fontFamily": "$font-display",
+                  "fontSize": 30
+                },
+                {
+                  "type": "text",
+                  "id": "aOjhe",
+                  "name": "Traveler Checkout desktop meta",
+                  "fill": "$ui-muted",
+                  "content": "🇳🇱 Amsterdam · Booking.com · ◈ TRAVEL & HOSPITALITY",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RaMNo",
+                  "name": "Traveler Checkout desktop match",
+                  "fill": "$accent-violet",
+                  "content": "Matched: checkout interaction patterns",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "s0lz7V",
+          "x": 60,
+          "y": 822,
+          "name": "Desktop results hint",
+          "fill": "$ui-muted",
+          "content": "ESC TO RETURN TO SEARCH EMPTY STATE",
+          "fontFamily": "$font-ui",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "id": "KjXKF",
+          "type": "ref",
+          "ref": "F6UDD",
+          "name": "Desktop results toolbar",
+          "x": 1362,
+          "y": 323,
+          "width": 48,
+          "height": 254,
+          "descendants": {
+            "l9xtL": {
+              "fill": "$ui-text"
+            },
+            "NBh4f": {
+              "fill": "$accent-violet"
+            }
+          }
+        }
+      ]
     }
   ],
   "themes": {
