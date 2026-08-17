@@ -110,12 +110,14 @@
     max-inline-size: 1920px;
     min-block-size: 100%;
     margin-inline: auto;
+    padding-block-end: var(--navigation-mobile-clearance);
     background: var(--color-surface);
   }
 
   @container site-viewport (inline-size >= 48em) {
     .site-canvas {
       --page-gutter: var(--space-xl);
+      padding-block-end: var(--space-none);
     }
   }
 
@@ -127,13 +129,50 @@
 }
 
 @layer transitions {
-  ::view-transition-old(root),
+  ::view-transition-old(root) {
+    animation-duration: 180ms;
+    animation-timing-function: ease-out;
+  }
+
   ::view-transition-new(root) {
     animation-duration: 180ms;
     animation-timing-function: ease-out;
   }
 
+  :root[data-theme-transition]::view-transition-old(root) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+
+  :root[data-theme-transition]::view-transition-new(root) {
+    animation: theme-iris 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    mix-blend-mode: normal;
+  }
+
+  @keyframes theme-iris {
+    from {
+      clip-path: circle(0 at var(--theme-iris-x) var(--theme-iris-y));
+    }
+
+    to {
+      clip-path: circle(
+        var(--theme-iris-radius) at var(--theme-iris-x) var(--theme-iris-y)
+      );
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
+    :where(
+      .button,
+      .compact-select__trigger,
+      .compact-select__menu,
+      .compact-select__option,
+      .tag,
+      .badge
+    ) {
+      transition: none;
+    }
+
     ::view-transition-old(root),
     ::view-transition-new(root) {
       animation: none;

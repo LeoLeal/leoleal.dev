@@ -1,1 +1,513 @@
-<nav aria-label="Primary"></nav>
+---
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+import Button from "./atoms/Button.astro";
+import { getMenuLabels } from "../i18n/menu";
+
+interface Props {
+  lang?: string;
+  showSearch?: boolean;
+}
+
+const { lang = "en-GB", showSearch = true } = Astro.props;
+const labels = getMenuLabels(lang);
+const homeHref = lang.toLowerCase() === "pt-br" ? "/pt-br/" : "/";
+const hasLeadingContent =
+  (await Astro.slots.render("leading")).trim().length > 0;
+const hasNavigationContent =
+  (await Astro.slots.render("navigation")).trim().length > 0;
+---
+
+<nav aria-label={labels.menu} class="menu" data-menu>
+  <div class="menu__positioner">
+    <div class="menu__surface">
+      <div
+        class:list={[
+          "menu__leading",
+          { "menu__leading--default": !hasLeadingContent },
+        ]}
+      >
+        {
+          hasLeadingContent ? (
+            <slot name="leading" />
+          ) : (
+            <a aria-label={labels.brand} class="menu__brand" href={homeHref}>
+              <span aria-hidden="true" class="menu__brand-mark" />
+              <span>{labels.brand}</span>
+            </a>
+          )
+        }
+      </div>
+
+      <div
+        class:list={[
+          "menu__navigation",
+          { "menu__navigation--default": !hasNavigationContent },
+        ]}
+      >
+        {
+          hasNavigationContent ? (
+            <slot name="navigation" />
+          ) : (
+            <div class="menu__navigation-default">
+              <a class="menu__link" href="#about">
+                {labels.about}
+              </a>
+              <a class="menu__link" href="#journey">
+                {labels.journey}
+              </a>
+            </div>
+          )
+        }
+      </div>
+
+      {
+        showSearch && (
+          <label class="menu__search">
+            <svg aria-hidden="true" viewBox="0 0 16 16">
+              <circle
+                cx="7"
+                cy="7"
+                fill="none"
+                r="4"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="m10 10 3 3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+            <input
+              aria-label={labels.search.full}
+              class="menu__search-input menu__search-input--full"
+              placeholder={labels.search.full}
+              type="search"
+            />
+            <input
+              aria-label={labels.search.compact}
+              class="menu__search-input menu__search-input--compact"
+              placeholder={labels.search.compact}
+              type="search"
+            />
+            <input
+              aria-label={labels.search.short}
+              class="menu__search-input menu__search-input--short"
+              placeholder={labels.search.short}
+              type="search"
+            />
+            <kbd aria-hidden="true" class="menu__shortcut">
+              {labels.search.shortcut}
+            </kbd>
+          </label>
+        )
+      }
+
+      <ThemeSwitcher
+        darkLabel={labels.theme.dark}
+        lightLabel={labels.theme.light}
+      />
+
+      <Button
+        ariaLabel={labels.contact}
+        className="menu__contact"
+        href="mailto:hello@leoleal.dev"
+        label={labels.contact}
+        rounded
+      >
+        <svg aria-hidden="true" slot="trailing" viewBox="0 0 16 16">
+          <rect
+            fill="none"
+            height="10"
+            rx="1.5"
+            stroke="currentColor"
+            stroke-width="1.5"
+            width="12"
+            x="2"
+            y="3"></rect>
+          <path
+            d="m2.5 4 5.5 4L13.5 4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"></path>
+        </svg>
+      </Button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const menus = document.querySelectorAll<HTMLElement>("[data-menu]");
+
+  for (const menu of menus) {
+    let scrolled = false;
+
+    const update = () => {
+      const nextScrolled = window.scrollY > 50;
+      if (nextScrolled === scrolled) return;
+
+      scrolled = nextScrolled;
+      menu.toggleAttribute("data-scrolled", scrolled);
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+  }
+</script>
+
+<style>
+  .menu {
+    position: fixed;
+    z-index: var(--navigation-z-index);
+    inset-block-end: calc(
+      var(--navigation-mobile-offset) + env(safe-area-inset-bottom)
+    );
+    inset-inline: 0;
+    pointer-events: none;
+  }
+
+  .menu__positioner {
+    display: flex;
+    justify-content: center;
+    padding-inline: var(--page-gutter);
+  }
+
+  .menu__surface {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    inline-size: auto;
+    min-block-size: var(--navigation-block-size-mobile);
+    padding-inline: var(--space-sm);
+    outline: 1px solid var(--color-floating-border);
+    border-radius: var(--radius-nav);
+    background: var(--color-floating-surface);
+    box-shadow: var(--shadow-navigation);
+    backdrop-filter: blur(1.125rem);
+    pointer-events: auto;
+  }
+
+  .menu__surface::after {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    block-size: 1px;
+    background: transparent;
+    content: "";
+    transition: all 300ms ease;
+  }
+
+  .menu__navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__leading--default,
+  .menu__navigation--default {
+    display: none;
+  }
+
+  .menu__navigation-default {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__navigation-default .menu__link {
+    display: none;
+  }
+
+  .menu__navigation :global(.menu-navigation--wide) {
+    display: none;
+  }
+
+  .menu__leading :global(.menu-leading-action .button__label) {
+    display: none;
+  }
+
+  .menu__brand,
+  .menu__link {
+    align-items: center;
+    color: var(--color-text);
+    font-size: var(--font-size-ui);
+    text-decoration: none;
+  }
+
+  .menu__brand {
+    display: inline-flex;
+    gap: var(--space-sm);
+    font-family: var(--font-utility);
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-max);
+    text-transform: uppercase;
+  }
+
+  .menu__brand-mark {
+    inline-size: 0.75rem;
+    block-size: 0.75rem;
+    border-radius: 50%;
+    background: var(--color-accent);
+  }
+
+  .menu :global(.button) {
+    flex: 0 0 auto;
+  }
+
+  .menu__search {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    inline-size: 10rem;
+    min-block-size: var(--control-size-default);
+    padding-inline: var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-alt);
+    color: var(--color-text-muted);
+  }
+
+  .menu__search svg {
+    flex: 0 0 auto;
+    inline-size: var(--icon-size-default);
+    block-size: var(--icon-size-default);
+    color: var(--color-accent);
+  }
+
+  .menu__search-input {
+    flex: 1 1 auto;
+    inline-size: 0;
+    min-inline-size: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-regular);
+  }
+
+  .menu__search-input::placeholder {
+    color: var(--color-text-muted);
+    opacity: 1;
+  }
+
+  .menu__search-input--full,
+  .menu__search-input--compact {
+    display: none;
+  }
+
+  .menu__search-input--short {
+    display: inline;
+  }
+
+  .menu :global(.menu__contact) {
+    inline-size: var(--control-size-default);
+    padding-inline: var(--space-none);
+  }
+
+  .menu :global(.menu__contact .button__label) {
+    display: none;
+  }
+
+  .menu__shortcut {
+    display: none;
+  }
+
+  @container site-canvas (inline-size >= 48em) {
+    .menu {
+      position: sticky;
+      inset-block-start: 0;
+      inset-block-end: auto;
+      transition: all 300ms ease;
+    }
+
+    .menu__positioner {
+      padding-inline: var(--space-none);
+      transition: all 300ms ease;
+    }
+
+    .menu__surface {
+      interpolate-size: allow-keywords;
+      gap: var(--space-md);
+      inline-size: 100%;
+      min-block-size: var(--navigation-block-size-tablet);
+      padding-inline: var(--page-gutter);
+      outline-color: transparent;
+      border-radius: var(--space-none);
+      background: var(--color-surface);
+      box-shadow: none;
+      backdrop-filter: none;
+      transition: all 300ms ease;
+    }
+
+    .menu__surface::after {
+      background: var(--color-border);
+    }
+
+    .menu__leading,
+    .menu__navigation {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu__navigation :global(.menu-navigation--mobile) {
+      display: none;
+    }
+
+    .menu__navigation :global(.menu-navigation--wide) {
+      display: inline-flex;
+    }
+
+    .menu__navigation-default {
+      display: flex;
+      gap: var(--space-lg);
+    }
+
+    .menu__navigation-default .menu__link {
+      display: inline;
+    }
+
+    .menu__leading :global(.menu-leading-action .button__label) {
+      display: inline;
+    }
+
+    .menu__navigation :global(.menu-navigation--wide .button__label--compact) {
+      display: inline;
+    }
+
+    .menu__navigation
+      :global(
+        .menu-navigation--wide
+          .button__label:not(.button__label--compact):not(.button__label--short)
+      ) {
+      display: none;
+    }
+
+    .menu__navigation {
+      gap: var(--space-lg);
+      margin-inline-start: auto;
+    }
+
+    .menu__link {
+      color: var(--color-text-muted);
+    }
+
+    .menu__link:hover,
+    .menu__link:focus-visible {
+      color: var(--color-text);
+    }
+
+    .menu__search-input--short,
+    .menu__search-input--full {
+      display: none;
+    }
+
+    .menu__search-input--compact {
+      display: inline;
+    }
+
+    .menu__search {
+      inline-size: 13.75rem;
+    }
+
+    .menu :global(.menu__contact) {
+      inline-size: auto;
+      padding-inline: var(--space-md);
+      border-radius: var(--radius-sm);
+    }
+
+    .menu :global(.menu__contact .button__label) {
+      display: inline;
+    }
+
+    .menu[data-scrolled] .menu__positioner {
+      padding-block: var(--space-lg);
+    }
+
+    .menu[data-scrolled] .menu__surface {
+      gap: var(--space-md);
+      inline-size: auto;
+      min-block-size: var(--navigation-block-size-mobile);
+      padding-inline: var(--space-lg);
+      outline-color: var(--color-floating-border);
+      border-radius: var(--radius-nav);
+      background: var(--color-floating-surface);
+      box-shadow: var(--shadow-navigation);
+      backdrop-filter: blur(1.125rem);
+    }
+
+    .menu[data-scrolled] .menu__surface::after {
+      background: transparent;
+    }
+
+    .menu[data-scrolled] :global(.menu__contact) {
+      border-radius: var(--radius-pill);
+    }
+
+    .menu[data-scrolled] .menu__search {
+      inline-size: 12.5rem;
+    }
+  }
+
+  @container site-canvas (inline-size >= 80em) {
+    .menu__surface {
+      min-block-size: var(--navigation-block-size-desktop);
+    }
+
+    .menu__search-input--compact,
+    .menu__search-input--short {
+      display: none;
+    }
+
+    .menu__search-input--full {
+      display: inline;
+    }
+
+    .menu__navigation :global(.menu-navigation--wide .button__label--compact) {
+      display: none;
+    }
+
+    .menu__navigation
+      :global(
+        .menu-navigation--wide
+          .button__label:not(.button__label--compact):not(.button__label--short)
+      ) {
+      display: inline;
+    }
+
+    .menu__search {
+      inline-size: 18.75rem;
+    }
+
+    .menu[data-scrolled] .menu__search {
+      inline-size: 14.875rem;
+    }
+
+    .menu__shortcut {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+      block-size: var(--navigation-shortcut-block-size);
+      padding: var(--space-3xs) var(--space-2xs);
+      border: 0;
+      border-radius: var(--radius-sm);
+      background: var(--color-surface);
+      box-shadow: none;
+      color: var(--color-text-muted);
+      font-family: var(--font-utility);
+      font-size: var(--font-size-caption);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-tight);
+      white-space: nowrap;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .menu,
+    .menu__surface {
+      transition: none;
+    }
+  }
+</style>

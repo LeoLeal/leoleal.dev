@@ -99,6 +99,17 @@
   --select-menu-inline-size: 15rem;
   --select-option-block-size: 2.25rem;
   --shadow-image-number: 0 0.125rem 0.375rem #18211c18;
+  --shadow-navigation: 0 0.5rem 1.5rem #18211c24;
+  --navigation-block-size-mobile: 3.5rem;
+  --navigation-block-size-tablet: 4.5rem;
+  --navigation-block-size-desktop: 5.5rem;
+  --navigation-shortcut-block-size: 1.5625rem;
+  --navigation-mobile-offset: var(--space-lg);
+  --navigation-mobile-clearance: calc(
+    var(--navigation-block-size-mobile) + var(--navigation-mobile-offset) +
+      env(safe-area-inset-bottom)
+  );
+  --navigation-z-index: 10;
 
   /* Pen radius scale */
   --radius-sm: 0.25rem;
@@ -145,6 +156,20 @@
 
 :root[data-theme="light"] {
   color-scheme: light;
+  --color-surface: #f4f1ea;
+  --color-surface-alt: #e8e2d7;
+  --color-text: #18211c;
+  --color-text-muted: #5e6761;
+  --color-border: #cbd0c9;
+  --color-accent: #ab432a;
+  --color-accent-active: #8f3522;
+  --color-floating-surface: #f4f1eaef;
+  --color-floating-border: #cbd0c9;
+  --color-surface-overlay: #f4f1ea;
+  --color-surface-raised: #e8e2d7;
+  --color-border-subtle: #cbd0c9;
+  --color-border-strong: #cbd0c9;
+  --color-text-muted-subtle: #667069;
 }
 
 :root[data-theme="dark"] {

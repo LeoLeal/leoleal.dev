@@ -25,7 +25,8 @@
 
 ## Content And Discovery
 
-- Contentful is the source of truth for published editorial content. Do not duplicate CMS copy across components.
+- Contentful is the source of truth only for published About Me and Journey editorial content. Do not duplicate that CMS copy across components.
+- Store reusable interface labels in separate en-GB and pt-BR source files; do not embed translated interface strings in shared component markup.
 - Support en-GB at `/` and pt-BR at `/pt-br/`; keep routes, links, metadata, and CMS queries locale-aware.
 - Every indexable page needs a unique title and description, canonical URL, hreflang links, social metadata, and suitable JSON-LD.
 - Structured data must describe visible, accurate content. Never expose Contentful credentials to browser code.

@@ -1,0 +1,178 @@
+---
+import Button from "./atoms/Button.astro";
+
+interface Props {
+  darkLabel: string;
+  lightLabel: string;
+}
+
+const { darkLabel, lightLabel } = Astro.props;
+---
+
+<div
+  data-dark-label={darkLabel}
+  data-light-label={lightLabel}
+  data-theme-switcher
+>
+  <Button
+    ariaLabel={darkLabel}
+    className="theme-switcher"
+    rounded
+    variant="secondary"
+  >
+    <svg aria-hidden="true" slot="icon" viewBox="0 0 16 16">
+      <path
+        class="theme-switcher__sun"
+        d="M8 1.75v1.5M8 12.75v1.5M3.58 3.58l1.06 1.06M11.36 11.36l1.06 1.06M1.75 8h1.5M12.75 8h1.5M3.58 12.42l1.06-1.06M11.36 4.64l1.06-1.06M10.5 8A2.5 2.5 0 1 1 5.5 8a2.5 2.5 0 0 1 5 0Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-width="1.5"></path>
+      <path
+        class="theme-switcher__moon"
+        d="M12.9 10.15A5.5 5.5 0 0 1 5.85 3.1 5.5 5.5 0 1 0 12.9 10.15Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-linejoin="round"
+        stroke-width="1.5"></path>
+    </svg>
+  </Button>
+</div>
+
+<script>
+  const switchers = document.querySelectorAll<HTMLElement>(
+    "[data-theme-switcher]",
+  );
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  for (const switcher of switchers) {
+    const control = switcher.querySelector<HTMLElement>(".theme-switcher");
+    const darkLabel = switcher.dataset.darkLabel;
+    const lightLabel = switcher.dataset.lightLabel;
+
+    if (!control || !darkLabel || !lightLabel) continue;
+
+    let animationFrame = 0;
+    let transitionFrame = 0;
+
+    const updateIrisOrigin = () => {
+      const bounds = control.getBoundingClientRect();
+      const x = bounds.left + bounds.width / 2;
+      const y = bounds.top + bounds.height / 2;
+      const radius = Math.hypot(
+        Math.max(x, window.innerWidth - x),
+        Math.max(y, window.innerHeight - y),
+      );
+
+      document.documentElement.style.setProperty("--theme-iris-x", `${x}px`);
+      document.documentElement.style.setProperty("--theme-iris-y", `${y}px`);
+      document.documentElement.style.setProperty(
+        "--theme-iris-radius",
+        `${radius}px`,
+      );
+    };
+
+    const scheduleIrisOriginUpdate = () => {
+      cancelAnimationFrame(animationFrame);
+      animationFrame = requestAnimationFrame(updateIrisOrigin);
+    };
+
+    const trackIrisOrigin = () => {
+      updateIrisOrigin();
+      transitionFrame = requestAnimationFrame(trackIrisOrigin);
+    };
+
+    const startTrackingIrisOrigin = () => {
+      cancelAnimationFrame(transitionFrame);
+      transitionFrame = requestAnimationFrame(trackIrisOrigin);
+    };
+
+    const stopTrackingIrisOrigin = () => {
+      cancelAnimationFrame(transitionFrame);
+      updateIrisOrigin();
+    };
+
+    const applyTheme = (theme: "light" | "dark") => {
+      document.documentElement.dataset.theme = theme;
+      control.dataset.theme = theme;
+      try {
+        localStorage.setItem("theme", theme);
+      } catch {
+        // The control remains useful when storage is unavailable.
+      }
+      control.setAttribute(
+        "aria-label",
+        theme === "dark" ? lightLabel : darkLabel,
+      );
+    };
+
+    const currentTheme = () =>
+      document.documentElement.dataset.theme === "dark" ||
+      (!document.documentElement.dataset.theme &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ? "dark"
+        : "light";
+
+    const syncThemeSwitcher = () => {
+      const theme = currentTheme();
+      control.dataset.theme = theme;
+      control.setAttribute(
+        "aria-label",
+        theme === "dark" ? lightLabel : darkLabel,
+      );
+    };
+
+    syncThemeSwitcher();
+    updateIrisOrigin();
+
+    const menuSurface = control.closest(".menu__surface");
+    const observer = new ResizeObserver(scheduleIrisOriginUpdate);
+    observer.observe(control);
+    if (menuSurface) observer.observe(menuSurface);
+
+    window.addEventListener("resize", scheduleIrisOriginUpdate, {
+      passive: true,
+    });
+    window.addEventListener("scroll", scheduleIrisOriginUpdate, {
+      passive: true,
+    });
+
+    menuSurface?.addEventListener("transitionrun", startTrackingIrisOrigin);
+    menuSurface?.addEventListener("transitioncancel", stopTrackingIrisOrigin);
+    menuSurface?.addEventListener("transitionend", stopTrackingIrisOrigin);
+
+    control.addEventListener("click", () => {
+      const nextTheme = currentTheme() === "dark" ? "light" : "dark";
+
+      if (!("startViewTransition" in document) || reducedMotion.matches) {
+        applyTheme(nextTheme);
+        return;
+      }
+
+      updateIrisOrigin();
+      document.documentElement.toggleAttribute("data-theme-transition", true);
+
+      const transition = document.startViewTransition(() => {
+        applyTheme(nextTheme);
+      });
+
+      void transition.finished.finally(() => {
+        document.documentElement.removeAttribute("data-theme-transition");
+      });
+    });
+  }
+</script>
+
+<style>
+  .theme-switcher__moon {
+    display: none;
+  }
+
+  :global(.theme-switcher[data-theme="dark"] .theme-switcher__sun) {
+    display: none;
+  }
+
+  :global(.theme-switcher[data-theme="dark"] .theme-switcher__moon) {
+    display: block;
+  }
+</style>

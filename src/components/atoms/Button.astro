@@ -1,20 +1,26 @@
 ---
 interface Props {
   ariaLabel?: string;
+  className?: string;
+  compactLabel?: string;
   disabled?: boolean;
   href?: string;
   label?: string;
   rounded?: boolean;
+  shortLabel?: string;
   type?: "button" | "reset" | "submit";
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "tertiary";
 }
 
 const {
   ariaLabel,
+  className: consumerClassName,
+  compactLabel,
   disabled = false,
   href,
   label,
   rounded = false,
+  shortLabel,
   type = "button",
   variant = "primary",
 } = Astro.props;
@@ -36,6 +42,7 @@ if (iconOnly && !ariaLabel) {
 
 const className = [
   "button",
+  consumerClassName,
   `button--${variant}`,
   rounded && "button--rounded",
   iconOnly && "button--icon-only",
@@ -57,7 +64,15 @@ const className = [
       ) : (
         <>
           {hasLeading && <slot name="leading" />}
-          <span>{label}</span>
+          <span class="button__label">{label}</span>
+          {compactLabel && (
+            <span class="button__label button__label--compact">
+              {compactLabel}
+            </span>
+          )}
+          {shortLabel && (
+            <span class="button__label button__label--short">{shortLabel}</span>
+          )}
           {hasTrailing && <slot name="trailing" />}
         </>
       )}
@@ -74,7 +89,15 @@ const className = [
       ) : (
         <>
           {hasLeading && <slot name="leading" />}
-          <span>{label}</span>
+          <span class="button__label">{label}</span>
+          {compactLabel && (
+            <span class="button__label button__label--compact">
+              {compactLabel}
+            </span>
+          )}
+          {shortLabel && (
+            <span class="button__label button__label--short">{shortLabel}</span>
+          )}
           {hasTrailing && <slot name="trailing" />}
         </>
       )}
@@ -98,6 +121,7 @@ const className = [
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-tight);
     text-decoration: none;
+    transition: all 300ms ease;
   }
 
   .button--primary {
@@ -107,6 +131,11 @@ const className = [
 
   .button--secondary {
     border-color: var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+  }
+
+  .button--tertiary {
     background: transparent;
     color: var(--color-text);
   }
@@ -121,12 +150,23 @@ const className = [
     padding-inline: var(--space-none);
   }
 
+  .button__label--compact,
+  .button__label--short {
+    display: none;
+  }
+
   .button--primary:not(:disabled):not([aria-disabled="true"]):hover {
     opacity: 0.88;
   }
 
   .button--secondary:not(:disabled):not([aria-disabled="true"]):hover {
     background: var(--color-surface-alt);
+  }
+
+  .button--tertiary:not(:disabled):not([aria-disabled="true"]):hover span {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
   }
 
   .button--primary:not(:disabled):not([aria-disabled="true"]):active {
@@ -157,6 +197,10 @@ const className = [
   .button--secondary:focus-visible {
     outline-color: var(--color-accent);
     outline-offset: 0;
+  }
+
+  .button--tertiary:focus-visible {
+    outline-color: var(--color-accent);
   }
 
   .button :global(svg) {
