@@ -1,20 +1,31 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  leoleal.dev is Leonardo Leal's bilingual professional portfolio.
+  Stack: Astro, strict TypeScript, pnpm, semantic HTML, modern CSS, and native browser APIs. No client UI framework.
+  Target rendering: static builds deployed to GitHub Pages; Contentful publishing triggers a rebuild.
+  Target content: Contentful is authoritative. en-GB is served at / and pt-BR at /pt-br/.
+  Design: design/leoleal.dev.pen is authoritative for UI and tokens and is accessed only through Pen tooling.
+  Layout: the page canvas remains full-width through 1920px, then uses a centred 1920px maximum inline size on wider viewports.
+  CSS: use modern logical properties, prefer intrinsic and container-relative sizing, and avoid viewport-relative units unless a rule genuinely depends on the viewport.
+  Transitions: use the native View Transition API as progressive enhancement where it adds meaningful continuity, with reduced-motion support and functional fallbacks.
+  Quality: mobile-first, light/dark themes, WCAG 2.2 AA, SEO metadata, accurate JSON-LD, DRY, and pragmatic SOLID.
+  Formatting: Prettier with prettier-plugin-astro, using the repository configuration and ignore rules.
+  Workflow: pnpm format:check and pnpm build are required. Commits use Commitizen-style Conventional Commits.
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+rules:
+  proposal:
+    - Keep scope and non-goals explicit and concise.
+    - Identify impacts on Contentful, locales, accessibility, design tokens, SEO, and deployment.
+  design:
+    - Prefer Astro components, semantic HTML, CSS, and native browser APIs over dependencies.
+    - Reuse Pen design tokens and preserve the static Contentful boundary.
+    - Keep layouts full-width through 1920px and centre them within a 1920px maximum inline-size container above that viewport width.
+    - Use CSS logical properties such as inline-size, block-size, and padding-inline-start instead of physical equivalents.
+    - Avoid viewport-relative units unless necessary for a genuine viewport constraint; prefer intrinsic sizing, container queries, and container query units for container-responsive behaviour.
+    - Use the View Transition API where appropriate as progressive enhancement, with reduced-motion handling and a functional fallback.
+    - Cover responsive layouts, both themes, both locales, and WCAG 2.2 AA behavior.
+  tasks:
+    - Include pnpm format:check and pnpm build as required verification steps.
+    - Include locale, accessibility, metadata, and structured-data checks when relevant.
+    - Update README commands, requirements, deployment notes, and badges when affected.

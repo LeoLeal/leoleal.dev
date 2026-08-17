@@ -1,0 +1,142 @@
+@import "./tokens.css";
+
+@layer reset, base, layout, transitions;
+
+@view-transition {
+  navigation: auto;
+}
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd) {
+    margin-block: 0;
+  }
+
+  :where(button, input, select, textarea) {
+    color: inherit;
+    font: inherit;
+  }
+
+  textarea {
+    resize: block;
+  }
+
+  :where(img, picture, video, canvas, svg) {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  :where(img, video, canvas, svg) {
+    block-size: auto;
+  }
+}
+
+@layer base {
+  html {
+    block-size: 100%;
+    background: var(--color-surface);
+  }
+
+  body {
+    min-block-size: 100%;
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+    overflow-wrap: anywhere;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-display);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+  }
+
+  a:hover {
+    text-decoration-thickness: 0.12em;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-surface);
+  }
+
+  :focus-visible {
+    outline: 0.125rem solid var(--color-accent);
+    outline-offset: 0.1875rem;
+  }
+
+  @media (forced-colors: active) {
+    :focus-visible {
+      outline-color: Highlight;
+    }
+  }
+}
+
+@layer layout {
+  body {
+    container: site-viewport / inline-size;
+  }
+
+  .site-canvas {
+    container: site-canvas / inline-size;
+    inline-size: 100%;
+    max-inline-size: 1920px;
+    min-block-size: 100%;
+    margin-inline: auto;
+    background: var(--color-surface);
+  }
+
+  @container site-viewport (inline-size >= 48em) {
+    .site-canvas {
+      --page-gutter: var(--space-xl);
+    }
+  }
+
+  @container site-viewport (inline-size >= 80em) {
+    .site-canvas {
+      --page-gutter: var(--space-3xl);
+    }
+  }
+}
+
+@layer transitions {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 180ms;
+    animation-timing-function: ease-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+      animation: none;
+    }
+  }
+}
