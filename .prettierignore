@@ -1,0 +1,8 @@
+.agents/
+.astro/
+.opencode/
+design/
+dist/
+node_modules/
+/index.md
+/_config.yml
