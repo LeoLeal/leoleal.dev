@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+import Menu from "../components/Menu.astro";
 import "../styles/global.css";
 
 interface Props {
@@ -25,6 +27,11 @@ const { title, description, lang = "en-GB" } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <div class="site-canvas"><slot /></div>
+    <div class="site-canvas">
+      <Menu />
+      <slot name="hero" />
+      <slot name="main" />
+      <Footer />
+    </div>
   </body>
 </html>
