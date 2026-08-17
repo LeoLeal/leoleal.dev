@@ -4,7 +4,7 @@ context: |
   leoleal.dev is Leonardo Leal's bilingual professional portfolio.
   Stack: Astro, strict TypeScript, pnpm, semantic HTML, modern CSS, and native browser APIs. No client UI framework.
   Target rendering: static builds deployed to GitHub Pages; Contentful publishing triggers a rebuild.
-  Target content: Contentful is authoritative. en-GB is served at / and pt-BR at /pt-br/.
+  Target content: Contentful is authoritative only for About Me and Journey editorial content; reusable interface labels are source-controlled in separate en-GB and pt-BR files. en-GB is served at / and pt-BR at /pt-br/.
   Design: design/leoleal.dev.pen is authoritative for UI and tokens and is accessed only through Pen tooling.
   Layout: the page canvas remains full-width through 1920px, then uses a centred 1920px maximum inline size on wider viewports.
   CSS: use modern logical properties, prefer intrinsic and container-relative sizing, and avoid viewport-relative units unless a rule genuinely depends on the viewport.
@@ -17,6 +17,7 @@ rules:
   proposal:
     - Keep scope and non-goals explicit and concise.
     - Identify impacts on Contentful, locales, accessibility, design tokens, SEO, and deployment.
+    - Keep Contentful scoped to About Me and Journey unless the change explicitly expands that boundary; require interface labels in both locale source files.
   design:
     - Prefer Astro components, semantic HTML, CSS, and native browser APIs over dependencies.
     - Reuse Pen design tokens and preserve the static Contentful boundary.
@@ -25,7 +26,9 @@ rules:
     - Avoid viewport-relative units unless necessary for a genuine viewport constraint; prefer intrinsic sizing, container queries, and container query units for container-responsive behaviour.
     - Use the View Transition API where appropriate as progressive enhancement, with reduced-motion handling and a functional fallback.
     - Cover responsive layouts, both themes, both locales, and WCAG 2.2 AA behavior.
+    - Keep shared component interface labels in per-locale source files rather than component markup.
   tasks:
     - Include pnpm format:check and pnpm build as required verification steps.
     - Include locale, accessibility, metadata, and structured-data checks when relevant.
     - Update README commands, requirements, deployment notes, and badges when affected.
+    - Verify Contentful ownership remains limited to About Me and Journey and new interface labels exist for both locales.

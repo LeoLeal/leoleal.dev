@@ -8,14 +8,25 @@ interface Option {
 
 interface Props {
   ariaLabel: string;
+  className?: string;
   disabled?: boolean;
   id?: string;
   name?: string;
   options: Option[];
+  placement?: "block-end" | "block-start";
   value?: string;
 }
 
-const { ariaLabel, disabled = false, id, name, options, value } = Astro.props;
+const {
+  ariaLabel,
+  className,
+  disabled = false,
+  id,
+  name,
+  options,
+  placement = "block-end",
+  value,
+} = Astro.props;
 
 const selectedOption =
   options.find((option) => option.value === value && !option.disabled) ??
@@ -32,7 +43,7 @@ const anchorName = `--${controlId}-anchor`;
 ---
 
 <div
-  class="compact-select"
+  class:list={["compact-select", className, `compact-select--${placement}`]}
   data-compact-select
   style={`--compact-select-anchor: ${anchorName}`}
 >
@@ -263,6 +274,7 @@ const anchorName = `--${controlId}-anchor`;
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-tight);
     anchor-name: var(--compact-select-anchor);
+    transition: all 300ms ease;
   }
 
   .compact-select__icon,
@@ -303,6 +315,12 @@ const anchorName = `--${controlId}-anchor`;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     background: var(--color-surface-overlay);
+    transition: all 300ms ease;
+  }
+
+  .compact-select--block-start .compact-select__menu {
+    inset-block-end: calc(100% + var(--space-xs));
+    inset-block-start: auto;
   }
 
   @supports (position-anchor: --compact-select-anchor) {
@@ -311,6 +329,11 @@ const anchorName = `--${controlId}-anchor`;
       inset-block-start: anchor(block-end);
       inset-inline-start: anchor(inline-start);
       position-try-fallbacks: flip-block;
+    }
+
+    .compact-select--block-start .compact-select__menu {
+      inset-block-end: anchor(block-start);
+      inset-block-start: auto;
     }
   }
 
@@ -333,6 +356,7 @@ const anchorName = `--${controlId}-anchor`;
     font-size: var(--font-size-ui);
     font-weight: var(--font-weight-regular);
     text-align: start;
+    transition: all 300ms ease;
   }
 
   .compact-select__option.is-selected {

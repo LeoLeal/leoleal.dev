@@ -7,9 +7,17 @@ interface Props {
   title: string;
   description?: string;
   lang?: string;
+  menuShowSearch?: boolean;
 }
 
-const { title, description, lang = "en-GB" } = Astro.props;
+const {
+  title,
+  description,
+  lang = "en-GB",
+  menuShowSearch = true,
+} = Astro.props;
+const hasMenuLeading = Astro.slots.has("menu-leading");
+const hasMenuNavigation = Astro.slots.has("menu-navigation");
 ---
 
 <!doctype html>
@@ -24,11 +32,22 @@ const { title, description, lang = "en-GB" } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&family=Newsreader:wght@400&display=swap"
     />
     {description && <meta name="description" content={description} />}
+    <script is:inline>
+      try {
+        const theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch {}
+    </script>
     <title>{title}</title>
   </head>
   <body>
     <div class="site-canvas">
-      <Menu />
+      <Menu lang={lang} showSearch={menuShowSearch}>
+        {hasMenuLeading && <slot name="menu-leading" slot="leading" />}
+        {hasMenuNavigation && <slot name="menu-navigation" slot="navigation" />}
+      </Menu>
       <slot name="hero" />
       <slot name="main" />
       <Footer />

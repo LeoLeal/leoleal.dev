@@ -10,7 +10,7 @@ Personal website for Leonardo Leal's professional story, selected work, and fron
 - Astro with strict TypeScript and no client UI framework
 - Semantic HTML, modern CSS, and native browser APIs
 - Pen design system with responsive light and dark themes
-- Contentful as the editorial source, fetched during static builds
+- Contentful for localized About Me and Journey editorial content, fetched during static builds
 - en-GB at `/` and pt-BR at `/pt-br/`
 - WCAG 2.2 AA, locale-aware metadata, and JSON-LD
 - GitHub Pages deployment at [leoleal.dev](https://leoleal.dev)
@@ -38,7 +38,7 @@ pnpm dev
 ## Sources Of Truth
 
 - `design/leoleal.dev.pen`: visual design and design tokens; access it through Pen tooling.
-- Contentful: future source for published career history, projects, and localized editorial content.
+- Contentful: future source for localized About Me and Journey editorial content only. Reusable interface labels remain in separate en-GB and pt-BR source files.
 - Google Fonts: runtime source for Newsreader, Geist, and IBM Plex Mono; resilient local font stacks keep content readable when it is unavailable.
 - `openspec/config.yaml`: context and constraints for explicitly requested OpenSpec work.
 
