@@ -1,5 +1,5 @@
 {
-  "version": "2.15",
+  "version": "2.17",
   "children": [
     {
       "type": "frame",
@@ -2640,7 +2640,7 @@
                       "type": "text",
                       "id": "K64olP",
                       "name": "Contact Label",
-                      "fill": "$overlay-ink",
+                      "fill": "$surface",
                       "content": "Let’s talk",
                       "fontFamily": "$type-font-family-body",
                       "fontSize": "$type-font-size-ui",
@@ -2654,7 +2654,7 @@
                       "height": 16,
                       "icon": "mail",
                       "library": "lucide",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   ]
                 }
@@ -3821,7 +3821,7 @@
                               "type": "text",
                               "id": "v5ruy",
                               "name": "Product Selection Journey Launch Label",
-                              "fill": "$overlay-ink",
+                              "fill": "$surface",
                               "content": "Launch project",
                               "fontFamily": "$type-font-family-body",
                               "fontSize": "$type-font-size-ui",
@@ -3835,7 +3835,7 @@
                               "height": 15,
                               "icon": "arrow-up-right",
                               "library": "lucide",
-                              "fill": "$overlay-ink"
+                              "fill": "$surface"
                             }
                           ]
                         }
@@ -7310,13 +7310,13 @@
                           "height": 16,
                           "icon": "download",
                           "library": "lucide",
-                          "fill": "$overlay-ink"
+                          "fill": "$surface"
                         },
                         {
                           "type": "text",
                           "id": "z2AML",
                           "name": "Button Label",
-                          "fill": "$overlay-ink",
+                          "fill": "$surface",
                           "content": "Primary action",
                           "fontFamily": "$type-font-family-body",
                           "fontSize": "$type-font-size-ui",
@@ -7330,7 +7330,7 @@
                           "height": 16,
                           "icon": "arrow-right",
                           "library": "lucide",
-                          "fill": "$overlay-ink"
+                          "fill": "$surface"
                         }
                       ]
                     },
@@ -9800,7 +9800,7 @@
                               "type": "text",
                               "id": "YkYch",
                               "name": "Publicis Sapient Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "04 / 2022 — NOW",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -10294,7 +10294,7 @@
                               "type": "text",
                               "id": "jkFJX",
                               "name": "EPAM Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "03 / 2020 — 2022",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -10719,7 +10719,7 @@
                               "type": "text",
                               "id": "IcaLO",
                               "name": "XP Investimentos Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "02 / 2016 — 2020",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -11159,7 +11159,7 @@
                               "type": "text",
                               "id": "Kw4ud",
                               "name": "Rico.com.vc Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "01 / 2013 — 2016",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -11639,7 +11639,7 @@
                       "type": "text",
                       "id": "m8afFy",
                       "name": "Contact Label",
-                      "fill": "$overlay-ink",
+                      "fill": "$surface",
                       "content": "Let’s talk",
                       "fontFamily": "$type-font-family-body",
                       "fontSize": "$type-font-size-ui",
@@ -11653,7 +11653,7 @@
                       "height": 16,
                       "icon": "mail",
                       "library": "lucide",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   ]
                 }
@@ -11738,7 +11738,7 @@
                   "type": "text",
                   "id": "pIxKD",
                   "name": "Publicis Hero Period",
-                  "fill": "#E88468",
+                  "fill": "$accent",
                   "content": "04 / 2022 — NOW  ·  03 PROJECTS",
                   "fontFamily": "$type-font-family-mono",
                   "fontSize": "$type-font-size-caption",
@@ -12001,7 +12001,7 @@
                               "type": "text",
                               "id": "ErjwR",
                               "name": "Product Selection Journey Launch Label",
-                              "fill": "$overlay-ink",
+                              "fill": "$surface",
                               "content": "Launch project",
                               "fontFamily": "$type-font-family-body",
                               "fontSize": "$type-font-size-ui",
@@ -12015,7 +12015,7 @@
                               "height": 15,
                               "icon": "arrow-up-right",
                               "library": "lucide",
-                              "fill": "$overlay-ink"
+                              "fill": "$surface"
                             }
                           ]
                         }
@@ -16063,7 +16063,7 @@
                               "type": "text",
                               "id": "F2GZG",
                               "name": "Publicis Sapient Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "04 / 2022 — NOW",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -16475,7 +16475,7 @@
                               "type": "text",
                               "id": "gGU2r",
                               "name": "EPAM Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "03 / 2020 — 2022",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -16823,7 +16823,7 @@
                               "type": "text",
                               "id": "sL7dz",
                               "name": "XP Investimentos Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "02 / 2016 — 2020",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -17186,7 +17186,7 @@
                               "type": "text",
                               "id": "t7t812",
                               "name": "Rico.com.vc Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "01 / 2013 — 2016",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -17585,7 +17585,7 @@
                       "type": "text",
                       "id": "dRxWj",
                       "name": "Contact Label",
-                      "fill": "$overlay-ink",
+                      "fill": "$surface",
                       "content": "Let’s talk",
                       "fontFamily": "$type-font-family-body",
                       "fontSize": "$type-font-size-ui",
@@ -17599,7 +17599,7 @@
                       "height": 16,
                       "icon": "mail",
                       "library": "lucide",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   ]
                 }
@@ -17684,7 +17684,7 @@
                   "type": "text",
                   "id": "C2vl45",
                   "name": "Publicis Hero Period",
-                  "fill": "#E88468",
+                  "fill": "$accent",
                   "content": "04 / 2022 — NOW  ·  03 PROJECTS",
                   "fontFamily": "$type-font-family-mono",
                   "fontSize": "$type-font-size-caption",
@@ -17949,7 +17949,7 @@
                               "type": "text",
                               "id": "PgBz2",
                               "name": "Product Selection Journey Launch Label",
-                              "fill": "$overlay-ink",
+                              "fill": "$surface",
                               "content": "Launch project",
                               "fontFamily": "$type-font-family-body",
                               "fontSize": "$type-font-size-ui",
@@ -17963,7 +17963,7 @@
                               "height": 15,
                               "icon": "arrow-up-right",
                               "library": "lucide",
-                              "fill": "$overlay-ink"
+                              "fill": "$surface"
                             }
                           ]
                         }
@@ -21993,7 +21993,7 @@
                               "type": "text",
                               "id": "FSain",
                               "name": "Publicis Sapient Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "04 / 2022 — NOW",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -22405,7 +22405,7 @@
                               "type": "text",
                               "id": "z8En6",
                               "name": "EPAM Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "03 / 2020 — 2022",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -22753,7 +22753,7 @@
                               "type": "text",
                               "id": "N7wIr",
                               "name": "XP Investimentos Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "02 / 2016 — 2020",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -23116,7 +23116,7 @@
                               "type": "text",
                               "id": "XSTyd",
                               "name": "Rico.com.vc Employment Period",
-                              "fill": "#E88468",
+                              "fill": "$accent",
                               "content": "01 / 2013 — 2016",
                               "fontFamily": "$type-font-family-mono",
                               "fontSize": "$type-font-size-caption",
@@ -23515,7 +23515,7 @@
                       "height": 16,
                       "icon": "mail",
                       "library": "lucide",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   ]
                 }
@@ -23606,7 +23606,7 @@
                   "type": "text",
                   "id": "u77b7w",
                   "name": "Publicis Hero Period",
-                  "fill": "#E88468",
+                  "fill": "$accent",
                   "content": "04 / 2022 — NOW  ·  03 PROJECTS",
                   "fontFamily": "$type-font-family-mono",
                   "fontSize": "$type-font-size-caption",
@@ -23762,7 +23762,7 @@
                   "descendants": {
                     "nC8Gb": {
                       "icon": "mail",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   }
                 }
@@ -23862,7 +23862,7 @@
                               "type": "text",
                               "id": "H1yW91",
                               "name": "Product Selection Journey Launch Label",
-                              "fill": "$overlay-ink",
+                              "fill": "$surface",
                               "content": "Launch project",
                               "fontFamily": "$type-font-family-body",
                               "fontSize": "$type-font-size-ui",
@@ -23876,7 +23876,7 @@
                               "height": 15,
                               "icon": "arrow-up-right",
                               "library": "lucide",
-                              "fill": "$overlay-ink"
+                              "fill": "$surface"
                             }
                           ]
                         }
@@ -26103,7 +26103,7 @@
                   "descendants": {
                     "nC8Gb": {
                       "icon": "mail",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   }
                 }
@@ -26285,7 +26285,7 @@
                   "descendants": {
                     "nC8Gb": {
                       "icon": "mail",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   }
                 }
@@ -28576,7 +28576,7 @@
                       "type": "text",
                       "id": "suBcA",
                       "name": "Contact Label",
-                      "fill": "$overlay-ink",
+                      "fill": "$surface",
                       "content": "Let’s talk",
                       "fontFamily": "$type-font-family-body",
                       "fontSize": "$type-font-size-ui",
@@ -28590,7 +28590,7 @@
                       "height": 16,
                       "icon": "mail",
                       "library": "lucide",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   ]
                 }
@@ -28940,7 +28940,7 @@
                               "type": "text",
                               "id": "irRp5",
                               "name": "Product Selection Journey Launch Label",
-                              "fill": "$overlay-ink",
+                              "fill": "$surface",
                               "content": "Launch project",
                               "fontFamily": "$type-font-family-body",
                               "fontSize": "$type-font-size-ui",
@@ -28954,7 +28954,7 @@
                               "height": 15,
                               "icon": "arrow-up-right",
                               "library": "lucide",
-                              "fill": "$overlay-ink"
+                              "fill": "$surface"
                             }
                           ]
                         }
@@ -34398,7 +34398,7 @@
                       "height": 16,
                       "icon": "mail",
                       "library": "lucide",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   ]
                 }
@@ -34645,7 +34645,7 @@
                   "descendants": {
                     "nC8Gb": {
                       "icon": "mail",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   }
                 }
@@ -34745,7 +34745,7 @@
                               "type": "text",
                               "id": "B3XXK",
                               "name": "Product Selection Journey Launch Label",
-                              "fill": "$overlay-ink",
+                              "fill": "$surface",
                               "content": "Launch project",
                               "fontFamily": "$type-font-family-body",
                               "fontSize": "$type-font-size-ui",
@@ -34759,7 +34759,7 @@
                               "height": 15,
                               "icon": "arrow-up-right",
                               "library": "lucide",
-                              "fill": "$overlay-ink"
+                              "fill": "$surface"
                             }
                           ]
                         }
@@ -36950,7 +36950,7 @@
                   "descendants": {
                     "nC8Gb": {
                       "icon": "mail",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   }
                 }
@@ -37131,7 +37131,7 @@
                   "descendants": {
                     "nC8Gb": {
                       "icon": "mail",
-                      "fill": "$overlay-ink"
+                      "fill": "$surface"
                     }
                   }
                 }
@@ -37204,7 +37204,7 @@
       "type": "color",
       "value": [
         {
-          "value": "#667069",
+          "value": "#5E6761",
           "theme": {
             "Mode": "Light"
           }
@@ -37238,7 +37238,7 @@
       "type": "color",
       "value": [
         {
-          "value": "#B6472D",
+          "value": "#AB432A",
           "theme": {
             "Mode": "Light"
           }
