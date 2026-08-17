@@ -1,0 +1,27 @@
+---
+interface Props {
+  value: string | number;
+}
+
+const { value } = Astro.props;
+---
+
+<span class="badge">{value}</span>
+
+<style>
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    min-block-size: var(--badge-size-image-number);
+    padding-inline: var(--space-xs);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-image-number);
+    color: var(--color-text);
+    font-family: var(--font-utility);
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+  }
+</style>

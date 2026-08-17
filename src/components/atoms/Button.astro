@@ -1,0 +1,167 @@
+---
+interface Props {
+  ariaLabel?: string;
+  disabled?: boolean;
+  href?: string;
+  label?: string;
+  rounded?: boolean;
+  type?: "button" | "reset" | "submit";
+  variant?: "primary" | "secondary";
+}
+
+const {
+  ariaLabel,
+  disabled = false,
+  href,
+  label,
+  rounded = false,
+  type = "button",
+  variant = "primary",
+} = Astro.props;
+
+const hasLeading = Astro.slots.has("leading");
+const hasTrailing = Astro.slots.has("trailing");
+const hasIcon = Astro.slots.has("icon");
+const iconOnly = !label && hasIcon && !hasLeading && !hasTrailing;
+
+if (!label && !iconOnly) {
+  throw new Error(
+    "Button requires a label or exactly one icon in the icon slot.",
+  );
+}
+
+if (iconOnly && !ariaLabel) {
+  throw new Error("An icon-only Button requires an ariaLabel.");
+}
+
+const className = [
+  "button",
+  `button--${variant}`,
+  rounded && "button--rounded",
+  iconOnly && "button--icon-only",
+]
+  .filter(Boolean)
+  .join(" ");
+---
+
+{
+  href ? (
+    <a
+      class={className}
+      aria-label={ariaLabel}
+      aria-disabled={disabled || undefined}
+      href={disabled ? undefined : href}
+    >
+      {iconOnly ? (
+        <slot name="icon" />
+      ) : (
+        <>
+          {hasLeading && <slot name="leading" />}
+          <span>{label}</span>
+          {hasTrailing && <slot name="trailing" />}
+        </>
+      )}
+    </a>
+  ) : (
+    <button
+      class={className}
+      aria-label={ariaLabel}
+      disabled={disabled}
+      type={type}
+    >
+      {iconOnly ? (
+        <slot name="icon" />
+      ) : (
+        <>
+          {hasLeading && <slot name="leading" />}
+          <span>{label}</span>
+          {hasTrailing && <slot name="trailing" />}
+        </>
+      )}
+    </button>
+  )
+}
+
+<style>
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    min-block-size: var(--control-size-default);
+    padding-inline: var(--space-md);
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    color: var(--color-overlay-text);
+    font-family: var(--font-body);
+    font-size: var(--font-size-ui);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+    text-decoration: none;
+  }
+
+  .button--primary {
+    background: var(--color-accent);
+    color: var(--color-surface);
+  }
+
+  .button--secondary {
+    border-color: var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+  }
+
+  .button--rounded {
+    border-radius: var(--radius-pill);
+  }
+
+  .button--icon-only {
+    inline-size: var(--control-size-default);
+    aspect-ratio: 1;
+    padding-inline: var(--space-none);
+  }
+
+  .button--primary:not(:disabled):not([aria-disabled="true"]):hover {
+    opacity: 0.88;
+  }
+
+  .button--secondary:not(:disabled):not([aria-disabled="true"]):hover {
+    background: var(--color-surface-alt);
+  }
+
+  .button--primary:not(:disabled):not([aria-disabled="true"]):active {
+    background: var(--color-accent-active);
+    opacity: 1;
+  }
+
+  .button--secondary:not(:disabled):not([aria-disabled="true"]):active {
+    border-color: var(--color-accent);
+    background: var(--color-surface-alt);
+  }
+
+  .button:not(:disabled):not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+
+  .button:disabled,
+  .button[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.45;
+  }
+
+  .button--primary:focus-visible {
+    outline-color: var(--color-text);
+    outline-offset: 0;
+  }
+
+  .button--secondary:focus-visible {
+    outline-color: var(--color-accent);
+    outline-offset: 0;
+  }
+
+  .button :global(svg) {
+    flex: 0 0 auto;
+    inline-size: var(--icon-size-default);
+    block-size: var(--icon-size-default);
+  }
+</style>
