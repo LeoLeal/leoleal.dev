@@ -1,12 +1,159 @@
 ---
+import Button from "../components/atoms/Button.astro";
+import CompactSelect from "../components/atoms/CompactSelect.astro";
+import ImageNumberBadge from "../components/atoms/ImageNumberBadge.astro";
+import Tag from "../components/atoms/Tag.astro";
 import Layout from "../layouts/Layout.astro";
+
+const focusAreaOptions = [
+  { label: "Product selection", value: "product-selection" },
+  { label: "Design systems", value: "design-systems" },
+  { label: "Frontend engineering", value: "frontend-engineering" },
+];
 ---
 
 <Layout
   title="Leonardo Leal"
   description="Leonardo Leal's professional portfolio."
 >
-  <main>
-    <h1>Leonardo Leal</h1>
+  <main slot="main">
+    <section aria-labelledby="atoms-title" class="showcase">
+      <p class="eyebrow">Design system</p>
+      <h1 id="atoms-title">Atoms</h1>
+
+      <div class="showcase__group">
+        <h2>Buttons</h2>
+        <div class="showcase__items">
+          <Button label="Primary action">
+            <svg slot="trailing" aria-hidden="true" viewBox="0 0 16 16">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+            </svg>
+          </Button>
+          <Button label="Secondary action" variant="secondary">
+            <svg slot="trailing" aria-hidden="true" viewBox="0 0 16 16">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+            </svg>
+          </Button>
+          <Button href="#atoms-title" label="Primary rounded" rounded>
+            <svg slot="trailing" aria-hidden="true" viewBox="0 0 16 16">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+            </svg>
+          </Button>
+          <Button
+            href="#atoms-title"
+            label="Secondary rounded"
+            rounded
+            variant="secondary"
+          >
+            <svg slot="trailing" aria-hidden="true" viewBox="0 0 16 16">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+            </svg>
+          </Button>
+          <Button ariaLabel="Open action menu">
+            <svg slot="icon" aria-hidden="true" viewBox="0 0 16 16">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+            </svg>
+          </Button>
+          <Button ariaLabel="Open action menu" rounded>
+            <svg slot="icon" aria-hidden="true" viewBox="0 0 16 16">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+            </svg>
+          </Button>
+          <Button ariaLabel="Open action menu" variant="secondary">
+            <svg slot="icon" aria-hidden="true" viewBox="0 0 16 16">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+            </svg>
+          </Button>
+          <Button ariaLabel="Open action menu" rounded variant="secondary">
+            <svg slot="icon" aria-hidden="true" viewBox="0 0 16 16">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"></path>
+            </svg>
+          </Button>
+        </div>
+      </div>
+
+      <div class="showcase__group">
+        <h2>Metadata</h2>
+        <div class="showcase__items">
+          <Tag label="TYPESCRIPT" />
+          <ImageNumberBadge value="01" />
+          <CompactSelect
+            ariaLabel="Choose a focus area"
+            name="focus-area"
+            options={focusAreaOptions}
+            value="design-systems"
+          />
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
+
+<style>
+  .showcase {
+    display: grid;
+    gap: var(--space-xl);
+    padding: var(--space-3xl) var(--page-gutter);
+  }
+
+  .eyebrow {
+    color: var(--color-text-muted);
+    font-family: var(--font-utility);
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-label);
+    text-transform: uppercase;
+  }
+
+  .showcase h1 {
+    font-size: var(--font-size-title-display);
+  }
+
+  .showcase h2 {
+    font-size: var(--font-size-title-sm);
+  }
+
+  .showcase__group {
+    display: grid;
+    gap: var(--space-md);
+  }
+
+  .showcase__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-md);
+  }
+</style>

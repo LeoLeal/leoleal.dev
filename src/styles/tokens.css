@@ -8,6 +8,7 @@
   --color-text-muted: #5e6761;
   --color-border: #cbd0c9;
   --color-accent: #ab432a;
+  --color-accent-active: #8f3522;
   --color-overlay-text: #ffffff;
   --color-overlay-muted: #ffffffb3;
   --color-overlay-secondary: #ffffff99;
@@ -17,6 +18,11 @@
   --color-image-overlay: #0d1210d9;
   --color-surface-overlay: #f4f1ea;
   --color-surface-raised: #e8e2d7;
+  --color-surface-menu-hover: color-mix(
+    in srgb,
+    var(--color-surface-overlay),
+    var(--color-surface-raised)
+  );
   --color-border-subtle: #cbd0c9;
   --color-border-strong: #cbd0c9;
   --color-text-muted-subtle: #667069;
@@ -84,6 +90,16 @@
   --space-5xl: 6rem;
   --space-6xl: 8rem;
 
+  /* Pen control and icon dimensions */
+  --control-size-compact: 2rem;
+  --control-size-default: 2.5rem;
+  --badge-size-image-number: 1.75rem;
+  --icon-size-default: 1rem;
+  --icon-size-select: 0.9375rem;
+  --select-menu-inline-size: 15rem;
+  --select-option-block-size: 2.25rem;
+  --shadow-image-number: 0 0.125rem 0.375rem #18211c18;
+
   /* Pen radius scale */
   --radius-sm: 0.25rem;
   --radius-md: 0.625rem;
@@ -116,6 +132,7 @@
     --color-text-muted: #a7b0a9;
     --color-border: #343b36;
     --color-accent: #e47a5f;
+    --color-accent-active: #d46850;
     --color-floating-surface: #101311e6;
     --color-floating-border: #ffffff2e;
     --color-surface-overlay: #18211cf2;
@@ -138,6 +155,7 @@
   --color-text-muted: #a7b0a9;
   --color-border: #343b36;
   --color-accent: #e47a5f;
+  --color-accent-active: #d46850;
   --color-floating-surface: #101311e6;
   --color-floating-border: #ffffff2e;
   --color-surface-overlay: #18211cf2;
