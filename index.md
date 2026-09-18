@@ -12,7 +12,7 @@ With many years of experience and engaging on global initiatives to build modern
 
 **Lead Experience Engineer - Sr Associate Engineer L2**  
 Publicis Sapient - Consulting  
-*Jun 2019 - Present · 6 yrs 3 mos*  
+*Jun 2019 - Present*  
 *London, United Kingdom · Hybrid*  
   
 Lead developer with strong UX/UI background collaborating with multi-disciplinary teams and clients to deliver top quality products and user experiences with proper architecture and the best frontend developer's experience aligned with the clients' needs.  
@@ -65,7 +65,7 @@ EverSystems - Consulting
 ## Some Notable Projects
 
 ### Real Estate, Hospitality and Tourism Industry - Diriyah Gate Company Ltd
-**Sep 2023 - Present · Associated with Publicis Sapient**  
+**Sep 2023 - 2025 · Associated with Publicis Sapient**  
 Lead developer acting as an engineer manager of 2 development tracks (IX Ops and Asset Launches) for various high-impact website projects for Diriyah Gate Company Ltd owned by the Saudi crown, providing Real Estate investment, Hospitality, and Tourism services. Built with Next.js on an Edge infrastructure, using a custom shared component library, and integrating with Content Hub One (CMS) and a CRM for high performance and a smooth user experience.  
   
 *Tech stack: Next.js, Sitecore ContentHub One / Adobe AEM (CMS), GraphQL, React.js, TypeScript, SSR, ISR, SSG*
